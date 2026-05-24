@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<meta name="theme-color" content="#FFFFFF" />
+<title>Contact · Mawid</title>
+<meta name="description" content="Talk to the Mawid team. Sales, support, press, partnerships. We respond within one business day." />
+<link rel="canonical" href="https://mawid.ai/contact/" />
+<link rel="alternate" hreflang="en" href="https://mawid.ai/contact/" />
+<link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/contact/" />
+<link rel="alternate" hreflang="x-default" href="https://mawid.ai/contact/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Contact · Mawid" />
+<meta property="og:description" content="Sales, support, press, partnerships. We respond within one business day." />
+<meta property="og:url" content="https://mawid.ai/contact/" />
+<meta property="og:image" content="https://mawid.ai/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0F0D'/%3E%3Ctext x='32' y='46' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='38' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/mawid.css" />
+
+<style>
+  /* Page-specific styles */
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: clamp(40px, 6vw, 80px);
+    align-items: start;
+  }
+  @media (max-width: 900px) { .contact-grid { grid-template-columns: 1fr; } }
+
+  .channel-list { display: flex; flex-direction: column; gap: 14px; }
+  .channel {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 22px 24px;
+    transition: border-color var(--t-fast);
+  }
+  .channel:hover { border-color: var(--ink); }
+  .channel .label-row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-block-end: 8px;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .channel .ch-label {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  html[lang="ar"] .channel .ch-label { font-family: var(--body-ar); letter-spacing: 0.02em; text-transform: none; font-size: 12.5px; }
+  .channel .email-link {
+    font-family: var(--display);
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color var(--t-fast);
+  }
+  html[lang="ar"] .channel .email-link { font-family: var(--display-ar); font-weight: 600; }
+  .channel .email-link:hover { border-bottom-color: var(--ink); }
+  .channel p {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--ink-mid);
+  }
+
+  .form-card {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: clamp(28px, 4vw, 44px);
+  }
+  .form-card h3 {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    margin-block-end: 24px;
+  }
+  html[lang="ar"] .form-card h3 { font-family: var(--display-ar); font-weight: 600; font-size: 23px; }
+
+  .submit-btn {
+    width: 100%;
+    background: var(--ink);
+    color: var(--bg);
+    border-radius: 10px;
+    padding-block: 14px;
+    font-family: inherit;
+    font-size: 14.5px;
+    font-weight: 500;
+    margin-block-start: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: background var(--t-fast);
+    cursor: pointer;
+    border: 0;
+  }
+  .submit-btn:hover { background: var(--primary); }
+  .submit-btn:disabled { cursor: wait; opacity: 0.85; }
+  .submit-btn .spinner {
+    display: none;
+    width: 14px; height: 14px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+  }
+  .submit-btn.is-loading .spinner { display: inline-block; }
+  .submit-btn.is-loading .label-text { display: none; }
+  .submit-btn.is-loading .loading-text { display: inline; }
+  .submit-btn .loading-text { display: none; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  .form-success {
+    display: none;
+    text-align: center;
+    padding: 32px 0;
+  }
+  .form-success.shown { display: block; }
+  .form-success .check-circle {
+    width: 56px; height: 56px;
+    background: var(--good);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin: 0 auto 20px;
+    color: white;
+    font-size: 28px;
+  }
+  .form-success h4 {
+    font-family: var(--display);
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    margin-block-end: 8px;
+  }
+  html[lang="ar"] .form-success h4 { font-family: var(--display-ar); font-weight: 600; }
+  .form-success p { color: var(--ink-mid); }
+
+  .form-foot {
+    margin-block-start: 14px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--muted);
+    text-align: center;
+    letter-spacing: 0.02em;
+  }
+  html[lang="ar"] .form-foot { font-family: var(--body-ar); letter-spacing: 0; font-size: 12.5px; }
+
+  .office-card {
+    background: var(--bg-warm);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 32px 36px;
+    margin-block-start: 24px;
+  }
+  .office-card h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-block-end: 16px;
+  }
+  html[lang="ar"] .office-card h4 { font-family: var(--body-ar); letter-spacing: 0.02em; text-transform: none; font-size: 12.5px; }
+  .office-addr {
+    font-family: var(--display);
+    font-size: 15px;
+    line-height: 1.55;
+    color: var(--ink);
+    margin-block-end: 18px;
+  }
+  html[lang="ar"] .office-addr { font-family: var(--display-ar); font-weight: 500; line-height: 1.8; }
+  .office-note {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    padding-block-start: 18px;
+    border-block-start: 1px solid var(--line);
+  }
+  html[lang="ar"] .office-note { line-height: 1.85; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark">م</span>
+      <span data-i18n="brand">Mawid</span>
+    </a>
+    <nav class="nav-primary">
+      <a href="/" data-i18n="nav.home">Home</a>
+      <a href="/#features" data-i18n="nav.product">Product</a>
+      <a href="/pricing/" data-i18n="nav.pricing">Pricing</a>
+      <a href="/about/" data-i18n="nav.about">About</a>
+      <a href="/contact/" class="active" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" role="tablist">
+        <span class="pill"></span>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <a href="/ar/contact/" data-lang="ar" aria-pressed="false" style="text-decoration: none; padding: 6px 12px; border-radius: 999px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.04em; position: relative; z-index: 2;">ع</a>
+      </div>
+      <a href="/#beta" class="btn btn-ink" data-i18n="cta.beta">Join the beta</a>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero">
+  <div class="container-wide">
+    <span class="kicker reveal">
+      <span class="num">·</span>
+      <span class="dot"></span>
+      <span data-i18n="contact.kicker">Contact</span>
+    </span>
+    <h1 class="h-display reveal d1" data-i18n="contact.title">Talk to <span class="it">us.</span></h1>
+    <p class="lede reveal d2" data-i18n="contact.lede">Whether you're a salon owner curious about the beta, a chain operator weighing the Enterprise tier, or a partner looking to integrate — pick the channel that fits and we'll respond within one business day.</p>
+  </div>
+</section>
+
+<section class="section-tight">
+  <div class="container-wide">
+    <div class="contact-grid">
+      <!-- LEFT: Channels -->
+      <div class="reveal">
+        <h2 style="font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-block-end: 20px;" data-i18n="contact.channels.title">Where to reach us</h2>
+
+        <div class="channel-list">
+          <div class="channel">
+            <div class="label-row">
+              <span class="ch-label" data-i18n="contact.c1.label">General</span>
+              <a class="email-link" href="mailto:hello@mawid.ai" data-i18n="contact.c1.email">hello@mawid.ai</a>
+            </div>
+            <p data-i18n="contact.c1.body">Anything that doesn't fit the channels below. We read every message.</p>
+          </div>
+          <div class="channel">
+            <div class="label-row">
+              <span class="ch-label" data-i18n="contact.c2.label">Sales</span>
+              <a class="email-link" href="mailto:sales@mawid.ai" data-i18n="contact.c2.email">sales@mawid.ai</a>
+            </div>
+            <p data-i18n="contact.c2.body">Beta applications, demos, multi-location chains, Enterprise quotes.</p>
+          </div>
+          <div class="channel">
+            <div class="label-row">
+              <span class="ch-label" data-i18n="contact.c3.label">Support</span>
+              <a class="email-link" href="mailto:support@mawid.ai" data-i18n="contact.c3.email">support@mawid.ai</a>
+            </div>
+            <p data-i18n="contact.c3.body">Existing customers — bugs, billing, account changes, integrations.</p>
+          </div>
+          <div class="channel">
+            <div class="label-row">
+              <span class="ch-label" data-i18n="contact.c4.label">Press</span>
+              <a class="email-link" href="mailto:press@mawid.ai" data-i18n="contact.c4.email">press@mawid.ai</a>
+            </div>
+            <p data-i18n="contact.c4.body">Media inquiries, interviews, brand assets, founder availability.</p>
+          </div>
+        </div>
+
+        <div class="office-card">
+          <h4 data-i18n="contact.office.title">Registered office</h4>
+          <div class="office-addr" data-i18n="contact.office.body">Diyar Holdings<br/>30 N Gould Street, Suite R<br/>Sheridan, WY 82801<br/>United States</div>
+          <p class="office-note" data-i18n="contact.office.note">Mawid operates across Saudi Arabia, the United Arab Emirates, Qatar, and Kuwait. We do not currently maintain physical offices in the GCC. All customer support and sales is conducted remotely via WhatsApp, email, and video call.</p>
+        </div>
+      </div>
+
+      <!-- RIGHT: Form -->
+      <div class="form-card reveal d1">
+        <h3 data-i18n="contact.form.title">Or send a message</h3>
+
+        <form id="contact-form" novalidate>
+          <div class="field-grid">
+            <div class="field">
+              <label for="cf-name" data-i18n="contact.form.name">Name</label>
+              <input type="text" id="cf-name" name="name" required />
+            </div>
+            <div class="field">
+              <label for="cf-email" data-i18n="contact.form.email">Email</label>
+              <input type="email" id="cf-email" name="email" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="cf-business" data-i18n="contact.form.business">Business name</label>
+            <input type="text" id="cf-business" name="business" />
+          </div>
+          <div class="field">
+            <label for="cf-subject" data-i18n="contact.form.subject">Subject</label>
+            <select id="cf-subject" name="subject" required>
+              <option value="beta" data-i18n="contact.subj.beta">Beta application</option>
+              <option value="demo" data-i18n="contact.subj.demo">Request a demo</option>
+              <option value="enterprise" data-i18n="contact.subj.enterprise">Enterprise inquiry</option>
+              <option value="partner" data-i18n="contact.subj.partner">Partnership / integration</option>
+              <option value="press" data-i18n="contact.subj.press">Press / media</option>
+              <option value="other" data-i18n="contact.subj.other">Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="cf-message" data-i18n="contact.form.message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span class="label-text" data-i18n="contact.form.submit">Send message</span>
+            <span class="loading-text">Sending…</span>
+            <span class="spinner"></span>
+          </button>
+          <p class="form-foot" data-i18n="contact.form.foot">We'll respond via email within one business day.</p>
+        </form>
+
+        <div id="contact-success" class="form-success">
+          <div class="check-circle">✓</div>
+          <h4 data-i18n="contact.form.success.title">Message sent.</h4>
+          <p data-i18n="contact.form.success.body">We've received your message and will respond via email within one business day.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="/" class="logo">
+        <span class="logo-mark">م</span>
+        <span data-i18n="brand">Mawid</span>
+      </a>
+      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first, AI-powered, WhatsApp-native — designed for how Saudi, Emirati, Qatari, and Kuwaiti businesses actually run.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.product">Product</h5>
+      <ul>
+        <li><a href="/#features" data-i18n="foot.product.features">Features</a></li>
+        <li><a href="/pricing/" data-i18n="foot.product.pricing">Pricing</a></li>
+        <li><a href="/#beta" data-i18n="foot.product.beta">Beta program</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.company">Company</h5>
+      <ul>
+        <li><a href="/about/" data-i18n="foot.company.about">About</a></li>
+        <li><a href="/contact/" data-i18n="foot.company.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.legal">Legal</h5>
+      <ul>
+        <li><a href="/privacy/" data-i18n="foot.legal.privacy">Privacy</a></li>
+        <li><a href="/terms/" data-i18n="foot.legal.terms">Terms</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span data-i18n="foot.copy">© 2026 Mawid</span>
+    <span data-i18n="foot.markets">KSA · UAE · Qatar · Kuwait</span>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js"></script>
+<script src="/assets/mawid.js"></script>
+</body>
+</html>
