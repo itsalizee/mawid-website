@@ -337,15 +337,18 @@ html[lang="ar"] .logo { font-family: var(--display-ar); font-weight: 600; font-s
 .logo-mark {
   width: 28px;
   height: 28px;
-  border-radius: 8px;
-  background: var(--ink);
-  display: grid;
-  place-items: center;
-  color: var(--bg);
-  font-family: var(--display-ar);
-  font-size: 14px;
-  font-weight: 600;
-  padding-block-end: 1px;
+  background-image: url('/assets/mawid-mark.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+  /* Hide the legacy "م" character that still lives in the markup so we don't
+     have to touch every page's HTML. The image is rendered via background. */
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
+  text-indent: -9999px;
+  overflow: hidden;
   flex-shrink: 0;
 }
 .nav-primary {
