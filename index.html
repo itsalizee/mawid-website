@@ -2283,6 +2283,37 @@ html[lang="ar"] .form-row label { font-family: var(--body-ar); letter-spacing: 0
 }
 html[lang="ar"] .trust-item { font-family: var(--body-ar); letter-spacing: 0; font-size: 12.5px; }
 .trust-item svg { color: var(--good); flex-shrink: 0; }
+
+/* Light-on-light variant for the hero (under the CTAs). Same shape, but
+   readable on the cream hero background. Skeptical Gulf audience — every
+   promise here is something we actually deliver. */
+.hero-trust-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px 22px;
+  margin-block-start: 22px;
+  max-width: 640px;
+}
+.hero-trust-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--ink-mid);
+  font-family: var(--body);
+  font-size: 13px;
+  line-height: 1.35;
+}
+html[lang="ar"] .hero-trust-item { font-family: var(--body-ar); font-size: 14px; }
+.hero-trust-item svg {
+  color: var(--primary);
+  flex-shrink: 0;
+  background: rgba(11, 61, 49, 0.10);
+  border-radius: 999px;
+  padding: 3px;
+  width: 20px;
+  height: 20px;
+  box-sizing: border-box;
+}
 .form-foot {
   font-family: var(--mono);
   font-size: 11px;
@@ -2736,12 +2767,34 @@ html[lang="ar"] .mobile-menu a {
         <span data-i18n="hero.cta">Request access</span>
         <span class="arrow" aria-hidden="true">→</span>
       </a>
-      <a href="https://mawid.ai/book/salon-rasha" class="btn btn-light btn-lg">
+      <a href="/product/" class="btn btn-light btn-lg">
         <span data-i18n="hero.cta2">See the product</span>
       </a>
       <span class="hero-cta-meta">
         <span class="pulse" aria-hidden="true"></span>
         <span data-i18n="hero.cta_meta">Used by salons across the Gulf</span>
+      </span>
+    </div>
+
+    <!-- Trust strip: skeptical Gulf audience needs explicit reassurance up
+         front. Four short promises, no jargon. Each one is something we
+         actually deliver — no theatre. -->
+    <div class="hero-trust-row reveal d3">
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="hero.trust1">No credit card to start</span>
+      </span>
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="hero.trust2">Cancel anytime, no penalty</span>
+      </span>
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="hero.trust3">Your customer data is yours — export anytime</span>
+      </span>
+      <span class="hero-trust-item">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span data-i18n="hero.trust4">Founding-member pricing, locked for life</span>
       </span>
     </div>
 
@@ -3684,8 +3737,8 @@ html[lang="ar"] .mobile-menu a {
       <div class="footer-col">
         <h5 data-i18n="footer.product">Product</h5>
         <ul>
-          <li><a href="#features" data-i18n="footer.features">Features</a></li>
-          <li><a href="https://mawid.ai/book/salon-rasha" data-i18n="footer.demo">Product preview</a></li>
+          <li><a href="/product/" data-i18n="footer.features">Features</a></li>
+          <li><a href="https://mawid.ai/book/salon-rasha" data-i18n="footer.demo">See a sample salon</a></li>
           <li><a href="/pricing/" data-i18n="footer.pricing">Pricing</a></li>
           <li><a href="https://app.mawid.ai/sign-up" data-i18n="footer.beta">Request access</a></li>
         </ul>
@@ -3773,6 +3826,10 @@ const I18N = {
     "hero.cta": "Request access",
     "hero.cta2": "See the product",
     "hero.cta_meta": "Used by salons across the Gulf",
+    "hero.trust1": "No credit card to start",
+    "hero.trust2": "Cancel anytime, no penalty",
+    "hero.trust3": "Your customer data is yours — export anytime",
+    "hero.trust4": "Founding-member pricing, locked for life",
     "hero.s1.l": "Markets",
     "hero.s2.l": "Languages", "hero.s2.v": "Arabic <span class=\"accent\">·</span> English",
     "hero.s3.l": "Calendars", "hero.s3.v": "Hijri <span class=\"accent\">·</span> Gregorian",
@@ -3952,7 +4009,7 @@ const I18N = {
     "beta.s.body": "Our team will be in touch via WhatsApp to schedule a short onboarding call.",
 
     "footer.about": "The booking platform built for the Gulf. Arabic-first, WhatsApp-native, Hijri-aware, and culturally fluent in how your business actually runs.",
-    "footer.product": "Product", "footer.features": "Features", "footer.demo": "Product preview",
+    "footer.product": "Product", "footer.features": "Features", "footer.demo": "See a sample salon",
     "footer.pricing": "Pricing", "footer.beta": "Request access",
     "footer.markets": "Markets", "footer.ksa": "Saudi Arabia", "footer.uae": "United Arab Emirates",
     "footer.qatar": "Qatar", "footer.kuwait": "Kuwait",
@@ -3990,8 +4047,12 @@ const I18N = {
     "hero.title": "الحجوزات،<br/>مصمَّمة <span class=\"it\">للخليج</span>.",
     "hero.lede": "موعد منصة الحجوزات الأولى المصممة خصيصاً للسوق الخليجي. عربية أولاً، تعمل عبر واتساب أصلاً، وتدعم التقويم الهجري. مبنية على الطريقة التي تحجز بها عميلاتكِ فعلاً.",
     "hero.cta": "Request access",
-    "hero.cta2": "شاهد المنتج",
-    "hero.cta_meta": "Used by salons across the Gulf",
+    "hero.cta2": "شاهدي المنتج",
+    "hero.cta_meta": "صالونات الخليج تعمل بموعد",
+    "hero.trust1": "بدون بطاقة ائتمان",
+    "hero.trust2": "إلغاء في أي وقت، بدون غرامات",
+    "hero.trust3": "بياناتكِ ملككِ — تصديرها متاح دائماً",
+    "hero.trust4": "سعر العضوة المؤسسة محفوظ مدى الحياة",
     "hero.s1.l": "الأسواق",
     "hero.s2.l": "اللغات", "hero.s2.v": "العربية <span class=\"accent\">·</span> الإنجليزية",
     "hero.s3.l": "التقاويم", "hero.s3.v": "هجري <span class=\"accent\">·</span> ميلادي",
@@ -4171,7 +4232,7 @@ const I18N = {
     "beta.s.body": "سيتواصل فريقنا معكِ عبر واتساب لترتيب جلسة إعداد قصيرة.",
 
     "footer.about": "منصة الحجوزات الأولى المصمَّمة للسوق الخليجي. عربية أولاً، تعمل عبر واتساب، تدعم التقويم الهجري، وتفهم ثقافة عملكِ.",
-    "footer.product": "المنتج", "footer.features": "المميزات", "footer.demo": "عرض المنتج",
+    "footer.product": "المنتج", "footer.features": "المميزات", "footer.demo": "صفحة صالون نموذجي",
     "footer.pricing": "الأسعار", "footer.beta": "Request access",
     "footer.markets": "الأسواق", "footer.ksa": "السعودية", "footer.uae": "الإمارات",
     "footer.qatar": "قطر", "footer.kuwait": "الكويت",
