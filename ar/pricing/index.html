@@ -33,7 +33,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="theme-color" content="#FFFFFF" />
 <title>Pricing · Mawid · Booking platform for Gulf service businesses</title>
-<meta name="description" content="Simple subscription pricing plus a small platform fee on online payments — scales down as you scale up. Starter $79, Professional $129, Studio $149, Enterprise custom. No setup fees." />
+<meta name="description" content="Simple subscription pricing. Starter $80, Professional $140, Studio $180, Enterprise custom. 7-day free trial on every paid tier. No setup fees, cancel anytime." />
 <link rel="canonical" href="https://mawid.ai/ar/pricing/" />
 <link rel="alternate" hreflang="en" href="https://mawid.ai/pricing/" />
 <link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/pricing/" />
@@ -59,11 +59,12 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
-    {"@type":"Question","name":"When do I start paying?","acceptedAnswer":{"@type":"Answer","text":"Beta participants are not billed during the active beta period (typically the first 60 days). Subscription billing begins after onboarding completes and you have processed your first ten paid bookings through Mawid."}},
-    {"@type":"Question","name":"How is the platform fee calculated?","acceptedAnswer":{"@type":"Answer","text":"The platform fee applies only to online payments processed through Mawid (deposits, full prepayment via Mada, KNET, Apple Pay, Tabby, or Tamara). It does not apply to in-person payments at your salon, cash, or any payment method outside the Mawid booking flow."}},
-    {"@type":"Question","name":"Who handles the payment processing fees?","acceptedAnswer":{"@type":"Answer","text":"The customer's payment goes directly to your existing merchant account at Tap Payments, HyperPay, or Moyasar. Their processing fees (typically 2 to 3 percent) are charged separately by your processor. Mawid never holds your money."}},
+    {"@type":"Question","name":"When do I start paying?","acceptedAnswer":{"@type":"Answer","text":"Start with a 7-day free trial. Your card is on file but not charged until day 8. Cancel anytime in those 7 days and you are never charged."}},
+    {"@type":"Question","name":"Do customer payments go through Mawid?","acceptedAnswer":{"@type":"Answer","text":"Not in V1. Your customer books online, you collect payment in person at the salon. Online deposit collection is on the roadmap for the Professional tier later."}},
     {"@type":"Question","name":"Can I switch tiers mid-month?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upgrades take effect immediately and are prorated. Downgrades take effect at the start of the next billing cycle."}},
-    {"@type":"Question","name":"Do you charge for SMS or WhatsApp messages?","acceptedAnswer":{"@type":"Answer","text":"Standard usage is included on every tier — confirmations, reminders, reactivation campaigns. Heavy outbound marketing campaigns above 5,000 messages per month are billed at cost via Unifonic, with no markup."}}
+    {"@type":"Question","name":"Do you charge for SMS or WhatsApp messages?","acceptedAnswer":{"@type":"Answer","text":"Standard usage is included on every tier — confirmations and reminders. Heavy outbound marketing campaigns above 5,000 messages per month are billed at cost, with no markup."}},
+    {"@type":"Question","name":"What happens if I cancel?","acceptedAnswer":{"@type":"Answer","text":"Cancel anytime from your Mawid account. Your subscription continues until the end of the current billing period. We export your full customer database and booking history in CSV format on request."}},
+    {"@type":"Question","name":"Is there a setup fee?","acceptedAnswer":{"@type":"Answer","text":"No. Onboarding, data import, and bilingual training are all included on every tier."}}
   ]
 }
 </script>
@@ -114,69 +115,66 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="tier-grid reveal">
       <!-- Starter -->
       <div class="tier">
-        <div class="tier-name" data-i18n="price.t1.name">Starter</div>
-        <p class="tier-tag" data-i18n="price.t1.tag">Solo practitioners and small teams up to 3 staff. Single location.</p>
+        <div class="tier-name" data-i18n="price.t1.name">المبتدئ</div>
+        <p class="tier-tag" data-i18n="price.t1.tag">للمصفِّفات المنفردات والصالونات الصغيرة حتى ٣ موظفات. فرع واحد.</p>
         <div class="tier-price">
           <span class="currency">$</span>
-          <span class="num">79</span>
-          <span class="period" data-i18n="price.period">/ month</span>
+          <span class="num">80</span>
+          <span class="period" data-i18n="price.period">/ شهرياً</span>
         </div>
-        <div class="tier-fee" data-i18n="price.t1.fee">2.5% on online payments</div>
         <ul>
-          <li data-i18n="price.t1.f1">Up to 3 staff members</li>
-          <li data-i18n="price.t1.f2">Unlimited bookings</li>
-          <li data-i18n="price.t1.f3">WhatsApp confirmations & reminders</li>
-          <li data-i18n="price.t1.f4">Tap Payments integration</li>
-          <li data-i18n="price.t1.f5">Customer database</li>
-          <li data-i18n="price.t1.f6">Arabic / English UI</li>
-          <li data-i18n="price.t1.f7">Email support</li>
+          <li data-i18n="price.t1.f1">حتى ٣ موظفات</li>
+          <li data-i18n="price.t1.f2">حجوزات غير محدودة</li>
+          <li data-i18n="price.t1.f3">تأكيدات وتذكيرات على واتساب والبريد</li>
+          <li data-i18n="price.t1.f4">قاعدة بيانات العميلات</li>
+          <li data-i18n="price.t1.f5">عربي وإنجليزي بالكامل</li>
+          <li data-i18n="price.t1.f6">تقويم هجري وميلادي</li>
+          <li data-i18n="price.t1.f7">دعم بالبريد الإلكتروني</li>
         </ul>
-        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t1.cta">Start the beta</span><span class="arrow">→</span></a>
+        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t1.cta">ابدئي تجربة ٧ أيام</span><span class="arrow">→</span></a>
       </div>
 
       <!-- Professional (featured) -->
       <div class="tier featured">
-        <span class="tier-flag" data-i18n="price.featured">Most popular</span>
-        <div class="tier-name" data-i18n="price.t2.name">Professional</div>
-        <p class="tier-tag" data-i18n="price.t2.tag">Growing salon up to 10 staff. Single location. Most chosen tier.</p>
+        <span class="tier-flag" data-i18n="price.featured">الأكثر طلباً</span>
+        <div class="tier-name" data-i18n="price.t2.name">الاحترافي</div>
+        <p class="tier-tag" data-i18n="price.t2.tag">للصالونات النامية حتى ١٠ موظفات. فرع واحد. الأكثر اختياراً.</p>
         <div class="tier-price">
           <span class="currency">$</span>
-          <span class="num">129</span>
-          <span class="period" data-i18n="price.period">/ month</span>
+          <span class="num">140</span>
+          <span class="period" data-i18n="price.period">/ شهرياً</span>
         </div>
-        <div class="tier-fee" data-i18n="price.t2.fee">1.5% on online payments</div>
         <ul>
-          <li data-i18n="price.t2.f1">Everything in Starter</li>
-          <li data-i18n="price.t2.f2">Up to 10 staff members & schedules</li>
-          <li data-i18n="price.t2.f3">Khaleeji AI assistant (Najdi, Emirati, Qatari, Kuwaiti)</li>
-          <li data-i18n="price.t2.f4">No-show prediction</li>
-          <li data-i18n="price.t2.f5">Auto customer reactivation</li>
-          <li data-i18n="price.t2.f6">Executive reporting</li>
-          <li data-i18n="price.t2.f7">Priority WhatsApp support</li>
+          <li data-i18n="price.t2.f1">كل ما في خطة المبتدئ</li>
+          <li data-i18n="price.t2.f2">حتى ١٠ موظفات وجداولهن</li>
+          <li data-i18n="price.t2.f3">جدولة متعددة المصفِّفات</li>
+          <li data-i18n="price.t2.f4">جدولة تراعي أوقات الصلاة</li>
+          <li data-i18n="price.t2.f5">تقارير الأداء</li>
+          <li data-i18n="price.t2.f6">تخصيص لون وشعار العلامة</li>
+          <li data-i18n="price.t2.f7">دعم ذو أولوية</li>
         </ul>
-        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t2.cta">Join the private beta</span><span class="arrow">→</span></a>
+        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t2.cta">ابدئي تجربة ٧ أيام</span><span class="arrow">→</span></a>
       </div>
 
       <!-- Studio -->
       <div class="tier">
-        <div class="tier-name" data-i18n="price.t3.name">Studio</div>
-        <p class="tier-tag" data-i18n="price.t3.tag">Multi-location chains. Up to 5 locations and unlimited team.</p>
+        <div class="tier-name" data-i18n="price.t3.name">الاستوديو</div>
+        <p class="tier-tag" data-i18n="price.t3.tag">للصالونات الكبيرة بعدد موظفات غير محدود. إعداد مخصَّص.</p>
         <div class="tier-price">
           <span class="currency">$</span>
-          <span class="num">149</span>
-          <span class="period" data-i18n="price.period">/ month</span>
+          <span class="num">180</span>
+          <span class="period" data-i18n="price.period">/ شهرياً</span>
         </div>
-        <div class="tier-fee" data-i18n="price.t3.fee">1% on online payments</div>
         <ul>
-          <li data-i18n="price.t3.f1">Everything in Professional</li>
-          <li data-i18n="price.t3.f2">Up to 5 locations</li>
-          <li data-i18n="price.t3.f3">Unlimited staff</li>
-          <li data-i18n="price.t3.f4">Role-based permissions</li>
-          <li data-i18n="price.t3.f5">Cross-location reporting</li>
-          <li data-i18n="price.t3.f6">Custom booking page branding</li>
-          <li data-i18n="price.t3.f7">Dedicated onboarding</li>
+          <li data-i18n="price.t3.f1">كل ما في خطة الاحترافي</li>
+          <li data-i18n="price.t3.f2">موظفات غير محدودات</li>
+          <li data-i18n="price.t3.f3">تخصيص علامة صفحة الحجز</li>
+          <li data-i18n="price.t3.f4">إعداد مخصَّص</li>
+          <li data-i18n="price.t3.f5">تواصل مباشر مع المؤسِّسين</li>
+          <li data-i18n="price.t3.f6">دعم واتساب ذو أولوية</li>
+          <li data-i18n="price.t3.f7">أولوية في تجربة الميزات الجديدة</li>
         </ul>
-        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t3.cta">Start the beta</span><span class="arrow">→</span></a>
+        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t3.cta">ابدئي تجربة ٧ أيام</span><span class="arrow">→</span></a>
       </div>
     </div>
 
@@ -184,7 +182,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="enterprise reveal d1">
       <div class="enterprise-name">
         <span data-i18n="price.t4.name">Enterprise</span>
-        <span class="pricing-tag" data-i18n="price.t4.tag">5+ locations · From 0.5% on online payments · Custom subscription</span>
+        <span class="pricing-tag" data-i18n="price.t4.tag">٥+ فروع · تكاملات مخصصة · اشتراك بالتفاوض</span>
       </div>
       <p class="enterprise-body" data-i18n="price.t4.body">Large chains, franchises, and multi-brand operators. Custom integrations, dedicated infrastructure, SLAs, security review, and a named account team. Volume-negotiated pricing on subscription and platform fees.</p>
       <a href="/ar/contact/?subject=enterprise" class="btn btn-ink btn-lg">
@@ -210,74 +208,56 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="faq-list reveal d1">
       <div class="faq-item">
         <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q1">When do I start paying?</span>
+          <span class="faq-q-text" data-i18n="price.faq.q1">متى أبدأ بالدفع؟</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a1">Beta participants are not billed during the active beta period (typically the first 60 days). Subscription billing begins after onboarding completes and you have processed your first ten paid bookings through Mawid.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a1">ابدئي بتجربة مجانية ٧ أيام. بطاقتكِ مسجَّلة لكن لا تُحاسَبين حتى اليوم الثامن. ألغي في أي وقت خلال الأيام السبعة ولن تُحاسَبي أبداً.</div>
         </div>
       </div>
       <div class="faq-item">
         <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q2">How is the platform fee calculated?</span>
+          <span class="faq-q-text" data-i18n="price.faq.q2">هل تمرّ مدفوعات العميلات عبر موعد؟</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a2">The platform fee applies only to online payments processed through Mawid (deposits, full prepayment via Mada, KNET, Apple Pay, Tabby, or Tamara). It does not apply to in-person payments at your salon, cash, or any payment method outside the Mawid booking flow.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a2">ليس في الإصدار الأول. عميلتكِ تحجز إلكترونياً، وتدفع لكِ شخصياً في الصالون — كما تفعلين اليوم. تحصيل التأمين الإلكتروني سيأتي لاحقاً في خطة الاحترافي.</div>
         </div>
       </div>
       <div class="faq-item">
         <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q3">Who handles the payment processing fees?</span>
+          <span class="faq-q-text" data-i18n="price.faq.q3">هل يمكنني تغيير الخطة في منتصف الشهر؟</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a3">The customer's payment goes directly to your existing merchant account at Tap Payments, HyperPay, or Moyasar. Their processing fees (typically 2 to 3 percent) are charged separately by your processor. Mawid never holds your money.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a3">نعم. الترقية تُطبَّق فوراً وتُحسَب نسبيّاً. التخفيض يُطبَّق في بداية دورة الفوترة التالية.</div>
         </div>
       </div>
       <div class="faq-item">
         <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q4">Can I switch tiers mid-month?</span>
+          <span class="faq-q-text" data-i18n="price.faq.q4">هل تحتسبون رسوماً على رسائل واتساب أو SMS؟</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a4">Yes. Upgrades take effect immediately and are prorated. Downgrades take effect at the start of the next billing cycle.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a4">الاستخدام الاعتيادي مشمول في كل خطة — التأكيدات والتذكيرات. الحملات التسويقية الكثيفة فوق ٥٠٠٠ رسالة شهرياً تُحاسَب بسعر التكلفة، بدون هامش.</div>
         </div>
       </div>
       <div class="faq-item">
         <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q5">Do you charge for SMS or WhatsApp messages?</span>
+          <span class="faq-q-text" data-i18n="price.faq.q5">ماذا يحدث إن ألغيت الاشتراك؟</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a5">Standard usage is included on every tier — confirmations, reminders, reactivation campaigns. Heavy outbound marketing campaigns above 5,000 messages per month are billed at cost via Unifonic, with no markup.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a5">الإلغاء متاح في أي وقت من حسابكِ في موعد. يستمر اشتراككِ حتى نهاية دورة الفوترة الحالية. نُصدِّر قاعدة بيانات عميلاتكِ وتاريخ الحجوزات بصيغة CSV عند الطلب.</div>
         </div>
       </div>
       <div class="faq-item">
         <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q6">What happens if I cancel?</span>
+          <span class="faq-q-text" data-i18n="price.faq.q6">هل توجد رسوم إعداد؟</span>
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a6">Cancel anytime. Your account continues until the end of your current billing period. We export your full customer database and booking history in CSV format on request, no questions asked.</div>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q7">Do you offer annual pricing?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a7">Yes. Annual plans receive a 15 percent discount versus monthly billing. Available on all tiers from Professional upward.</div>
-        </div>
-      </div>
-      <div class="faq-item">
-        <button type="button" class="faq-question" aria-expanded="false">
-          <span class="faq-q-text" data-i18n="price.faq.q8">Is there a setup fee?</span>
-          <span class="faq-icon">+</span>
-        </button>
-        <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a8">No. Onboarding, data import, staff training, and customer migration are all included on every tier.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a6">لا. الإعداد، استيراد البيانات، والتدريب باللغتين — كلها مشمولة في كل خطة.</div>
         </div>
       </div>
     </div>
