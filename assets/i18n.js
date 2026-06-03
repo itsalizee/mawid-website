@@ -11,9 +11,9 @@ window.MAWID_I18N = {
     "nav.pricing": "Pricing",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "cta.beta": "Join the beta",
+    "cta.beta": "Start free trial",
     "cta.demo": "Talk to sales",
-    "cta.start": "Start the beta",
+    "cta.start": "Start free trial",
 
     /* Footer */
     "foot.tagline": "Booking, built for the Gulf. Arabic-first, AI-powered, WhatsApp-native — designed for how Saudi, Emirati, Qatari, and Kuwaiti businesses actually run.",
@@ -29,6 +29,7 @@ window.MAWID_I18N = {
     "foot.legal": "Legal",
     "foot.legal.privacy": "Privacy",
     "foot.legal.terms": "Terms",
+    "foot.legal.refund": "Refunds",
     "foot.legal.dpa": "Data processing",
     "foot.copy": "© 2026 Mawid",
     "foot.markets": "KSA · UAE · Qatar · Kuwait",
@@ -206,9 +207,9 @@ window.MAWID_I18N = {
     "nav.pricing": "الأسعار",
     "nav.about": "من نحن",
     "nav.contact": "تواصل",
-    "cta.beta": "انضم للنسخة التجريبية",
+    "cta.beta": "ابدئي تجربة مجانية",
     "cta.demo": "تواصل مع المبيعات",
-    "cta.start": "ابدأ النسخة التجريبية",
+    "cta.start": "ابدئي تجربة مجانية",
 
     /* Footer */
     "foot.tagline": "الحجوزات، مصمَّمة للخليج. عربية أولاً، مدعومة بالذكاء الاصطناعي، تعمل عبر واتساب — هندست للطريقة التي تعمل بها المنشآت في السعودية والإمارات وقطر والكويت.",
@@ -224,6 +225,7 @@ window.MAWID_I18N = {
     "foot.legal": "قانوني",
     "foot.legal.privacy": "الخصوصية",
     "foot.legal.terms": "الشروط",
+    "foot.legal.refund": "الاسترداد",
     "foot.legal.dpa": "معالجة البيانات",
     "foot.copy": "© ٢٠٢٦ شركة ديار القابضة · وايومنغ، الولايات المتحدة",
     "foot.markets": "السعودية · الإمارات · قطر · الكويت",

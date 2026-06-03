@@ -2747,7 +2747,7 @@ html[lang="ar"] .mobile-menu a {
         <a href="/ar/" data-lang="ar" aria-pressed="false" style="text-decoration: none; padding: 6px 12px; border-radius: 999px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.04em; position: relative; z-index: 2;">AR</a>
       </div>
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink">
-        <span data-i18n="cta.header">Request access</span>
+        <span data-i18n="cta.header">Start free trial</span>
       </a>
     </div>
       <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
@@ -2762,7 +2762,7 @@ html[lang="ar"] .mobile-menu a {
     <a href="/pricing/" data-i18n="nav.pricing">Pricing</a>
     <a href="/about/" data-i18n="nav.about">About</a>
     <a href="/contact/" data-i18n="nav.contact">Contact</a>
-    <a href="https://app.mawid.ai/sign-up" class="mobile-cta" data-i18n="cta.header">Request access</a>
+    <a href="https://app.mawid.ai/sign-up" class="mobile-cta" data-i18n="cta.header">Start free trial</a>
   </nav>
 </header>
 
@@ -2792,11 +2792,11 @@ html[lang="ar"] .mobile-menu a {
 
     <div class="hero-cta-row reveal d3">
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">
-        <span data-i18n="hero.cta">Request access</span>
+        <span data-i18n="hero.cta">Start free trial</span>
         <span class="arrow" aria-hidden="true">→</span>
       </a>
-      <a href="/product/" class="btn btn-light btn-lg">
-        <span data-i18n="hero.cta2">See the product</span>
+      <a href="https://mawid.ai/book/salon-rasha" class="btn btn-light btn-lg">
+        <span data-i18n="hero.cta2">See demo</span>
       </a>
       <span class="hero-cta-meta">
         <span class="pulse" aria-hidden="true"></span>
@@ -3651,6 +3651,86 @@ html[lang="ar"] .mobile-menu a {
   </div>
 </section>
 
+<!-- ROADMAP / COMING SOON -->
+<style>
+  .roadmap-grid {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-block-start: 48px;
+  }
+  @media (max-width: 860px) { .roadmap-grid { grid-template-columns: 1fr; } }
+  .roadmap-item {
+    border: 1px solid var(--line);
+    background: var(--bg);
+    border-radius: 16px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .roadmap-when {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    padding: 4px 10px;
+    border-radius: 999px;
+    background: var(--primary-tint, rgba(11, 61, 49, 0.08));
+    color: var(--primary, #0B3D31);
+    font-family: var(--mono);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  html[lang="ar"] .roadmap-when { font-family: var(--body-ar); letter-spacing: 0; font-size: 12px; }
+  .roadmap-title {
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    line-height: 1.3;
+  }
+  html[lang="ar"] .roadmap-title { font-family: var(--display-ar); }
+  .roadmap-body {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--ink-mid);
+  }
+</style>
+<section class="section bg-soft" id="roadmap">
+  <div class="container-wide">
+    <div class="section-header center reveal">
+      <span class="kicker">
+        <span class="num">04</span>
+        <span class="dot"></span>
+        <span data-i18n="roadmap.kicker">Roadmap</span>
+      </span>
+      <h2 class="h-section" data-i18n="roadmap.title">What's <span class="it">coming next.</span></h2>
+      <p class="lede" data-i18n="roadmap.lede">We're laser-focused on the operator experience first. Here's what's already on the way for our paying salons.</p>
+    </div>
+
+    <div class="roadmap-grid reveal d1">
+      <article class="roadmap-item">
+        <span class="roadmap-when" data-i18n="roadmap.q3">Q3 2026</span>
+        <h3 class="roadmap-title" data-i18n="roadmap.r1.title">Deposit collection & no-show protection</h3>
+        <p class="roadmap-body" data-i18n="roadmap.r1.body">Collect a deposit online when the customer books. Held until they show up, refunded to your account automatically.</p>
+      </article>
+      <article class="roadmap-item">
+        <span class="roadmap-when" data-i18n="roadmap.q4">Q4 2026</span>
+        <h3 class="roadmap-title" data-i18n="roadmap.r2.title">Multi-location support</h3>
+        <p class="roadmap-body" data-i18n="roadmap.r2.body">Run multiple branches from one Mawid account. Shared customer database, location-specific staff, schedules, and reports.</p>
+      </article>
+      <article class="roadmap-item">
+        <span class="roadmap-when" data-i18n="roadmap.q4">Q4 2026</span>
+        <h3 class="roadmap-title" data-i18n="roadmap.r3.title">AI-powered no-show prediction</h3>
+        <p class="roadmap-body" data-i18n="roadmap.r3.body">Catch likely no-shows before they happen. Auto-confirm by WhatsApp, overbook safely, protect your revenue.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- BETA CTA -->
 <section class="beta" id="beta">
   <div class="container-wide">
@@ -3760,7 +3840,7 @@ html[lang="ar"] .mobile-menu a {
           <li><a href="/product/" data-i18n="footer.features">Features</a></li>
           <li><a href="https://mawid.ai/book/salon-rasha" data-i18n="footer.demo">See a sample salon</a></li>
           <li><a href="/pricing/" data-i18n="footer.pricing">Pricing</a></li>
-          <li><a href="https://app.mawid.ai/sign-up" data-i18n="footer.beta">Request access</a></li>
+          <li><a href="https://app.mawid.ai/sign-up" data-i18n="footer.beta">Start free trial</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -3779,6 +3859,7 @@ html[lang="ar"] .mobile-menu a {
           <li><a href="/contact/" data-i18n="footer.contactlink">Contact</a></li>
           <li><a href="/privacy/" data-i18n="footer.privacy">Privacy</a></li>
           <li><a href="/terms/" data-i18n="footer.terms">Terms</a></li>
+          <li><a href="/refund/" data-i18n="footer.refund">Refunds</a></li>
         </ul>
       </div>
     </div>
@@ -3825,7 +3906,7 @@ const I18N = {
     "nav.pricing": "Pricing",
     "nav.about": "About",
     "nav.contact": "Contact",
-    "cta.header": "Request access",
+    "cta.header": "Start free trial",
 
     "ch.kicker": "Channel-agnostic",
     "ch.title": "One link. <span class=\"it\">Every platform.</span>",
@@ -3843,8 +3924,8 @@ const I18N = {
     "hero.kicker": "Booking infrastructure for the Gulf",
     "hero.title": "Booking, <span class=\"it\">built</span><br/>for the Gulf.",
     "hero.lede": "Mawid is the Arabic-first, AI-powered booking platform for premium service businesses across Saudi Arabia, the UAE, Qatar, and Kuwait. WhatsApp-native. Hijri-aware. Built for how your customers actually book.",
-    "hero.cta": "Request access",
-    "hero.cta2": "See the product",
+    "hero.cta": "Start free trial",
+    "hero.cta2": "See demo",
     "hero.cta_meta": "Used by salons across the Gulf",
     "hero.trust1": "Free trial — cancel before it converts and you&rsquo;re not charged",
     "hero.trust2": "Cancel anytime — no long-term contract",
@@ -4029,12 +4110,12 @@ const I18N = {
 
     "footer.about": "The booking platform built for the Gulf. Arabic-first, WhatsApp-native, Hijri-aware, and culturally fluent in how your business actually runs.",
     "footer.product": "Product", "footer.features": "Features", "footer.demo": "See a sample salon",
-    "footer.pricing": "Pricing", "footer.beta": "Request access",
+    "footer.pricing": "Pricing", "footer.beta": "Start free trial",
     "footer.markets": "Markets", "footer.ksa": "Saudi Arabia", "footer.uae": "United Arab Emirates",
     "footer.qatar": "Qatar", "footer.kuwait": "Kuwait",
     "footer.company": "Company", "footer.sales": "Talk to sales",
     "footer.aboutlink": "About", "footer.contactlink": "Contact",
-    "footer.privacy": "Privacy", "footer.terms": "Terms",
+    "footer.privacy": "Privacy", "footer.terms": "Terms", "footer.refund": "Refunds",
     "footer.copy": "© 2026 Mawid · Made for the Gulf"
   },
 
@@ -4047,7 +4128,7 @@ const I18N = {
     "nav.pricing": "الأسعار",
     "nav.about": "من نحن",
     "nav.contact": "تواصل",
-    "cta.header": "Request access",
+    "cta.header": "ابدئي تجربة مجانية",
 
     "ch.kicker": "تعمل عبر كل القنوات",
     "ch.title": "رابط واحد. <span class=\"it\">كل المنصات.</span>",
@@ -4065,8 +4146,8 @@ const I18N = {
     "hero.kicker": "البنية التحتية للحجوزات في الخليج",
     "hero.title": "الحجوزات،<br/>مصمَّمة <span class=\"it\">للخليج</span>.",
     "hero.lede": "موعد منصة الحجوزات الأولى المصممة خصيصاً للسوق الخليجي. عربية أولاً، تعمل عبر واتساب أصلاً، وتدعم التقويم الهجري. مبنية على الطريقة التي تحجز بها عميلاتكِ فعلاً.",
-    "hero.cta": "Request access",
-    "hero.cta2": "شاهدي المنتج",
+    "hero.cta": "ابدئي تجربة مجانية",
+    "hero.cta2": "شاهدي العرض",
     "hero.cta_meta": "صالونات الخليج تعمل بموعد",
     "hero.trust1": "تجربة مجانية — ألغي قبل التحويل ولن تُحاسبي",
     "hero.trust2": "إلغاء في أي وقت — بدون عقد طويل الأمد",
@@ -4251,12 +4332,12 @@ const I18N = {
 
     "footer.about": "منصة الحجوزات الأولى المصمَّمة للسوق الخليجي. عربية أولاً، تعمل عبر واتساب، تدعم التقويم الهجري، وتفهم ثقافة عملكِ.",
     "footer.product": "المنتج", "footer.features": "المميزات", "footer.demo": "صفحة صالون نموذجي",
-    "footer.pricing": "الأسعار", "footer.beta": "Request access",
+    "footer.pricing": "الأسعار", "footer.beta": "ابدئي تجربة مجانية",
     "footer.markets": "الأسواق", "footer.ksa": "السعودية", "footer.uae": "الإمارات",
     "footer.qatar": "قطر", "footer.kuwait": "الكويت",
     "footer.company": "الشركة", "footer.sales": "تحدثي مع المبيعات",
     "footer.aboutlink": "من نحن", "footer.contactlink": "تواصل",
-    "footer.privacy": "الخصوصية", "footer.terms": "الشروط",
+    "footer.privacy": "الخصوصية", "footer.terms": "الشروط", "footer.refund": "الاسترداد",
     "footer.copy": "© ٢٠٢٦ موعد · صُنع للخليج"
   }
 };
