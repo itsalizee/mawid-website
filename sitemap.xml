@@ -124,4 +124,36 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://mawid.ai/product/" />
     <xhtml:link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/product/" />
   </url>
+
+  <!-- Vertical landing pages -->
+  <url>
+    <loc>https://mawid.ai/restaurants/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mawid.ai/restaurants/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/restaurants/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mawid.ai/restaurants/" />
+  </url>
+  <url>
+    <loc>https://mawid.ai/ar/restaurants/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mawid.ai/restaurants/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/restaurants/" />
+  </url>
+  <url>
+    <loc>https://mawid.ai/clinics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mawid.ai/clinics/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/clinics/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://mawid.ai/clinics/" />
+  </url>
+  <url>
+    <loc>https://mawid.ai/ar/clinics/</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://mawid.ai/clinics/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/clinics/" />
+  </url>
 </urlset>

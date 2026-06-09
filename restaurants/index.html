@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) — GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7V29X4R34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y7V29X4R34', {
+    linker: { domains: ['mawid.ai', 'app.mawid.ai'] }
+  });
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1016451274045170');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+<title>Restaurants · Mawid · Reservations for Gulf restaurants</title>
+<meta name="description" content="Mawid for restaurants. Arabic-first reservations, WhatsApp confirmations, Hijri-aware reminders. Built for mid-market casual dining in Saudi Arabia, UAE, Qatar, and Kuwait." />
+<link rel="canonical" href="https://mawid.ai/restaurants/" />
+<link rel="alternate" hreflang="en" href="https://mawid.ai/restaurants/" />
+<link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/restaurants/" />
+<link rel="alternate" hreflang="x-default" href="https://mawid.ai/restaurants/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Restaurants · Mawid · Reservations for Gulf restaurants" />
+<meta property="og:description" content="Arabic-first reservations. WhatsApp confirmations. Hijri-aware reminders. Built for the Gulf." />
+<meta property="og:url" content="https://mawid.ai/restaurants/" />
+<meta property="og:image" content="https://mawid.ai/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0F0D'/%3E%3Ctext x='32' y='46' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='38' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230A0F0D'/%3E%3Ctext x='90' y='128' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='108' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/mawid.css" />
+
+<style>
+  /* Page-specific layout polish for the vertical landing pages.
+     Reuses brand tokens — values come from mawid.css custom properties. */
+  .vert-prob-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-block-start: 40px;
+  }
+  @media (max-width: 720px) { .vert-prob-grid { grid-template-columns: 1fr; gap: 20px; } }
+  .vert-prob {
+    border-inline-start: 3px solid var(--line);
+    padding-inline-start: 20px;
+  }
+  .vert-prob-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-block-end: 8px;
+  }
+  .vert-prob h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.25;
+    color: var(--ink);
+    margin-block-end: 10px;
+  }
+  .vert-prob p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-mid);
+  }
+  .vert-steps {
+    counter-reset: steps;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-block-start: 40px;
+  }
+  @media (max-width: 720px) { .vert-steps { grid-template-columns: 1fr; } }
+  .vert-step {
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px;
+  }
+  .vert-step-num {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+  .vert-step h3 {
+    margin-block: 10px 8px;
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--ink);
+  }
+  .vert-step p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--ink-mid);
+  }
+  .vert-faq {
+    max-width: 760px;
+    margin: 40px auto 0;
+  }
+  .vert-faq details {
+    border-block-end: 1px solid var(--line);
+    padding-block: 18px;
+  }
+  .vert-faq summary {
+    cursor: pointer;
+    list-style: none;
+    font-weight: 600;
+    color: var(--ink);
+    font-size: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  .vert-faq summary::-webkit-details-marker { display: none; }
+  .vert-faq summary::after {
+    content: '+';
+    font-family: var(--mono);
+    color: var(--muted);
+    font-size: 22px;
+    transition: transform 0.2s;
+  }
+  .vert-faq details[open] summary::after { content: '–'; }
+  .vert-faq details p {
+    margin-block-start: 12px;
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-mid);
+  }
+  .vert-pricing {
+    text-align: center;
+    background: var(--bg-soft);
+    border-radius: 16px;
+    padding: 40px 24px;
+    margin-block-start: 40px;
+  }
+  .vert-price {
+    font-family: var(--display);
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -0.02em;
+  }
+  .vert-price .currency {
+    font-size: 22px;
+    color: var(--muted);
+    font-weight: 500;
+    vertical-align: super;
+    margin-inline-end: 4px;
+  }
+  .vert-price .period {
+    font-size: 18px;
+    color: var(--muted);
+    font-weight: 500;
+  }
+  .vert-price-cap {
+    font-family: var(--mono);
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-block-end: 16px;
+  }
+  .vert-trial-note {
+    margin-block-start: 16px;
+    font-size: 14px;
+    color: var(--ink-mid);
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark">م</span>
+      <span data-i18n="brand">Mawid</span>
+    </a>
+    <nav class="nav-primary">
+      <a href="/" data-i18n="nav.home">Home</a>
+      <a href="/#features" data-i18n="nav.product">Product</a>
+      <a href="/pricing/" data-i18n="nav.pricing">Pricing</a>
+      <a href="/about/" data-i18n="nav.about">About</a>
+      <a href="/contact/" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" role="tablist">
+        <span class="pill"></span>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ar" aria-pressed="false">ع</button>
+      </div>
+      <a href="https://app.mawid.ai/sign-up" class="btn btn-ink">Start free trial</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container-wide">
+    <span class="kicker reveal">
+      <span class="num">01</span>
+      <span class="dot"></span>
+      <span>For restaurants</span>
+    </span>
+    <h1 class="h-display reveal d1">Reservations, built for <span class="it">Gulf restaurants.</span></h1>
+    <p class="lede reveal d2">Your guests pick a time and confirm. You see who's coming. No more lost Instagram DMs, no more double-bookings, no more WhatsApp threads. Arabic-first, Hijri-aware, and live in five minutes.</p>
+    <div class="cta-actions reveal d3" style="margin-block-start: 32px;">
+      <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">Start free 7-day trial</a>
+      <a href="/contact/" class="btn btn-ghost btn-lg">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="section bg-soft">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">02</span>
+        <span class="dot"></span>
+        <span>The problem</span>
+      </span>
+      <h2 class="h-section">Every casual restaurant in the Gulf <span class="it">runs reservations</span> the same broken way.</h2>
+    </div>
+
+    <div class="vert-prob-grid">
+      <div class="vert-prob reveal">
+        <div class="vert-prob-tag">Instagram DMs</div>
+        <h3>Lost in the inbox.</h3>
+        <p>Customer sends "Friday 8pm for four?" Your team replies six hours later. Customer already booked somewhere else.</p>
+      </div>
+      <div class="vert-prob reveal d1">
+        <div class="vert-prob-tag">WhatsApp threads</div>
+        <h3>Fourteen conversations, no calendar.</h3>
+        <p>The hostess holds the whole night in her head. She moves to a different shift and tomorrow's reservations get half-forgotten.</p>
+      </div>
+      <div class="vert-prob reveal d2">
+        <div class="vert-prob-tag">Paper book</div>
+        <h3>One book, twelve mistakes a night.</h3>
+        <p>Crossed-out lines, party size in the wrong column, walk-ins jammed in the margins. No record of who's a regular.</p>
+      </div>
+      <div class="vert-prob reveal d3">
+        <div class="vert-prob-tag">Global platforms</div>
+        <h3>Built for somewhere else.</h3>
+        <p>OpenTable doesn't know Riyadh. Eat App charges enterprise prices for SMB features. Neither speaks Arabic the way your guests do.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">03</span>
+        <span class="dot"></span>
+        <span>How it works</span>
+      </span>
+      <h2 class="h-section">Three steps. <span class="it">No app downloads.</span> No setup fees.</h2>
+      <p class="lede">Your guests' experience is intentionally simple — that's how reservations should be. Your team's experience is the same, just better.</p>
+    </div>
+
+    <div class="vert-steps">
+      <div class="vert-step reveal">
+        <span class="vert-step-num">01 · GUEST</span>
+        <h3>Picks a time.</h3>
+        <p>You share your booking link from your Instagram bio or WhatsApp status. Guest opens it, picks party size + time, enters their name and number. Thirty seconds.</p>
+      </div>
+      <div class="vert-step reveal d1">
+        <span class="vert-step-num">02 · GUEST</span>
+        <h3>Gets confirmed.</h3>
+        <p>WhatsApp confirmation arrives instantly with the date in both Hijri and Gregorian. Thursday morning gets a reminder. Friday morning, a "see you tonight" nudge.</p>
+      </div>
+      <div class="vert-step reveal d2">
+        <span class="vert-step-num">03 · YOU</span>
+        <h3>Sees who's coming.</h3>
+        <p>Your reservations dashboard shows tonight by hour: name, party size, phone, notes. Tap a reservation to mark them arrived. That's it.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES STRIP -->
+<section class="section bg-soft">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">04</span>
+        <span class="dot"></span>
+        <span>What you get</span>
+      </span>
+      <h2 class="h-section">Four things <span class="it">no other platform</span> in the Gulf gives you.</h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <span class="value-num">01</span>
+        <h3>Arabic-first reservations.</h3>
+        <p>Your booking page renders in Arabic or English based on the guest's phone. RTL layout is native, not retrofitted. Numerals format correctly. Times read naturally.</p>
+      </div>
+      <div class="value-card reveal d1">
+        <span class="value-num">02</span>
+        <h3>WhatsApp confirmations.</h3>
+        <p>The guest doesn't install anything, doesn't make an account. The confirmation lands in WhatsApp — the app they already check forty times a day — with a tap-to-reschedule link.</p>
+      </div>
+      <div class="value-card reveal d2">
+        <span class="value-num">03</span>
+        <h3>Hijri + Gregorian, side by side.</h3>
+        <p>Reminders carry both calendars. Ramadan iftar reservations work. Eid bookings work. Friday morning prayer time is blocked by default for Saudi venues. We built for the Gulf calendar, not against it.</p>
+      </div>
+      <div class="value-card reveal d3">
+        <span class="value-num">04</span>
+        <h3>Guest database that remembers.</h3>
+        <p>The party of four from last spring? Mawid remembers their name, their preferred table, the food allergy you noted last time. Your team treats every regular like a regular — because the system does the remembering.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING STRIP -->
+<section class="section">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">05</span>
+        <span class="dot"></span>
+        <span>Pricing</span>
+      </span>
+      <h2 class="h-section">Flat monthly. <span class="it">No per-reservation fees.</span></h2>
+      <p class="lede">No setup costs. No commission per booking. No surcharges for SMS or support. Cancel anytime.</p>
+    </div>
+
+    <div class="vert-pricing reveal">
+      <div class="vert-price-cap">Restaurant plan</div>
+      <div class="vert-price">
+        <span class="currency">$</span>180<span class="period"> / month</span>
+      </div>
+      <p style="margin-block: 24px 0; font-size: 15px; line-height: 1.65; color: var(--ink-mid); max-width: 540px; margin-inline: auto;">
+        Unlimited reservations · WhatsApp + email confirmations · Hijri-aware reminders · Searchable guest database · Bilingual booking page · 7-day free trial
+      </p>
+      <div class="vert-trial-note">Card required to start the trial. Cancel before day 8 and you're not charged.</div>
+      <div class="cta-actions" style="margin-block-start: 24px; justify-content: center;">
+        <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">Start free trial</a>
+        <a href="/pricing/" class="btn btn-ghost btn-lg">Compare plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-soft">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">06</span>
+        <span class="dot"></span>
+        <span>FAQ</span>
+      </span>
+      <h2 class="h-section">Common <span class="it">questions</span> from Gulf operators.</h2>
+    </div>
+
+    <div class="vert-faq reveal">
+      <details>
+        <summary>Do my guests need to download an app?</summary>
+        <p>No. The booking page is a regular web page that opens in their phone's browser. The confirmation lands in WhatsApp. They never sign up for anything.</p>
+      </details>
+      <details>
+        <summary>Do you take a commission on each reservation?</summary>
+        <p>No. Mawid is a flat monthly subscription — $180/month for restaurants. No per-reservation fees, no commissions, no markup on payments.</p>
+      </details>
+      <details>
+        <summary>What about walk-ins?</summary>
+        <p>Walk-ins still walk in. Mawid handles the reserved-in-advance side of your night. Your hostess marks walk-ins on the dashboard so you have one source of truth for who's in the building.</p>
+      </details>
+      <details>
+        <summary>Does it handle table assignments and floor plans?</summary>
+        <p>Mawid uses a capacity model — you tell us how many parties you can take at once (8 tables = 8 concurrent reservations) and we space them across the slot. Visual drag-and-drop floor plans are on the roadmap for the higher tier, not in V1.</p>
+      </details>
+      <details>
+        <summary>Can guests reschedule or cancel?</summary>
+        <p>Yes. Every confirmation includes a tap-to-reschedule link. The change reaches your dashboard in real time so the hostess always sees the truth.</p>
+      </details>
+      <details>
+        <summary>Is the booking page in Arabic?</summary>
+        <p>Yes, by default for guests with Arabic phones. English for everyone else. The toggle is one tap. RTL is native — not a translation glued on top of a Western product.</p>
+      </details>
+      <details>
+        <summary>How long does it take to set up?</summary>
+        <p>Under five minutes. You tell us your restaurant name, country, how many tables you can take at once, and your opening hours. We send you a booking link to paste in your Instagram bio. That's the install.</p>
+      </details>
+      <details>
+        <summary>Which countries do you support?</summary>
+        <p>Saudi Arabia, UAE, Qatar, and Kuwait at launch. Each country gets its own defaults — prayer times, weekend days, Hijri awareness.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section">
+  <div class="container-wide">
+    <div class="cta-banner reveal">
+      <h2>Stop running reservations on <span class="it">paper.</span></h2>
+      <p>Free 7-day trial. No credit card required to see the demo. Cancel anytime.</p>
+      <div class="cta-actions">
+        <a href="https://app.mawid.ai/sign-up" class="btn btn-light btn-lg">Start free trial</a>
+        <a href="/contact/" class="btn btn-ghost btn-lg">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="/" class="logo">
+        <span class="logo-mark">م</span>
+        <span data-i18n="brand">Mawid</span>
+      </a>
+      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first, AI-powered, WhatsApp-native — designed for how Saudi, Emirati, Qatari, and Kuwaiti businesses actually run.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.product">Product</h5>
+      <ul>
+        <li><a href="/#features" data-i18n="foot.product.features">Features</a></li>
+        <li><a href="/pricing/" data-i18n="foot.product.pricing">Pricing</a></li>
+        <li><a href="/restaurants/">For restaurants</a></li>
+        <li><a href="/clinics/">For clinics</a></li>
+        <li><a href="https://app.mawid.ai/sign-up" data-i18n="foot.product.beta">Start trial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.company">Company</h5>
+      <ul>
+        <li><a href="/about/" data-i18n="foot.company.about">About</a></li>
+        <li><a href="/contact/" data-i18n="foot.company.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.legal">Legal</h5>
+      <ul>
+        <li><a href="/privacy/" data-i18n="foot.legal.privacy">Privacy</a></li>
+        <li><a href="/terms/" data-i18n="foot.legal.terms">Terms</a></li>
+        <li><a href="/refund/" data-i18n="foot.legal.refund">Refunds</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span data-i18n="foot.copy">© 2026 Diyar Holdings LLC · Wyoming, USA</span>
+    <span data-i18n="foot.markets">KSA · UAE · Qatar · Kuwait</span>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js"></script>
+<script src="/assets/mawid.js"></script>
+</body>
+</html>

@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<!-- Google tag (gtag.js) — GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7V29X4R34"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-Y7V29X4R34', {
+    linker: { domains: ['mawid.ai', 'app.mawid.ai'] }
+  });
+</script>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1016451274045170');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+<title>Clinics · Mawid · Booking for Gulf medical clinics</title>
+<meta name="description" content="Mawid for clinics. Arabic-first booking, WhatsApp confirmations, Hijri-aware reminders. Front-desk booking only — your existing EHR keeps the medical records. Built for dermatology, dental, and aesthetic clinics in Saudi Arabia, UAE, Qatar, and Kuwait." />
+<link rel="canonical" href="https://mawid.ai/clinics/" />
+<link rel="alternate" hreflang="en" href="https://mawid.ai/clinics/" />
+<link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/clinics/" />
+<link rel="alternate" hreflang="x-default" href="https://mawid.ai/clinics/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Clinics · Mawid · Booking for Gulf medical clinics" />
+<meta property="og:description" content="Arabic-first booking. WhatsApp confirmations. Hijri-aware reminders. Front-desk only — your EHR keeps the records." />
+<meta property="og:url" content="https://mawid.ai/clinics/" />
+<meta property="og:image" content="https://mawid.ai/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0F0D'/%3E%3Ctext x='32' y='46' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='38' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230A0F0D'/%3E%3Ctext x='90' y='128' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='108' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/assets/mawid.css" />
+
+<style>
+  /* Same patterns as the restaurant page — kept inline so the page is
+     self-contained and edits to one don't accidentally break the other.
+     Both pages can absorb a shared stylesheet later if we add more
+     verticals (clinics + restaurants + fitness etc). */
+  .vert-prob-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-block-start: 40px; }
+  @media (max-width: 720px) { .vert-prob-grid { grid-template-columns: 1fr; gap: 20px; } }
+  .vert-prob { border-inline-start: 3px solid var(--line); padding-inline-start: 20px; }
+  .vert-prob-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-block-end: 8px; }
+  .vert-prob h3 { font-family: var(--display); font-weight: 600; font-size: 22px; line-height: 1.25; color: var(--ink); margin-block-end: 10px; }
+  .vert-prob p { font-size: 15px; line-height: 1.6; color: var(--ink-mid); }
+  .vert-steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-block-start: 40px; }
+  @media (max-width: 720px) { .vert-steps { grid-template-columns: 1fr; } }
+  .vert-step { background: var(--bg); border: 1px solid var(--line); border-radius: 14px; padding: 24px; }
+  .vert-step-num { font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: var(--muted); }
+  .vert-step h3 { margin-block: 10px 8px; font-family: var(--display); font-weight: 600; font-size: 20px; color: var(--ink); }
+  .vert-step p { font-size: 14px; line-height: 1.6; color: var(--ink-mid); }
+  .vert-faq { max-width: 760px; margin: 40px auto 0; }
+  .vert-faq details { border-block-end: 1px solid var(--line); padding-block: 18px; }
+  .vert-faq summary { cursor: pointer; list-style: none; font-weight: 600; color: var(--ink); font-size: 16px; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+  .vert-faq summary::-webkit-details-marker { display: none; }
+  .vert-faq summary::after { content: '+'; font-family: var(--mono); color: var(--muted); font-size: 22px; transition: transform 0.2s; }
+  .vert-faq details[open] summary::after { content: '–'; }
+  .vert-faq details p { margin-block-start: 12px; font-size: 15px; line-height: 1.65; color: var(--ink-mid); }
+  .vert-pricing { text-align: center; background: var(--bg-soft); border-radius: 16px; padding: 40px 24px; margin-block-start: 40px; }
+  .vert-price { font-family: var(--display); font-size: 56px; font-weight: 700; color: var(--ink); letter-spacing: -0.02em; }
+  .vert-price .currency { font-size: 22px; color: var(--muted); font-weight: 500; vertical-align: super; margin-inline-end: 4px; }
+  .vert-price .period { font-size: 18px; color: var(--muted); font-weight: 500; }
+  .vert-price-cap { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-block-end: 16px; }
+  .vert-trial-note { margin-block-start: 16px; font-size: 14px; color: var(--ink-mid); }
+
+  /* Clinic-specific: scope-of-product callout. Mawid is FRONT DESK only.
+     We never store patient medical records, prescriptions, or anything
+     that would put us in regulated EHR territory. This box exists so
+     no operator can sign up confused about that. */
+  .scope-callout {
+    background: var(--bg-soft);
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 24px 28px;
+    margin-block-start: 40px;
+    max-width: 760px;
+    margin-inline: auto;
+  }
+  .scope-callout-tag {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-block-end: 12px;
+  }
+  .scope-callout h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--ink);
+    margin-block-end: 12px;
+  }
+  .scope-callout p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--ink-mid);
+    margin-block-end: 10px;
+  }
+  .scope-callout p:last-child { margin-block-end: 0; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="logo">
+      <span class="logo-mark">م</span>
+      <span data-i18n="brand">Mawid</span>
+    </a>
+    <nav class="nav-primary">
+      <a href="/" data-i18n="nav.home">Home</a>
+      <a href="/#features" data-i18n="nav.product">Product</a>
+      <a href="/pricing/" data-i18n="nav.pricing">Pricing</a>
+      <a href="/about/" data-i18n="nav.about">About</a>
+      <a href="/contact/" data-i18n="nav.contact">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <div class="lang-toggle" role="tablist">
+        <span class="pill"></span>
+        <button type="button" data-lang="en" aria-pressed="true">EN</button>
+        <button type="button" data-lang="ar" aria-pressed="false">ع</button>
+      </div>
+      <a href="https://app.mawid.ai/sign-up" class="btn btn-ink">Start free trial</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+  <div class="container-wide">
+    <span class="kicker reveal">
+      <span class="num">01</span>
+      <span class="dot"></span>
+      <span>For clinics</span>
+    </span>
+    <h1 class="h-display reveal d1">The booking page your <span class="it">patients deserve.</span></h1>
+    <p class="lede reveal d2">Arabic-first. WhatsApp-native. Hijri-aware. Built for dermatology, dental, and aesthetic clinics across the Gulf — the front-desk software your EHR was never going to be.</p>
+    <div class="cta-actions reveal d3" style="margin-block-start: 32px;">
+      <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">Start free 7-day trial</a>
+      <a href="/contact/" class="btn btn-ghost btn-lg">Talk to us</a>
+    </div>
+  </div>
+</section>
+
+<!-- SCOPE CALLOUT — honesty up front -->
+<section class="section" style="padding-block-end: 0;">
+  <div class="container-wide">
+    <div class="scope-callout reveal">
+      <div class="scope-callout-tag">What Mawid is — and isn't</div>
+      <h3>Front-desk booking. Not an EHR.</h3>
+      <p>Mawid handles patient appointments, confirmations, and reminders. It stores names, phone numbers, visit history, and any notes your team chooses to add — same level of data as a paper appointment book.</p>
+      <p>Mawid does <strong>not</strong> store medical records, lab results, prescriptions, diagnoses, or insurance claims. We're a booking platform, not regulated medical software. Your existing EHR (or your team) handles that, and we integrate with nothing — we just keep the front desk smooth.</p>
+    </div>
+  </div>
+</section>
+
+<!-- THE PROBLEM -->
+<section class="section bg-soft">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">02</span>
+        <span class="dot"></span>
+        <span>The problem</span>
+      </span>
+      <h2 class="h-section">Mid-market clinics in the Gulf <span class="it">book patients</span> the same broken way.</h2>
+    </div>
+
+    <div class="vert-prob-grid">
+      <div class="vert-prob reveal">
+        <div class="vert-prob-tag">WhatsApp + paper</div>
+        <h3>Two systems, one mess.</h3>
+        <p>Patients book on WhatsApp, the receptionist writes them in the paper book. Half the time something falls through. No-shows hit 20%.</p>
+      </div>
+      <div class="vert-prob reveal d1">
+        <div class="vert-prob-tag">Online directories</div>
+        <h3>You're a number on Vezeeta.</h3>
+        <p>Marketplace platforms compete you on price, take commission per booking, and own your patient relationship. Your brand disappears.</p>
+      </div>
+      <div class="vert-prob reveal d2">
+        <div class="vert-prob-tag">Generic SaaS</div>
+        <h3>Calendly doesn't speak Arabic.</h3>
+        <p>Global booking tools assume English-speaking patients on Western calendars. RTL is an afterthought. Hijri dates don't exist. Friday morning isn't a "weekend."</p>
+      </div>
+      <div class="vert-prob reveal d3">
+        <div class="vert-prob-tag">Full clinic suites</div>
+        <h3>SevenRooms is overkill.</h3>
+        <p>Enterprise EHR + billing platforms start at $500/month and take three months to onboard. You wanted a booking page, not a hospital system.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">03</span>
+        <span class="dot"></span>
+        <span>How it works</span>
+      </span>
+      <h2 class="h-section">Three steps. <span class="it">No medical complexity.</span> No setup fees.</h2>
+      <p class="lede">Your patients' experience is as simple as scheduling a coffee. Your team's experience is one screen showing today's appointments by hour.</p>
+    </div>
+
+    <div class="vert-steps">
+      <div class="vert-step reveal">
+        <span class="vert-step-num">01 · PATIENT</span>
+        <h3>Picks a time.</h3>
+        <p>You share your booking link from your Instagram bio or DM. Patient picks consultation time + adds an optional note ("follow-up for last week's filler"), enters their name and number. Thirty seconds.</p>
+      </div>
+      <div class="vert-step reveal d1">
+        <span class="vert-step-num">02 · PATIENT</span>
+        <h3>Gets confirmed.</h3>
+        <p>WhatsApp confirmation arrives instantly with the date in Hijri and Gregorian. 24h before the appointment, a reminder. 2h before, a nudge with your clinic's location pin.</p>
+      </div>
+      <div class="vert-step reveal d2">
+        <span class="vert-step-num">03 · RECEPTION</span>
+        <h3>Sees who's coming.</h3>
+        <p>Your appointments dashboard shows today by hour: patient name, phone, optional note. Tap to mark them arrived, completed, or no-show. No medical chart, no insurance form — just the front desk.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section bg-soft">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">04</span>
+        <span class="dot"></span>
+        <span>What you get</span>
+      </span>
+      <h2 class="h-section">Four things <span class="it">no other booking platform</span> in the Gulf gives you.</h2>
+    </div>
+
+    <div class="values-grid">
+      <div class="value-card reveal">
+        <span class="value-num">01</span>
+        <h3>Arabic-first patient experience.</h3>
+        <p>Your booking page renders in Arabic or English based on the patient's phone. RTL layout is native, not retrofitted. Numerals format correctly. Times read naturally.</p>
+      </div>
+      <div class="value-card reveal d1">
+        <span class="value-num">02</span>
+        <h3>WhatsApp confirmations + reminders.</h3>
+        <p>The patient doesn't install anything, doesn't make an account. Confirmations land in WhatsApp with a tap-to-reschedule link. Reminders are timed to your clinic's no-show patterns.</p>
+      </div>
+      <div class="value-card reveal d2">
+        <span class="value-num">03</span>
+        <h3>Hijri + Gregorian, side by side.</h3>
+        <p>Reminders carry both calendars. Friday morning prayer time is blocked by default for KSA clinics. Ramadan-shifted hours are respected. We built for the Gulf calendar, not against it.</p>
+      </div>
+      <div class="value-card reveal d3">
+        <span class="value-num">04</span>
+        <h3>Patient database — non-clinical.</h3>
+        <p>Names, phones, visit count, last seen, preferred provider, optional free-text notes. Your existing EHR keeps the medical record. Mawid keeps the front desk's institutional memory so your reception remembers every regular.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING STRIP -->
+<section class="section">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">05</span>
+        <span class="dot"></span>
+        <span>Pricing</span>
+      </span>
+      <h2 class="h-section">Flat monthly. <span class="it">No per-appointment fees.</span></h2>
+      <p class="lede">No setup costs. No commission. No surcharges for SMS or support. Cancel anytime.</p>
+    </div>
+
+    <div class="vert-pricing reveal">
+      <div class="vert-price-cap">Clinic plan</div>
+      <div class="vert-price">
+        <span class="currency">$</span>140<span class="period"> / month</span>
+      </div>
+      <p style="margin-block: 24px 0; font-size: 15px; line-height: 1.65; color: var(--ink-mid); max-width: 540px; margin-inline: auto;">
+        Unlimited appointments · WhatsApp + email confirmations · Hijri-aware reminders · Patient database (non-clinical) · Bilingual booking page · 7-day free trial
+      </p>
+      <div class="vert-trial-note">Card required to start the trial. Cancel before day 8 and you're not charged.</div>
+      <div class="cta-actions" style="margin-block-start: 24px; justify-content: center;">
+        <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">Start free trial</a>
+        <a href="/pricing/" class="btn btn-ghost btn-lg">Compare plans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section bg-soft">
+  <div class="container-wide">
+    <div class="section-header reveal">
+      <span class="kicker">
+        <span class="num">06</span>
+        <span class="dot"></span>
+        <span>FAQ</span>
+      </span>
+      <h2 class="h-section">Common <span class="it">questions</span> from Gulf clinics.</h2>
+    </div>
+
+    <div class="vert-faq reveal">
+      <details>
+        <summary>Is Mawid HIPAA / Saudi PDPL compliant?</summary>
+        <p>Mawid does not handle Protected Health Information (PHI) or anything that falls under HIPAA or Saudi PDPL medical data scope. We store patient names, phone numbers, appointment times, and optional free-text notes — the same data category as a paper appointment book. Your existing EHR keeps the medical record. If you need an EHR + billing suite, talk to platforms like Cura, Medscope, or Yashfeen instead — that's not what Mawid does.</p>
+      </details>
+      <details>
+        <summary>Do you integrate with NPHIES / Sehhaty / our EHR?</summary>
+        <p>Not in V1. Mawid is a standalone front-desk booking platform. Your team uses Mawid for appointments + reminders, and continues using your existing EHR (or Sehhaty for public-sector connectivity) for medical workflows. Direct integrations are on the roadmap once we have enough customer demand for specific integrations.</p>
+      </details>
+      <details>
+        <summary>Can patients reschedule via WhatsApp?</summary>
+        <p>Yes. Every confirmation includes a tap-to-reschedule link. The change reaches your dashboard in real time so the front desk always sees the truth.</p>
+      </details>
+      <details>
+        <summary>Do we need a website?</summary>
+        <p>No. Your Mawid booking link works on its own. Paste it into your Instagram bio, send it via WhatsApp, or QR-code it on a poster at reception. It's a full booking page, not a widget you have to embed.</p>
+      </details>
+      <details>
+        <summary>What about insurance verification?</summary>
+        <p>Out of scope for V1. Mawid asks the patient an optional "insurance provider" free-text field at booking so your team has it before the visit. We don't run real-time eligibility checks — your existing billing system or third-party tool handles that.</p>
+      </details>
+      <details>
+        <summary>How many doctors can use one account?</summary>
+        <p>The plan scales with capacity, not headcount. You tell us how many concurrent appointments your clinic can take (e.g. 3 providers on shift = 3 concurrent slots). One Mawid account can run a multi-provider clinic.</p>
+      </details>
+      <details>
+        <summary>Which clinic types does Mawid work for?</summary>
+        <p>Best fit: dermatology, aesthetic, cosmetic, dental, and GP clinics where appointments are time-bookable and the front-desk workflow is the bottleneck. Less suited: complex specialty clinics with insurance pre-authorisation workflows, or hospitals with department-level scheduling.</p>
+      </details>
+      <details>
+        <summary>How long does it take to set up?</summary>
+        <p>Under five minutes. Clinic name, country, how many concurrent appointments, opening hours. We give you a booking link. That's the install.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section">
+  <div class="container-wide">
+    <div class="cta-banner reveal">
+      <h2>Stop running appointments on <span class="it">WhatsApp threads.</span></h2>
+      <p>Free 7-day trial. Cancel anytime. Your EHR keeps doing what it does — Mawid handles the front desk.</p>
+      <div class="cta-actions">
+        <a href="https://app.mawid.ai/sign-up" class="btn btn-light btn-lg">Start free trial</a>
+        <a href="/contact/" class="btn btn-ghost btn-lg">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <a href="/" class="logo">
+        <span class="logo-mark">م</span>
+        <span data-i18n="brand">Mawid</span>
+      </a>
+      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first, AI-powered, WhatsApp-native — designed for how Saudi, Emirati, Qatari, and Kuwaiti businesses actually run.</p>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.product">Product</h5>
+      <ul>
+        <li><a href="/#features" data-i18n="foot.product.features">Features</a></li>
+        <li><a href="/pricing/" data-i18n="foot.product.pricing">Pricing</a></li>
+        <li><a href="/restaurants/">For restaurants</a></li>
+        <li><a href="/clinics/">For clinics</a></li>
+        <li><a href="https://app.mawid.ai/sign-up" data-i18n="foot.product.beta">Start trial</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.company">Company</h5>
+      <ul>
+        <li><a href="/about/" data-i18n="foot.company.about">About</a></li>
+        <li><a href="/contact/" data-i18n="foot.company.contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5 data-i18n="foot.legal">Legal</h5>
+      <ul>
+        <li><a href="/privacy/" data-i18n="foot.legal.privacy">Privacy</a></li>
+        <li><a href="/terms/" data-i18n="foot.legal.terms">Terms</a></li>
+        <li><a href="/refund/" data-i18n="foot.legal.refund">Refunds</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bot">
+    <span data-i18n="foot.copy">© 2026 Diyar Holdings LLC · Wyoming, USA</span>
+    <span data-i18n="foot.markets">KSA · UAE · Qatar · Kuwait</span>
+  </div>
+</footer>
+
+<script src="/assets/i18n.js"></script>
+<script src="/assets/mawid.js"></script>
+</body>
+</html>
