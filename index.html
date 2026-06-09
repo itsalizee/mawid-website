@@ -40,7 +40,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 
 <!-- Primary SEO -->
 <title>Mawid · Booking platform for Gulf service businesses · KSA, UAE, Qatar, Kuwait</title>
-<meta name="description" content="Mawid is the Arabic-first, AI-powered booking platform for Gulf service businesses — salons, clinics, spas, dental, fitness. WhatsApp-native. Hijri-aware. Native GCC payment rails. Built for KSA, UAE, Qatar, and Kuwait." />
+<meta name="description" content="Mawid is the Arabic-first booking platform for Gulf service businesses — salons, clinics, spas, dental, fitness. WhatsApp-native. Hijri-aware. Bilingual customer experience. Built for KSA, UAE, Qatar, and Kuwait." />
 <meta name="keywords" content="booking platform GCC, salon booking software Saudi Arabia, salon booking UAE, Arabic booking system, WhatsApp booking, Hijri calendar booking, Gulf SaaS, salon software Riyadh, salon software Dubai, clinic booking Kuwait, beauty booking Qatar, موعد, نظام حجز, حجز صالون" />
 <meta name="author" content="Mawid" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -56,7 +56,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Mawid" />
 <meta property="og:title" content="Mawid · Booking, built for the Gulf." />
-<meta property="og:description" content="The Arabic-first, AI-powered booking platform for Gulf service businesses. WhatsApp-native. Hijri-aware. Native GCC payment rails." />
+<meta property="og:description" content="The Arabic-first booking platform for Gulf service businesses. WhatsApp-native. Hijri-aware. Bilingual customer experience." />
 <meta property="og:url" content="https://mawid.ai/" />
 <meta property="og:image" content="https://mawid.ai/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -68,7 +68,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <!-- Twitter / X -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Mawid · Booking, built for the Gulf." />
-<meta name="twitter:description" content="Arabic-first booking platform for Gulf service businesses. WhatsApp-native. Hijri-aware. Native GCC payment rails." />
+<meta name="twitter:description" content="Arabic-first booking platform for Gulf service businesses. WhatsApp-native. Hijri-aware. Bilingual customer experience." />
 <meta name="twitter:image" content="https://mawid.ai/og-image.png" />
 <meta name="twitter:image:alt" content="Mawid — Booking platform for Gulf service businesses" />
 
@@ -122,19 +122,19 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   "applicationCategory": "BusinessApplication",
   "applicationSubCategory": "Booking & Scheduling",
   "operatingSystem": "Web, iOS, Android",
-  "description": "Arabic-first, AI-powered booking platform for Gulf service businesses. WhatsApp-native, Hijri-aware, native GCC payment rails.",
+  "description": "Arabic-first booking platform for Gulf service businesses. WhatsApp-native, Hijri-aware, bilingual customer experience.",
   "url": "https://mawid.ai",
   "offers": [
-    {"@type":"Offer","name":"Starter","price":"79","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"79","priceCurrency":"USD","unitText":"MONTH"}},
-    {"@type":"Offer","name":"Professional","price":"129","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"129","priceCurrency":"USD","unitText":"MONTH"}},
-    {"@type":"Offer","name":"Studio","price":"149","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"149","priceCurrency":"USD","unitText":"MONTH"}}
+    {"@type":"Offer","name":"Starter","price":"80","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"80","priceCurrency":"USD","unitText":"MONTH"}},
+    {"@type":"Offer","name":"Professional","price":"140","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"140","priceCurrency":"USD","unitText":"MONTH"}},
+    {"@type":"Offer","name":"Studio","price":"180","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"180","priceCurrency":"USD","unitText":"MONTH"}}
   ],
   "featureList": [
     "WhatsApp-native bookings","Hijri & Gregorian calendars",
-    "Khaleeji AI assistant (Najdi, Emirati, Qatari, Kuwaiti)",
     "Bilingual Arabic/English data layer",
-    "Mada, KNET, Tabby, Tamara, Apple Pay payments",
-    "60% reduction in no-shows"
+    "Searchable customer database with visit history",
+    "Prayer-time aware scheduling",
+    "7-day free trial"
   ]
 }
 </script>
@@ -1409,6 +1409,60 @@ html[lang="ar"] .feat-ai .ai-msg .who { font-family: var(--body-ar); letter-spac
 .pay-chip[data-c="tap"] .swatch { background: linear-gradient(135deg, #9B5BE0, #6B33C8); }
 .pay-chip[data-c="visa"] .swatch { background: #1A1F71; }
 .pay-chip[data-c="stripe"] .swatch { background: linear-gradient(135deg, #635BFF, #4D43E0); }
+
+/* Customer-database feat */
+.feat-cust {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.cust-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--line);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+.cust-count { color: var(--ink); font-weight: 600; }
+.cust-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 16px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.cust-row:last-of-type { border-bottom: none; }
+.cust-meta { display: flex; flex-direction: column; gap: 2px; }
+.cust-name { font-size: 14px; font-weight: 500; color: var(--ink); }
+.cust-sub { font-size: 12px; color: var(--muted); }
+.cust-tag {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 999px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-family: var(--mono);
+}
+.cust-tag.tag-vip { background: rgba(245, 158, 11, 0.12); color: #B45309; }
+.cust-tag.tag-reg { background: rgba(16, 185, 129, 0.12); color: #047857; }
+.cust-tag.tag-lapsed { background: rgba(107, 114, 128, 0.12); color: #4B5563; }
+.cust-more {
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 12px;
+  color: var(--muted);
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--mono);
+}
 
 /* Vertical-template feat */
 .vt-grid {
@@ -3163,29 +3217,30 @@ html[lang="ar"] .mobile-menu a {
         <div class="feat-content">
           <span class="label" data-i18n="feat.1.label">01 — Channel</span>
           <h3 data-i18n="feat.1.title">Your customers don't install an app. They send a message.</h3>
-          <p data-i18n="feat.1.body">Confirmations, reminders, payment links, rescheduling — every touchpoint flows through WhatsApp, in their language. No accounts. No passwords. No friction. Deposits collected before the conversation ends.</p>
+          <p data-i18n="feat.1.body">Confirmations, reminders, rescheduling — every touchpoint flows through WhatsApp, in their language. No accounts. No passwords. No friction. The booking lives in the conversation they already have open.</p>
         </div>
         <div class="feat-visual">
           <div class="feat-wa">
             <div class="msg" data-i18n="feat.1.wa1">Hey, can I get Friday 10am for color + cut?</div>
             <div class="msg out">
-              <span data-i18n="feat.1.wa2">Confirmed for Friday 10:00 AM. Tap below to pay your SAR 50 deposit.</span>
-              <a class="pay-link" href="#" aria-label="Pay deposit">
+              <span data-i18n="feat.1.wa2">Confirmed for Friday 10:00 AM with Maysa. We'll send a reminder Thursday.</span>
+              <a class="pay-link" href="#" aria-label="Manage booking">
                 <span class="pl-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="2" y="6" width="20" height="14" rx="2"/>
-                    <line x1="2" y1="11" x2="22" y2="11"/>
-                    <line x1="6" y1="16" x2="10" y2="16"/>
+                    <rect x="3" y="4" width="18" height="18" rx="2"/>
+                    <line x1="16" y1="2" x2="16" y2="6"/>
+                    <line x1="8" y1="2" x2="8" y2="6"/>
+                    <line x1="3" y1="10" x2="21" y2="10"/>
                   </svg>
                 </span>
                 <span class="pl-meta">
-                  <span class="pl-title" data-i18n="feat.1.paytitle">Pay deposit · SAR 50</span>
-                  <span class="pl-url">pay.mawid.ai/d/k7f9</span>
+                  <span class="pl-title" data-i18n="feat.1.paytitle">Reschedule or cancel</span>
+                  <span class="pl-url">book.mawid.ai/r/k7f9</span>
                 </span>
               </a>
               <span class="time">2:14 PM ✓✓</span>
             </div>
-            <div class="msg" data-i18n="feat.1.wa3">Paid — see you then 🌸</div>
+            <div class="msg" data-i18n="feat.1.wa3">Perfect — see you Friday 🌸</div>
             <div class="typing"><span></span><span></span><span></span></div>
           </div>
         </div>
@@ -3293,22 +3348,48 @@ html[lang="ar"] .mobile-menu a {
         </div>
       </div>
 
-      <!-- Payments -->
+      <!-- Customer database -->
       <div class="feat reveal d2">
         <div class="feat-content">
-          <span class="label" data-i18n="feat.5.label">05 — Payments</span>
-          <h3 data-i18n="feat.5.title">GCC rails. Native. Not bolted on.</h3>
-          <p data-i18n="feat.5.body">Mada and KNET are mandatory in their markets. Tabby and Tamara dominate beauty BNPL. Apple Pay is table stakes. We integrated all of it day one — your customers pay the way they always pay.</p>
+          <span class="label" data-i18n="feat.5.label">05 — Customers</span>
+          <h3 data-i18n="feat.5.title">The bride from last spring. The regular from two years ago. All on one screen.</h3>
+          <p data-i18n="feat.5.body">Mawid keeps a searchable record of every customer who's ever booked — visit history, preferred staff, no-show count, last seen. Your team treats every walk-in like they remember her by name, because the system does.</p>
         </div>
         <div class="feat-visual">
-          <div class="feat-pay">
-            <span class="pay-chip" data-c="mada"><span class="swatch">m</span>Mada</span>
-            <span class="pay-chip" data-c="apple"><span class="swatch"></span>Apple Pay</span>
-            <span class="pay-chip" data-c="knet"><span class="swatch">K</span>KNET</span>
-            <span class="pay-chip" data-c="tabby"><span class="swatch">t</span>Tabby</span>
-            <span class="pay-chip" data-c="tamara"><span class="swatch">T</span>Tamara</span>
-            <span class="pay-chip" data-c="tap"><span class="swatch">⌥</span>Tap</span>
-            <span class="pay-chip" data-c="visa"><span class="swatch">V</span>Visa</span>
+          <div class="feat-cust">
+            <div class="cust-head">
+              <span data-i18n="feat.5.head">Customers</span>
+              <span class="cust-count">2,840</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.5.c1n">Sara Al-Fahad</div>
+                <div class="cust-sub" data-i18n="feat.5.c1s">12 visits · prefers Maysa</div>
+              </div>
+              <span class="cust-tag tag-vip" data-i18n="feat.5.tagVip">VIP</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.5.c2n">Hessa Al-Mutairi</div>
+                <div class="cust-sub" data-i18n="feat.5.c2s">4 visits · last May 9</div>
+              </div>
+              <span class="cust-tag tag-reg" data-i18n="feat.5.tagReg">Regular</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.5.c3n">Maysa Al-Saud</div>
+                <div class="cust-sub" data-i18n="feat.5.c3s">24 visits · every month</div>
+              </div>
+              <span class="cust-tag tag-vip" data-i18n="feat.5.tagVip2">VIP</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.5.c4n">Nora Al-Otaibi</div>
+                <div class="cust-sub" data-i18n="feat.5.c4s">Last seen 4 months ago</div>
+              </div>
+              <span class="cust-tag tag-lapsed" data-i18n="feat.5.tagLapsed">Lapsed</span>
+            </div>
+            <div class="cust-more" data-i18n="feat.5.more">+ 2,836 more</div>
           </div>
         </div>
       </div>
@@ -3425,9 +3506,9 @@ html[lang="ar"] .mobile-menu a {
             <div class="delta" data-i18n="prev.k2d">↓ 60% vs pre-Mawid</div>
           </div>
           <div class="pv-aside-card">
-            <span class="label" data-i18n="prev.k3">Deposits collected</span>
-            <div class="val">94%</div>
-            <div class="delta" data-i18n="prev.k3d">38 of 42 bookings</div>
+            <span class="label" data-i18n="prev.k3">Returning customers</span>
+            <div class="val">68%</div>
+            <div class="delta" data-i18n="prev.k3d">vs 41% pre-Mawid</div>
           </div>
           <div class="pv-aside-card">
             <span class="label" data-i18n="prev.k4">AI replies sent</span>
@@ -3451,7 +3532,7 @@ html[lang="ar"] .mobile-menu a {
           <span data-i18n="exp.kicker">Customer experience</span>
         </span>
         <h2 class="h-section" data-i18n="exp.title">How <span class="it">they</span> book.</h2>
-        <p class="lede-lg" data-i18n="exp.lede">Your customers go from Instagram link to confirmed appointment in under sixty seconds. They pay your business directly through Mada, Apple Pay, KNET, or Tabby — using your existing merchant account. Mawid never touches the money. We bill a transparent platform fee monthly that scales down as you scale up.</p>
+        <p class="lede-lg" data-i18n="exp.lede">Your customers go from Instagram link to confirmed appointment in under sixty seconds. Mawid runs the booking experience, the customer history, and the WhatsApp follow-ups — payment happens at your salon, the way it always has. We charge a flat monthly subscription. No transaction fees, no platform cuts, no surprises.</p>
 
         <ul class="exp-steps">
           <li>
@@ -3471,8 +3552,8 @@ html[lang="ar"] .mobile-menu a {
           <li>
             <span class="step-num">03</span>
             <div>
-              <h4 data-i18n="exp.s3.h">They pay you directly.</h4>
-              <p data-i18n="exp.s3.b">Mada, Apple Pay, KNET, Tabby — whichever they already use. The payment lands in your account, not ours. No-shows drop sixty percent the first month.</p>
+              <h4 data-i18n="exp.s3.h">They get a Hijri-aware reminder.</h4>
+              <p data-i18n="exp.s3.b">Thursday morning, a WhatsApp reminder with the date in both calendars and the salon's location. Friday morning, a "see you at 10" nudge. Your customers stop forgetting because the salon remembers for them.</p>
             </div>
           </li>
           <li>
@@ -3533,11 +3614,10 @@ html[lang="ar"] .mobile-menu a {
               </button>
 
               <div class="book-pay-row">
-                <span data-i18n="exp.bp.pay">Pay deposit with</span>
+                <span data-i18n="exp.bp.confirm">Confirmation sent via</span>
                 <span class="pay-tags">
-                  <span class="pay-tag">Mada</span>
-                  <span class="pay-tag"></span>
-                  <span class="pay-tag">Tabby</span>
+                  <span class="pay-tag">WhatsApp</span>
+                  <span class="pay-tag">SMS</span>
                 </span>
               </div>
 
@@ -3552,7 +3632,7 @@ html[lang="ar"] .mobile-menu a {
             <span class="live"><span class="pulse"></span><span data-i18n="exp.wa.live">live</span></span>
           </div>
           <div class="exp-wa-msg">
-            <span data-i18n="exp.wa.body">Hi Sara — your appointment is confirmed for Friday 10:00 AM. SAR 50 deposit received. See you then 🌸</span>
+            <span data-i18n="exp.wa.body">Hi Sara — your appointment is confirmed for Friday 10:00 AM with Maysa. We'll see you then 🌸</span>
             <span class="exp-wa-time">2:14 PM <span class="check">✓✓</span></span>
           </div>
         </div>
@@ -3571,7 +3651,7 @@ html[lang="ar"] .mobile-menu a {
         <span data-i18n="price.kicker">Pricing</span>
       </span>
       <h2 class="h-section" data-i18n="price.title">Simple price. <span class="it">Scales with you.</span></h2>
-      <p class="lede-lg" data-i18n="price.lede">Every plan includes unlimited bookings, WhatsApp messaging, GCC payment integration, and AI built in. A small platform fee on online payments scales down as you scale up.</p>
+      <p class="lede-lg" data-i18n="price.lede">Every plan includes unlimited bookings, WhatsApp + email confirmations, bilingual Arabic / English, and prayer-time aware scheduling. Start with a 7-day free trial — cancel anytime before it converts and you're not charged.</p>
     </div>
 
     <div class="tier-grid reveal d1">
@@ -3738,7 +3818,7 @@ html[lang="ar"] .mobile-menu a {
       <div class="reveal">
         <span class="kicker" data-i18n="beta.kicker">Working with us</span>
         <h2 class="h-section" data-i18n="beta.title">Made for serious salons.</h2>
-        <p class="beta-lede" data-i18n="beta.body">Mawid runs the bookings, deposits, and customer relationships for premium salons across Riyadh, Dubai, Abu Dhabi, Doha, and Kuwait City. Tell us about yours.</p>
+        <p class="beta-lede" data-i18n="beta.body">Mawid runs the bookings, the WhatsApp confirmations, and the customer database for premium salons across Riyadh, Dubai, Abu Dhabi, Doha, and Kuwait City. Tell us about yours.</p>
         <ul class="beta-perks">
           <li><span class="num">01</span><span data-i18n="beta.p1">White-glove onboarding from our team — not a help doc.</span></li>
           <li><span class="num">02</span><span data-i18n="beta.p2">Your services, staff, and history migrated for you.</span></li>
@@ -3969,11 +4049,11 @@ const I18N = {
     "feat.lede": "Six things engineered ground-up for how Gulf service businesses actually run. None of them retrofitted. None of them translated.",
     "feat.1.label": "01 — Channel",
     "feat.1.title": "Your customers don't install an app. They send a message.",
-    "feat.1.body": "Confirmations, reminders, payment links, rescheduling — every touchpoint flows through WhatsApp, in their language. No accounts. No passwords. No friction. Deposits collected before the conversation ends.",
+    "feat.1.body": "Confirmations, reminders, rescheduling — every touchpoint flows through WhatsApp, in their language. No accounts. No passwords. No friction. The booking lives in the conversation they already have open.",
     "feat.1.wa1": "Hey, can I get Friday 10am for color + cut?",
-    "feat.1.wa2": "Confirmed for Friday 10:00 AM. Tap below to pay your SAR 50 deposit.",
-    "feat.1.paytitle": "Pay deposit · SAR 50",
-    "feat.1.wa3": "Paid — see you then 🌸",
+    "feat.1.wa2": "Confirmed for Friday 10:00 AM with Maysa. We'll send a reminder Thursday.",
+    "feat.1.paytitle": "Reschedule or cancel",
+    "feat.1.wa3": "Perfect — see you Friday 🌸",
     "feat.2.label": "02 — Calendar",
     "feat.2.title": "Hijri and Gregorian, side by side.",
     "feat.2.body": "Umm al-Qura for KSA, astronomical for UAE/QA/KW. Eid, National Day, Ramadan auto-detected per country. Friday morning blocked by default for Saudi salons. Prayer times respected.",
@@ -3987,9 +4067,23 @@ const I18N = {
     "feat.4.title": "Bilingual at the row level.",
     "feat.4.body": "Every service, staff bio, and message template can be authored in Arabic, English, or both. UI language is per-user. Direction flips smoothly. RTL is built-in, not retrofitted.",
     "feat.4.svc_en": "Brazilian Keratin", "feat.4.dur_en": "90 min · SAR 450",
-    "feat.5.label": "05 — Payments",
-    "feat.5.title": "GCC rails. Native. Not bolted on.",
-    "feat.5.body": "Mada and KNET are mandatory in their markets. Tabby and Tamara dominate beauty BNPL. Apple Pay is table stakes. We integrated all of it day one — your customers pay the way they always pay.",
+    "feat.5.label": "05 — Customers",
+    "feat.5.title": "The bride from last spring. The regular from two years ago. All on one screen.",
+    "feat.5.body": "Mawid keeps a searchable record of every customer who's ever booked — visit history, preferred staff, no-show count, last seen. Your team treats every walk-in like they remember her by name, because the system does.",
+    "feat.5.head": "Customers",
+    "feat.5.c1n": "Sara Al-Fahad",
+    "feat.5.c1s": "12 visits · prefers Maysa",
+    "feat.5.c2n": "Hessa Al-Mutairi",
+    "feat.5.c2s": "4 visits · last May 9",
+    "feat.5.c3n": "Maysa Al-Saud",
+    "feat.5.c3s": "24 visits · every month",
+    "feat.5.c4n": "Nora Al-Otaibi",
+    "feat.5.c4s": "Last seen 4 months ago",
+    "feat.5.tagVip": "VIP",
+    "feat.5.tagVip2": "VIP",
+    "feat.5.tagReg": "Regular",
+    "feat.5.tagLapsed": "Lapsed",
+    "feat.5.more": "+ 2,836 more",
     "feat.6.label": "06 — Vertical templates",
     "feat.6.title": "The salon template knows about color formulas. The clinic template knows about pre-treatment forms.",
     "feat.6.body": "Generic booking tools force you to configure everything. Mawid ships with vertical-aware templates: salons get hair color tracking and stylist preferences out of the box, clinics get consent forms and patient histories, padel courts get partner-matching and equipment booking. Set up your business in minutes, not days.",
@@ -4014,18 +4108,18 @@ const I18N = {
     "prev.e4": "5 bookings", "prev.e5": "Fri · evening", "prev.e6": "6 bookings", "prev.e7": "Fully booked",
     "prev.k1": "This week", "prev.k1d": "↑ 12% vs last week",
     "prev.k2": "No-show rate", "prev.k2d": "↓ 60% vs pre-Mawid",
-    "prev.k3": "Deposits collected", "prev.k3d": "38 of 42 bookings",
+    "prev.k3": "Returning customers", "prev.k3d": "vs 41% pre-Mawid",
     "prev.k4": "AI replies sent", "prev.k4d": "87% resolved without staff",
 
     "exp.kicker": "Customer experience",
     "exp.title": "How <span class=\"it\">they</span> book.",
-    "exp.lede": "Your customers go from Instagram link to confirmed appointment in under sixty seconds. They pay your business directly through Mada, Apple Pay, KNET, or Tabby — using your existing merchant account. Mawid never touches the money. We bill a transparent platform fee monthly that scales down as you scale up.",
+    "exp.lede": "Your customers go from Instagram link to confirmed appointment in under sixty seconds. Mawid runs the booking experience, the customer history, and the WhatsApp follow-ups — payment happens at your salon, the way it always has. We charge a flat monthly subscription. No transaction fees, no platform cuts, no surprises.",
     "exp.s1.h": "They find you on Instagram.",
     "exp.s1.b": "Your branded booking link sits in your bio, in your stories, and in your DMs. One tap and they're on your page — no download, no signup.",
     "exp.s2.h": "They book in their language.",
     "exp.s2.b": "Your public booking page renders in Arabic or English based on their phone. Services, prices, calendar — all of it bilingual at the row level.",
-    "exp.s3.h": "They pay you directly.",
-    "exp.s3.b": "Mada, Apple Pay, KNET, Tabby — whichever they already use. The payment lands in your account, not ours. No-shows drop sixty percent the first month.",
+    "exp.s3.h": "They get a Hijri-aware reminder.",
+    "exp.s3.b": "Thursday morning, a WhatsApp reminder with the date in both calendars and the salon's location. Friday morning, a \"see you at 10\" nudge. Your customers stop forgetting because the salon remembers for them.",
     "exp.s4.h": "WhatsApp confirms. Forever.",
     "exp.s4.b": "Confirmation, reminders, reschedules, follow-ups — all on the channel they use every day. You see every booking the moment it lands.",
     "exp.bp.name": "Salon Rasha",
@@ -4036,11 +4130,11 @@ const I18N = {
     "exp.bp.s2": "Brazilian Keratin", "exp.bp.s2m": "120 min · any stylist",
     "exp.bp.s3": "Manicure + Pedicure", "exp.bp.s3m": "60 min · with Hessa",
     "exp.bp.cta": "Continue · Friday, 10:00 AM",
-    "exp.bp.pay": "Pay deposit with",
+    "exp.bp.confirm": "Confirmation sent via",
     "exp.bp.foot": "Powered by Mawid",
     "exp.wa.head": "WhatsApp · Salon Rasha",
     "exp.wa.live": "live",
-    "exp.wa.body": "Hi Sara — your appointment is confirmed for Friday 10:00 AM. SAR 50 deposit received. See you then 🌸",
+    "exp.wa.body": "Hi Sara — your appointment is confirmed for Friday 10:00 AM with Maysa. We'll see you then 🌸",
 
     "price.kicker": "Pricing",
     "price.title": "Simple price. <span class=\"it\">Scales with you.</span>",
@@ -4086,7 +4180,7 @@ const I18N = {
 
     "beta.kicker": "Working with us",
     "beta.title": "Made for serious salons.",
-    "beta.body": "Mawid runs the bookings, deposits, and customer relationships for premium salons across Riyadh, Dubai, Abu Dhabi, Doha, and Kuwait City. Tell us about yours.",
+    "beta.body": "Mawid runs the bookings, the WhatsApp confirmations, and the customer database for premium salons across Riyadh, Dubai, Abu Dhabi, Doha, and Kuwait City. Tell us about yours.",
     "beta.p1": "White-glove onboarding from our team — not a help doc.",
     "beta.p2": "Your services, staff, and history migrated for you.",
     "beta.p3": "Direct support — message the team that built it.",
@@ -4192,11 +4286,11 @@ const I18N = {
     "feat.lede": "ست خصائص هندست من الصفر للطريقة التي تعمل بها الخدمات الخليجية فعلاً. لم تُكيَّف. ولم تُترجم.",
     "feat.1.label": "٠١ — القناة",
     "feat.1.title": "عملاؤكِ لا يحمّلون تطبيقاً. يكتبون رسالة.",
-    "feat.1.body": "التأكيدات، التذكيرات، روابط الدفع، إعادة الجدولة — كل تواصل يصل عبر واتساب، بلغتهم. لا حسابات، لا كلمات مرور، لا احتكاك. التأمين يُحصَّل قبل أن تنتهي المحادثة.",
+    "feat.1.body": "التأكيدات، التذكيرات، إعادة الجدولة — كل تواصل يصل عبر واتساب، بلغتهم. لا حسابات، لا كلمات مرور، لا احتكاك. الحجز يعيش في المحادثة المفتوحة عندهم أصلاً.",
     "feat.1.wa1": "هاي، ممكن الجمعة ١٠ الصبح صبغة وقص؟",
-    "feat.1.wa2": "تم تأكيد الحجز الجمعة ١٠:٠٠ ص. اضغطي على الزر أدناه لدفع التأمين ٥٠ ر.س.",
-    "feat.1.paytitle": "ادفعي التأمين · ٥٠ ر.س",
-    "feat.1.wa3": "تم الدفع — أشوفكِ يوم الجمعة 🌸",
+    "feat.1.wa2": "تم تأكيد الحجز الجمعة ١٠:٠٠ ص مع ميساء. راح نرسل تذكير يوم الخميس.",
+    "feat.1.paytitle": "تعديل أو إلغاء",
+    "feat.1.wa3": "تمام — أشوفكِ يوم الجمعة 🌸",
     "feat.2.label": "٠٢ — التقويم",
     "feat.2.title": "هجري وميلادي، جنباً إلى جنب.",
     "feat.2.body": "أم القرى الرسمي للسعودية، فلكي للإمارات وقطر والكويت. أعياد العيد، اليوم الوطني، رمضان مكتشفة تلقائياً لكل دولة. صلاة الجمعة محجوبة افتراضياً للصالونات السعودية.",
@@ -4210,9 +4304,23 @@ const I18N = {
     "feat.4.title": "ثنائية اللغة في صميم النظام.",
     "feat.4.body": "كل خدمة، ملف موظفة، ورسالة قالب — قابلة للتأليف بالعربية والإنجليزية معاً. الواجهة تتبدل لكل مستخدمة على حدة. الاتجاه ينعكس بسلاسة. RTL مبني من الأساس.",
     "feat.4.svc_en": "كيراتين برازيلي", "feat.4.dur_en": "٩٠ دقيقة · ٤٥٠ ر.س",
-    "feat.5.label": "٠٥ — المدفوعات",
-    "feat.5.title": "بنية مدفوعات خليجية. أصلية. ليست ملصقة.",
-    "feat.5.body": "مدى وKNET إلزاميان في أسواقهما. تابي وتمارا يهيمنان على تقسيط التجميل. آبل باي ضرورة. دمجنا كل ذلك من اليوم الأول — عملاؤكِ يدفعون بالطريقة التي اعتادوا عليها.",
+    "feat.5.label": "٠٥ — العميلات",
+    "feat.5.title": "العروس من الربيع الماضي. والمنتظمة من قبل سنتين. كلهن في شاشة واحدة.",
+    "feat.5.body": "موعد يحتفظ بسجل قابل للبحث لكل عميلة حجزت يوماً — تاريخ الزيارات، الموظفة المفضلة، عدد مرات الغياب، آخر زيارة. فريقكِ يتعامل مع كل زائرة كأنه يتذكرها بالاسم، لأن النظام يتذكر.",
+    "feat.5.head": "العميلات",
+    "feat.5.c1n": "سارة الفهد",
+    "feat.5.c1s": "١٢ زيارة · تفضّل ميساء",
+    "feat.5.c2n": "حصة المطيري",
+    "feat.5.c2s": "٤ زيارات · آخرها ٩ مايو",
+    "feat.5.c3n": "ميساء آل سعود",
+    "feat.5.c3s": "٢٤ زيارة · شهرياً",
+    "feat.5.c4n": "نورة العتيبي",
+    "feat.5.c4s": "آخر زيارة قبل ٤ أشهر",
+    "feat.5.tagVip": "VIP",
+    "feat.5.tagVip2": "VIP",
+    "feat.5.tagReg": "منتظمة",
+    "feat.5.tagLapsed": "متغيّبة",
+    "feat.5.more": "+ ٢,٨٣٦ أخريات",
     "feat.6.label": "٠٦ — قوالب القطاعات",
     "feat.6.title": "قالب الصالون يعرف معادلات الصبغة. قالب العيادة يعرف نماذج ما قبل العلاج.",
     "feat.6.body": "أدوات الحجز العامة تجبركِ على إعداد كل شيء بنفسكِ. موعد يأتي بقوالب تعرف قطاعكِ: الصالونات تأتي مع تتبع معادلات الصبغة وتفضيلات المصففات، العيادات تأتي مع نماذج الموافقة وتاريخ المريض، ملاعب البادل تأتي مع مطابقة الشركاء وحجز المعدات. تعدّين عملكِ في دقائق، لا أيام.",
@@ -4237,18 +4345,18 @@ const I18N = {
     "prev.e4": "٥ مواعيد", "prev.e5": "جمعة · مساءً", "prev.e6": "٦ مواعيد", "prev.e7": "يوم مكتمل",
     "prev.k1": "هذا الأسبوع", "prev.k1d": "↑ ١٢٪ مقارنة بالأسبوع الماضي",
     "prev.k2": "نسبة عدم الحضور", "prev.k2d": "↓ ٦٠٪ قبل موعد",
-    "prev.k3": "التأمينات المُحصَّلة", "prev.k3d": "٣٨ من ٤٢ حجز",
+    "prev.k3": "العميلات المنتظمات", "prev.k3d": "مقابل ٤١٪ قبل موعد",
     "prev.k4": "ردود الذكاء الاصطناعي", "prev.k4d": "٨٧٪ تُحلّ بدون موظفة",
 
     "exp.kicker": "تجربة العميلة",
     "exp.title": "كيف <span class=\"it\">يحجزون</span>.",
-    "exp.lede": "عملاؤكِ ينتقلون من رابط إنستغرام إلى موعد مؤكد في أقل من ستين ثانية. يدفعون لكِ مباشرة عبر مدى أو آبل باي أو KNET أو تابي — عبر حساب التاجر الخاص بكِ. موعد لا تلمس المال أبداً. نصدر فاتورة شهرية شفافة بنسبة منخفضة، تنخفض كلما نمت.",
+    "exp.lede": "عميلاتكِ ينتقلن من رابط إنستغرام إلى موعد مؤكد في أقل من ستين ثانية. موعد يدير تجربة الحجز، وسجل العميلات، ومتابعات الواتساب — والدفع يتم في الصالون كما اعتدتِ. نحن نأخذ اشتراك شهري ثابت. لا رسوم على المعاملات، لا اقتطاع، لا مفاجآت.",
     "exp.s1.h": "يكتشفونكِ على إنستغرام.",
     "exp.s1.b": "رابط الحجز المخصص لكِ موجود في سيرة حسابكِ، وفي ستوريز، وفي رسائلكِ. ضغطة واحدة وهم على صفحتكِ — لا تحميل، لا تسجيل.",
     "exp.s2.h": "يحجزون بلغتهم.",
     "exp.s2.b": "صفحة الحجز العامة تظهر بالعربية أو الإنجليزية حسب جوّالاتهم. الخدمات، الأسعار، التقويم — كلها ثنائية اللغة في صميم النظام.",
-    "exp.s3.h": "يدفعون لكِ مباشرة.",
-    "exp.s3.b": "مدى، آبل باي، KNET، تابي — أيها يستخدمون. الدفع يصل لحسابكِ، لا حسابنا. حالات عدم الحضور تنخفض ٦٠٪ في الشهر الأول.",
+    "exp.s3.h": "يصلهن تذكير يحترم التقويم الهجري.",
+    "exp.s3.b": "صباح الخميس، تذكير على واتساب يحوي التاريخ بالتقويمين وعنوان الصالون. صباح الجمعة، رسالة \"أشوفكِ الساعة ١٠\". عميلاتكِ يتوقفن عن النسيان لأن الصالون يتذكر عنهن.",
     "exp.s4.h": "واتساب يؤكد. للأبد.",
     "exp.s4.b": "التأكيد، التذكيرات، إعادة الجدولة، المتابعات — كلها على القناة التي يستخدمونها كل يوم. وأنتِ ترين كل حجز لحظة وصوله.",
     "exp.bp.name": "صالون رشا",
@@ -4259,11 +4367,11 @@ const I18N = {
     "exp.bp.s2": "كيراتين برازيلي", "exp.bp.s2m": "١٢٠ دقيقة · أي مصففة",
     "exp.bp.s3": "مانيكير + باديكير", "exp.bp.s3m": "٦٠ دقيقة · مع حصة",
     "exp.bp.cta": "متابعة · الجمعة، ١٠:٠٠ ص",
-    "exp.bp.pay": "ادفعي التأمين بـ",
+    "exp.bp.confirm": "تأكيد عبر",
     "exp.bp.foot": "بدعم من موعد",
     "exp.wa.head": "واتساب · صالون رشا",
     "exp.wa.live": "مباشر",
-    "exp.wa.body": "هلا سارة — تم تأكيد موعدكِ يوم الجمعة ١٠:٠٠ ص. التأمين ٥٠ ر.س مستلم. أشوفكِ الجمعة 🌸",
+    "exp.wa.body": "هلا سارة — تم تأكيد موعدكِ يوم الجمعة ١٠:٠٠ ص مع ميساء. أشوفكِ الجمعة 🌸",
 
     "price.kicker": "الأسعار",
     "price.title": "سعرٌ بسيط. <span class=\"it\">يكبر معكِ.</span>",
@@ -4309,7 +4417,7 @@ const I18N = {
 
     "beta.kicker": "Working with us",
     "beta.title": "Made for serious salons.",
-    "beta.body": "Mawid runs the bookings, deposits, and customer relationships for premium salons across Riyadh, Dubai, Abu Dhabi, Doha, and Kuwait City. Tell us about yours.",
+    "beta.body": "Mawid runs the bookings, the WhatsApp confirmations, and the customer database for premium salons across Riyadh, Dubai, Abu Dhabi, Doha, and Kuwait City. Tell us about yours.",
     "beta.p1": "White-glove onboarding from our team — not a help doc.",
     "beta.p2": "Your services, staff, and history migrated for you.",
     "beta.p3": "Direct support — message the team that built it.",

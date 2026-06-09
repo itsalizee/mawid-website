@@ -43,8 +43,8 @@ window.MAWID_I18N = {
     "about.story.title": "Why <span class=\"it\">Mawid</span> exists.",
     "about.story.p1": "Anyone who has tried to book a salon, clinic, or fitness studio in Riyadh, Dubai, Doha, or Kuwait City knows the drill. You DM them on Instagram. They ask for your phone number. You wait for a WhatsApp confirmation that may or may not come. You show up and hope your time is still booked.",
     "about.story.p2": "On the other side of that conversation, the salon owner is running fourteen WhatsApp threads, one calendar in Google Sheets, another in their head, and a stack of paper notes for color formulas and customer preferences. No-shows hit twenty to thirty percent. Reactivation campaigns are nonexistent. Every booking is a manual reconstruction.",
-    "about.story.p3": "The global platforms can't fix this — they don't speak Arabic dialects, don't render Hijri dates, don't accept Mada or KNET, and don't understand that Friday morning is for prayer. The local platforms can't fix it either — they're underbuilt, with weak product and no investment.",
-    "about.story.p4": "Mawid is the platform we wished existed. Native to four GCC markets from day one. WhatsApp-first, because that's where bookings actually happen. Arabic-first, with per-country dialect support in our AI assistant. Hijri and Gregorian calendars rendered together. Mada, KNET, Tabby, Tamara, and Apple Pay integrated on launch.",
+    "about.story.p3": "The global platforms can't fix this — they don't speak Arabic dialects, don't render Hijri dates, don't speak the Gulf customer's language, and don't understand that Friday morning is for prayer. The local platforms can't fix it either — they're underbuilt, with weak product and no investment.",
+    "about.story.p4": "Mawid is the platform we wished existed. Native to four GCC markets from day one. WhatsApp-first, because that's where bookings actually happen. Arabic-first, with per-country dialect support in our AI assistant. Hijri and Gregorian calendars rendered together. A searchable customer database that remembers every visit, every preference, every name.",
 
     "about.values.kicker": "What we believe",
     "about.values.title": "Four <span class=\"it\">principles</span> we don't compromise on.",
@@ -66,7 +66,7 @@ window.MAWID_I18N = {
     /* ===== Pricing page ===== */
     "price.kicker": "Pricing",
     "price.title": "Simple price. <span class=\"it\">Scales with you.</span>",
-    "price.lede": "Every plan includes unlimited bookings, WhatsApp messaging, GCC payment integration, and AI built in. A small platform fee on online payments scales down as you scale up. No setup fees, no hidden charges.",
+    "price.lede": "Every plan includes unlimited bookings, WhatsApp + email confirmations, bilingual Arabic / English, and prayer-time aware scheduling. Start with a 7-day free trial — cancel anytime before it converts and you're not charged.",
     "price.period": "/ month",
     "price.featured": "Most popular",
 
@@ -239,8 +239,8 @@ window.MAWID_I18N = {
     "about.story.title": "لماذا وُجِد <span class=\"it\">موعد.</span>",
     "about.story.p1": "أيّ شخص حاول حجز موعد في صالون أو عيادة أو نادٍ رياضي في الرياض أو دبي أو الدوحة أو الكويت يعرف السيناريو. ترسلين رسالة على إنستغرام. يطلبون رقم جوّالكِ. تنتظرين تأكيداً على واتساب قد يأتي وقد لا يأتي. تذهبين للموعد متمنيةً ألا يكون قد ضاع.",
     "about.story.p2": "على الجهة الأخرى من هذه المحادثة، صاحبة الصالون تدير أربع عشرة محادثة واتساب، وتقويماً واحداً في Google Sheets، وآخر في رأسها، وكومة من الأوراق لتركيبات الصبغات وتفضيلات العميلات. حالات عدم الحضور تصل إلى ٢٠-٣٠٪. حملات إعادة التنشيط معدومة. كل حجز إعادة بناء يدوية.",
-    "about.story.p3": "المنصات العالمية لا تستطيع حلّ هذا — لا تتحدث اللهجات الخليجية، ولا تعرض التواريخ الهجرية، ولا تقبل مدى أو KNET، ولا تفهم أن صباح الجمعة للصلاة. والمنصات المحلية لا تستطيع حلّه أيضاً — ضعيفة المنتج، غير مستثمَر فيها.",
-    "about.story.p4": "موعد هي المنصة التي تمنّينا وجودها. أصلية لأربعة أسواق خليجية من اليوم الأول. واتساب أولاً، لأن الحجوزات تحدث هناك فعلاً. عربية أولاً، بدعم لهجوي لكل دولة في مساعدنا الذكي. التقويمان الهجري والميلادي يظهران معاً. مدى وKNET وتابي وتمارا وآبل باي مدمجة من الإطلاق.",
+    "about.story.p3": "المنصات العالمية لا تستطيع حلّ هذا — لا تتحدث اللهجات الخليجية، ولا تعرض التواريخ الهجرية، ولا تتحدث لغة العميلة الخليجية، ولا تفهم أن صباح الجمعة للصلاة. والمنصات المحلية لا تستطيع حلّه أيضاً — ضعيفة المنتج، غير مستثمَر فيها.",
+    "about.story.p4": "موعد هي المنصة التي تمنّينا وجودها. أصلية لأربعة أسواق خليجية من اليوم الأول. واتساب أولاً، لأن الحجوزات تحدث هناك فعلاً. عربية أولاً، بدعم لهجوي لكل دولة في مساعدنا الذكي. التقويمان الهجري والميلادي يظهران معاً. سجل عميلات قابل للبحث يتذكر كل زيارة، كل تفضيل، كل اسم.",
 
     "about.values.kicker": "ما نؤمن به",
     "about.values.title": "أربعة <span class=\"it\">مبادئ</span> لا نتنازل عنها.",
@@ -262,7 +262,7 @@ window.MAWID_I18N = {
     /* ===== Pricing page ===== */
     "price.kicker": "الأسعار",
     "price.title": "سعر بسيط. <span class=\"it\">يكبر معكِ.</span>",
-    "price.lede": "كل خطة تشمل حجوزات لامحدودة، رسائل واتساب، تكامل المدفوعات الخليجية، وذكاء اصطناعي مدمج. رسوم منصة بسيطة على المدفوعات الإلكترونية، تنخفض كلما نمت. لا رسوم إعداد، لا رسوم خفية.",
+    "price.lede": "كل الخطط تشمل حجوزات غير محدودة، تأكيدات واتساب وبريد، عربي وإنجليزي بالكامل، وجدولة تراعي أوقات الصلاة. ابدئي بتجربة مجانية ٧ أيام — ألغي قبل التحويل ولن تُحاسَبي.",
     "price.period": "/ شهرياً",
     "price.featured": "الأكثر طلباً",
 
