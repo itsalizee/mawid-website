@@ -33,7 +33,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
 <title>المنتج · موعد · منصة الحجوزات للصالونات في الخليج</title>
-<meta name="description" content="نظرة عامة على منتج موعد: حجوزات عبر واتساب، تقويم هجري وميلادي، تأمينات بمدى وكي نت، استرجاع الحجوزات الملغاة، رؤى ذكاء اصطناعي، وواجهة ثنائية اللغة — للسعودية والإمارات وقطر والكويت." />
+<meta name="description" content="نظرة عامة على منتج موعد: حجوزات عبر واتساب، تقويم هجري وميلادي، سجل عميلات قابل للبحث، جدولة تراعي أوقات الصلاة، وواجهة ثنائية اللغة — للسعودية والإمارات وقطر والكويت." />
 <link rel="canonical" href="https://mawid.ai/ar/product/" />
 <link rel="alternate" hreflang="en" href="https://mawid.ai/product/" />
 <link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/product/" />
@@ -41,7 +41,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Product · Mawid · Booking platform for Gulf service businesses" />
-<meta property="og:description" content="WhatsApp-native bookings, Hijri-aware calendar, Mada/KNET deposits, no-show recovery, AI insights — engineered for the GCC." />
+<meta property="og:description" content="WhatsApp-native bookings, Hijri-aware calendar, searchable customer database, bilingual customer experience — engineered for the GCC." />
 <meta property="og:url" content="https://mawid.ai/ar/product/" />
 <meta property="og:image" content="https://mawid.ai/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -454,6 +454,61 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     border-block-end: 1px solid var(--line);
   }
   .pp-ai-row:last-child { border-block-end: 0; }
+
+  /* Customer-database card (Panel 02 visual) */
+  .feat-cust {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .cust-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    font-family: var(--mono);
+  }
+  .cust-count { color: var(--ink); font-weight: 600; }
+  .cust-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line-soft, var(--line));
+  }
+  .cust-row:last-of-type { border-bottom: none; }
+  .cust-meta { display: flex; flex-direction: column; gap: 2px; }
+  .cust-name { font-size: 14px; font-weight: 500; color: var(--ink); }
+  .cust-sub { font-size: 12px; color: var(--muted); }
+  .cust-tag {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 999px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-family: var(--mono);
+  }
+  .cust-tag.tag-vip { background: rgba(245, 158, 11, 0.12); color: #B45309; }
+  .cust-tag.tag-reg { background: rgba(16, 185, 129, 0.12); color: #047857; }
+  .cust-tag.tag-lapsed { background: rgba(107, 114, 128, 0.12); color: #4B5563; }
+  .cust-more {
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--line-soft, var(--line));
+    font-family: var(--mono);
+  }
+
   .pp-ai-cust {
     font-size: 14px;
     font-weight: 500;
@@ -701,8 +756,8 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <div class="pp-stat-label" data-i18n="prod.stat2">هجري وميلادي معاً</div>
       </div>
       <div class="pp-stat-cell">
-        <div class="pp-stat-num">6 <span class="it">payment rails</span></div>
-        <div class="pp-stat-label" data-i18n="prod.stat3">مدى · كي نت · أبل باي · تابي · تمارا · بطاقات</div>
+        <div class="pp-stat-num">4 <span class="it">channels</span></div>
+        <div class="pp-stat-label" data-i18n="prod.stat3">واتساب · رسائل نصية · بريد · تذكيرات هجرية</div>
       </div>
     </div>
   </div>
@@ -716,9 +771,9 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <span class="pp-tab-num">01</span>
         <span data-i18n="prod.tab.bookings">الحجوزات</span>
       </button>
-      <button type="button" class="pp-tab" data-tab="payments" role="tab">
+      <button type="button" class="pp-tab" data-tab="customers" role="tab">
         <span class="pp-tab-num">02</span>
-        <span data-i18n="prod.tab.payments">الدفعات</span>
+        <span data-i18n="prod.tab.customers">العميلات</span>
       </button>
       <button type="button" class="pp-tab" data-tab="whatsapp" role="tab">
         <span class="pp-tab-num">03</span>
@@ -847,80 +902,80 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       </div>
     </div>
 
-    <!-- Panel 02: Payments -->
-    <div class="pp-panel" data-panel="payments" id="payments">
+    <!-- Panel 02: Customers -->
+    <div class="pp-panel" data-panel="customers" id="customers">
       <div class="pp-panel-grid">
         <div class="pp-panel-content">
-          <h2 class="h-feature" data-i18n="prod.payments.title">اقبضي تأميناً. <span class="it">امنعي</span> الإلغاء قبل أن يحدث.</h2>
-          <p class="lede-lg" data-i18n="prod.payments.lede">مدى، كي نت، أبل باي، تابي، تمارا، والبطاقات — كلها في تدفق الحجز. التأمينات تُحصَّل لحظة النية، وليس عند الكرسي.</p>
+          <h2 class="h-feature" data-i18n="prod.customers.title">كل عميلة دخلت الصالون يوماً — <span class="it">قابلة للبحث.</span></h2>
+          <p class="lede-lg" data-i18n="prod.customers.lede">تاريخ الزيارات، الموظفة المفضلة، الخدمات المأخوذة، آخر زيارة. فريقكِ يتعامل مع كل زائرة كأنه يتذكرها بالاسم، لأن النظام يتذكر.</p>
 
           <div class="pp-spec-list">
             <div class="pp-spec">
               <div class="pp-spec-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div>
               <div>
-                <h4 data-i18n="prod.payments.s1.t">مدى وكي نت أصليان</h4>
-                <p data-i18n="prod.payments.s1.b">عبر تاب، التاجر المعتمد عبر الخليج. لا احتكاك من نوع "البطاقة مرفوضة". البطاقات المحلية تعمل محلياً.</p>
+                <h4 data-i18n="prod.customers.s1.t">سجل زيارات كامل لكل عميلة</h4>
+                <p data-i18n="prod.customers.s1.b">كل موعد، كل خدمة، كل موظفة. قابل للبحث بالاسم أو الجوال. حوّلي حجز عميلة عائدة في أقل من ٥ ثوانٍ.</p>
               </div>
             </div>
             <div class="pp-spec">
               <div class="pp-spec-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div>
               <div>
-                <h4 data-i18n="prod.payments.s2.t">تأمينات قابلة للاسترجاع</h4>
-                <p data-i18n="prod.payments.s2.b">نسبة قابلة للضبط لكل خدمة. ٢٠٪ للصبغة والقص. ٣٠٪ للكيراتين. ٤٠٪ للعروس. تُدفع عند الحجز، تُطبَّق عند الدفع النهائي.</p>
+                <h4 data-i18n="prod.customers.s2.t">تصنيف VIP ومنتظمة ومتغيّبة</h4>
+                <p data-i18n="prod.customers.s2.b">١٢ زيارة فأكثر = شارة VIP. ٣ إلى ١١ = منتظمة. لا زيارة منذ ٩٠ يوم = متغيّبة لتطلقي حملة استرجاع. تحديث تلقائي مع كل موعد.</p>
               </div>
             </div>
             <div class="pp-spec">
               <div class="pp-spec-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div>
               <div>
-                <h4 data-i18n="prod.payments.s3.t">تابي وتمارا</h4>
-                <p data-i18n="prod.payments.s3.b">للحجوزات الكبرى (العرائس، باقات اليوم الكامل)، يمكن للعميلات التقسيم على ٣ أو ٤ دفعات. أنتِ تستلمين فوراً. هن يدفعن على مراحل.</p>
+                <h4 data-i18n="prod.customers.s3.t">تفضيلات الموظفات محفوظة</h4>
+                <p data-i18n="prod.customers.s3.b">العميلة تحجز دائماً مع ميساء؟ موعد يعرض ميساء أولاً. لا تحجز أبداً مع حصة؟ مواعيد حصة تنزل تلقائياً. الاستقبال يتوقف عن السؤال نفسه كل زيارة.</p>
               </div>
             </div>
             <div class="pp-spec">
               <div class="pp-spec-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div>
               <div>
-                <h4 data-i18n="prod.payments.s4.t">تسوية إلى بنككِ</h4>
-                <p data-i18n="prod.payments.s4.b">تسوية يومية أو أسبوعية إلى حسابكِ البنكي المحلي. ر.س، د.إ، ر.ق، د.ك — تُدفعين بعملتكِ.</p>
+                <h4 data-i18n="prod.customers.s4.t">ملاحظات، حساسيات، خلطات صبغة</h4>
+                <p data-i18n="prod.customers.s4.b">ملاحظات حرة لكل عميلة بالإضافة إلى حقول مهيكلة لأهم التفاصيل — خلطات الصبغة للصالونات، الحساسيات للعيادات، التفضيلات للسبا. تبقى حتى لو تغيّر الفريق.</p>
               </div>
             </div>
           </div>
         </div>
 
         <div class="pp-visual">
-          <div class="pp-pay">
-            <div class="pp-pay-amount"><sup>SAR</sup>50</div>
-            <div class="pp-pay-label">DEPOSIT · COLOR & CUT WITH MAYSA</div>
-            <div class="pp-pay-methods">
-              <div class="pp-pay-method primary">
-                <div class="pp-pay-method-logo mada">mada</div>
-                <span>Mada card</span>
-              </div>
-              <div class="pp-pay-method">
-                <div class="pp-pay-method-logo apay">Pay</div>
-                <span>Apple Pay</span>
-              </div>
-              <div class="pp-pay-method">
-                <div class="pp-pay-method-logo visa">VISA</div>
-                <span>Credit card</span>
-              </div>
-              <div class="pp-pay-method">
-                <div class="pp-pay-method-logo tabby">tabby</div>
-                <span>4 payments</span>
-              </div>
-              <div class="pp-pay-method">
-                <div class="pp-pay-method-logo tamara">tamara</div>
-                <span>3 payments</span>
-              </div>
-              <div class="pp-pay-method">
-                <div class="pp-pay-method-logo knet">KNET</div>
-                <span>KNET</span>
-              </div>
+          <div class="feat-cust">
+            <div class="cust-head">
+              <span data-i18n="prod.customers.head">العميلات</span>
+              <span class="cust-count">٢,٨٤٠</span>
             </div>
-            <a href="#" class="pp-pay-cta">Pay SAR 50</a>
-            <div class="pp-pay-secure">
-              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-              <span>SECURED BY TAP · PCI DSS LEVEL 1</span>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="prod.customers.c1n">سارة الفهد</div>
+                <div class="cust-sub" data-i18n="prod.customers.c1s">١٢ زيارة · تفضّل ميساء</div>
+              </div>
+              <span class="cust-tag tag-vip" data-i18n="prod.customers.tagVip">VIP</span>
             </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="prod.customers.c2n">حصة المطيري</div>
+                <div class="cust-sub" data-i18n="prod.customers.c2s">٤ زيارات · آخرها ٩ مايو</div>
+              </div>
+              <span class="cust-tag tag-reg" data-i18n="prod.customers.tagReg">منتظمة</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="prod.customers.c3n">ميساء آل سعود</div>
+                <div class="cust-sub" data-i18n="prod.customers.c3s">٢٤ زيارة · شهرياً</div>
+              </div>
+              <span class="cust-tag tag-vip" data-i18n="prod.customers.tagVip2">VIP</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="prod.customers.c4n">نورة العتيبي</div>
+                <div class="cust-sub" data-i18n="prod.customers.c4s">آخر زيارة قبل ٤ أشهر</div>
+              </div>
+              <span class="cust-tag tag-lapsed" data-i18n="prod.customers.tagLapsed">متغيّبة</span>
+            </div>
+            <div class="cust-more" data-i18n="prod.customers.more">+ ٢,٨٣٦ أخريات</div>
           </div>
         </div>
       </div>
@@ -931,7 +986,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       <div class="pp-panel-grid">
         <div class="pp-panel-content">
           <h2 class="h-feature" data-i18n="prod.wa.title">حيث تحدث الحجوزات فعلاً — <span class="it">واتساب.</span></h2>
-          <p class="lede-lg" data-i18n="prod.wa.lede">تأكيدات، تذكيرات، روابط دفع، إعادة جدولة، إعادة تنشيط. كل نقطة تواصل مع العميلة تمر عبر واتساب، بلغتها. بدون حسابات. بدون تطبيقات.</p>
+          <p class="lede-lg" data-i18n="prod.wa.lede">تأكيدات، تذكيرات، إعادة جدولة، إعادة تنشيط. كل نقطة تواصل مع العميلة تمر عبر واتساب، بلغتها. بدون حسابات. بدون تطبيقات.</p>
 
           <div class="pp-spec-list">
             <div class="pp-spec">
@@ -968,16 +1023,16 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <div class="pp-visual">
           <div class="pp-wa">
             <div class="pp-wa-msg">Hey, can I get Friday 10am for color + cut?<span class="pp-wa-time">10:42 AM</span></div>
-            <div class="pp-wa-msg out">Confirmed for Friday 10:00 AM with Maysa.<br>Tap below to pay your SAR 50 deposit.<span class="pp-wa-time">10:42 AM ✓✓</span></div>
+            <div class="pp-wa-msg out">Confirmed for Friday 10:00 AM with Maysa.<br>We'll send a reminder Thursday.<span class="pp-wa-time">10:42 AM ✓✓</span></div>
             <div class="pp-wa-pay">
-              <div style="font-size: 11px; color: var(--muted); font-family: var(--mono);">PAYMENT LINK</div>
-              <div style="font-weight: 600; font-size: 14px; margin-block-start: 4px;">Pay your deposit</div>
+              <div style="font-size: 11px; color: var(--muted); font-family: var(--mono);">MANAGE BOOKING</div>
+              <div style="font-weight: 600; font-size: 14px; margin-block-start: 4px;">Reschedule or cancel</div>
               <div class="pp-wa-pay-bar">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
-                pay.mawid.ai/d/k7f9 · SAR 50
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                book.mawid.ai/r/k7f9
               </div>
             </div>
-            <div class="pp-wa-msg">Paid — see you Friday 🌸<span class="pp-wa-time">10:43 AM</span></div>
+            <div class="pp-wa-msg">Perfect — see you Friday 🌸<span class="pp-wa-time">10:43 AM</span></div>
             <div class="pp-wa-msg out">Reminder Thursday at 10am.<br>See you tomorrow!<span class="pp-wa-time">scheduled</span></div>
           </div>
         </div>
@@ -996,7 +1051,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
               <div class="pp-spec-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M5 12l5 5L20 7"/></svg></div>
               <div>
                 <h4 data-i18n="prod.ai.s1.t">تقييم خطر الإلغاء</h4>
-                <p data-i18n="prod.ai.s1.b">٠-١٠٠٪ لكل حجز. مدفوع بتاريخ العميلة، أنماط الوقت، حالة دفع التأمين، الطقس، و١٤ إشارة أخرى. يُحدَّث في الزمن الحقيقي.</p>
+                <p data-i18n="prod.ai.s1.b">٠-١٠٠٪ لكل حجز. مدفوع بتاريخ العميلة، أنماط الوقت، عدد الغيابات السابقة، الطقس، و١٤ إشارة أخرى. يُحدَّث في الزمن الحقيقي.</p>
               </div>
             </div>
             <div class="pp-spec">
@@ -1032,7 +1087,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <div class="pp-ai-row">
               <div>
                 <div class="pp-ai-cust">Tala Al-Rajhi</div>
-                <span class="pp-ai-cust-meta">Mani-Pedi · Tue 5:45 PM · No deposit · 2 prior no-shows</span>
+                <span class="pp-ai-cust-meta">Mani-Pedi · Tue 5:45 PM · New customer · 2 prior no-shows</span>
               </div>
               <div class="pp-ai-score">
                 <div class="pp-ai-bar"><div class="pp-ai-bar-fill high" style="width: 99%;"></div></div>
@@ -1042,7 +1097,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <div class="pp-ai-row">
               <div>
                 <div class="pp-ai-cust">Mona Al-Dosari</div>
-                <span class="pp-ai-cust-meta">Brazilian Keratin · Sun 3:15 PM · Deposit paid · 1 prior late-cancel</span>
+                <span class="pp-ai-cust-meta">Brazilian Keratin · Sun 3:15 PM · Regular · 1 prior late-cancel</span>
               </div>
               <div class="pp-ai-score">
                 <div class="pp-ai-bar"><div class="pp-ai-bar-fill med" style="width: 61%;"></div></div>
@@ -1052,7 +1107,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <div class="pp-ai-row">
               <div>
                 <div class="pp-ai-cust">Sara Al-Fahad</div>
-                <span class="pp-ai-cust-meta">Color & Cut · Thu 10:00 AM · Deposit paid · VIP · 12 visits</span>
+                <span class="pp-ai-cust-meta">Color & Cut · Thu 10:00 AM · VIP · 12 visits</span>
               </div>
               <div class="pp-ai-score">
                 <div class="pp-ai-bar"><div class="pp-ai-bar-fill low" style="width: 8%;"></div></div>
@@ -1062,7 +1117,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <div class="pp-ai-row">
               <div>
                 <div class="pp-ai-cust">Reema Al-Jubair</div>
-                <span class="pp-ai-cust-meta">Highlights · Sat 2:00 PM · Deposit paid · 8 visits</span>
+                <span class="pp-ai-cust-meta">Highlights · Sat 2:00 PM · Regular · 8 visits</span>
               </div>
               <div class="pp-ai-score">
                 <div class="pp-ai-bar"><div class="pp-ai-bar-fill low" style="width: 12%;"></div></div>
@@ -1072,7 +1127,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <div class="pp-ai-row">
               <div>
                 <div class="pp-ai-cust">Rana Al-Subaie</div>
-                <span class="pp-ai-cust-meta">Bridal Trial · Wed 6:00 PM · Deposit paid · First visit</span>
+                <span class="pp-ai-cust-meta">Bridal Trial · Wed 6:00 PM · First visit</span>
               </div>
               <div class="pp-ai-score">
                 <div class="pp-ai-bar"><div class="pp-ai-bar-fill med" style="width: 34%;"></div></div>
@@ -1236,11 +1291,11 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             </div>
             <div class="pp-loc-card">
               <div class="pp-loc-card-tag">EN · WHATSAPP</div>
-              <div style="font-size: 13px; line-height: 1.5; color: var(--ink-mid);">Confirmed for Friday 10:00 AM with Maysa. Tap to pay your SAR 50 deposit.</div>
+              <div style="font-size: 13px; line-height: 1.5; color: var(--ink-mid);">Confirmed for Friday 10:00 AM with Maysa. We'll send a reminder Thursday.</div>
             </div>
             <div class="pp-loc-card rtl">
               <div class="pp-loc-card-tag" style="font-family: var(--mono); direction: ltr;">AR · WHATSAPP</div>
-              <div style="font-size: 13px; line-height: 1.7; color: var(--ink-mid);">تم تأكيد موعدكِ يوم الجمعة الساعة ١٠:٠٠ صباحاً مع ميساء. اضغطي لدفع تأمين ٥٠ ر.س.</div>
+              <div style="font-size: 13px; line-height: 1.7; color: var(--ink-mid);">تم تأكيد موعدكِ يوم الجمعة الساعة ١٠:٠٠ صباحاً مع ميساء. راح نرسل تذكير يوم الخميس.</div>
             </div>
           </div>
         </div>
