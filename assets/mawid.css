@@ -478,15 +478,24 @@ html[lang="ar"] .mobile-menu a {
   letter-spacing: 0.04em;
   user-select: none;
 }
-.lang-toggle button {
+/* Targets both <button> (used on home + product pages where the toggle
+   swaps text in-place via data-i18n) AND <a> (used on the vertical
+   landing pages where the toggle navigates to a cross-locale URL).
+   Both render as the same pill-shaped chip. */
+.lang-toggle button,
+.lang-toggle a {
   padding: 6px 12px;
   border-radius: 999px;
   color: var(--muted);
   transition: color var(--t-fast);
   position: relative;
   z-index: 2;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
 }
-.lang-toggle button[aria-pressed="true"] { color: var(--bg); }
+.lang-toggle button[aria-pressed="true"],
+.lang-toggle a[aria-pressed="true"] { color: var(--bg); }
 .lang-toggle .pill {
   position: absolute;
   inset-block: 3px;

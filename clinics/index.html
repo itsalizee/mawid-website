@@ -140,8 +140,12 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="header-actions">
       <div class="lang-toggle" role="tablist">
         <span class="pill"></span>
-        <button type="button" data-lang="en" aria-pressed="true">EN</button>
-        <button type="button" data-lang="ar" aria-pressed="false">ع</button>
+        <!-- Anchor tags (not buttons) so clicking EN/AR navigates to the
+             matched-vertical page in the other locale. assets/mawid.js
+             explicitly skips in-place applyLocale() when the target is
+             an <a> with an href, letting the browser follow the link. -->
+        <a href="/clinics/" data-lang="en" aria-pressed="true">EN</a>
+        <a href="/ar/clinics/" data-lang="ar" aria-pressed="false">ع</a>
       </div>
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink">Start free trial</a>
     </div>
