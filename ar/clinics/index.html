@@ -85,6 +85,23 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   .scope-callout h3 { font-family: var(--display-ar); font-weight: 600; font-size: 20px; color: var(--ink); margin-block-end: 12px; }
   .scope-callout p { font-size: 15px; line-height: 1.7; color: var(--ink-mid); margin-block-end: 10px; }
   .scope-callout p:last-child { margin-block-end: 0; }
+
+  /* Reservation-list dashboard mockup */
+  .hp-res-head { padding: 18px 22px 14px; border-block-end: 1px solid var(--line); }
+  .hp-res-head h3 { font-family: var(--display-ar); font-size: 18px; font-weight: 600; color: var(--ink); margin: 0 0 4px; }
+  .hp-res-head .breadcrumb { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .hp-res-list { padding: 8px 0; }
+  .hp-res-row { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 16px; padding: 12px 22px; border-block-end: 1px solid var(--line-soft, rgba(0,0,0,0.04)); }
+  .hp-res-row:last-child { border-block-end: 0; }
+  .hp-res-time { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--ink); direction: ltr; }
+  .hp-res-meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .hp-res-name { font-size: 14px; font-weight: 500; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hp-res-sub { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hp-res-tag { font-family: var(--mono); font-size: 10px; font-weight: 600; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.06em; }
+  .hp-res-tag.tag-confirmed { background: rgba(16,185,129,0.12); color: #047857; }
+  .hp-res-tag.tag-vip { background: rgba(245,158,11,0.12); color: #B45309; }
+  .hp-res-tag.tag-followup { background: rgba(99,102,241,0.12); color: #4338CA; }
+  .hp-res-tag.tag-new { background: rgba(14,165,233,0.12); color: #0369A1; }
 </style>
 </head>
 <body>
@@ -131,6 +148,140 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="cta-actions reveal d3" style="margin-block-start: 32px;">
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">جرّبي مجاناً ٧ أيام</a>
       <a href="/ar/contact/" class="btn btn-ghost btn-lg">تكلّمي معنا</a>
+    </div>
+
+    <!-- HERO PRODUCT MOCKUP -->
+    <div class="hero-product reveal d4" style="margin-block-start: 56px;">
+      <div class="hero-product-frame">
+        <div class="hero-product-toolbar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">app.mawid.ai/appointments</div>
+          <div style="width: 60px;"></div>
+        </div>
+        <div class="hero-product-body">
+          <aside class="hp-side">
+            <div class="hp-org">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="name">عيادة ديرما</div>
+                <div class="sub">الرياض · باقة العيادات</div>
+              </div>
+              <span class="chev">⌄</span>
+            </div>
+            <span class="hp-section-label">العمليات</span>
+            <div class="hp-item active">
+              <span class="ic">⊞</span>
+              <span>المواعيد</span>
+              <span class="badge">١٨</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">◐</span>
+              <span>المرضى</span>
+              <span class="badge">١,٢٤٠</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">○</span>
+              <span>الأطباء</span>
+            </div>
+            <span class="hp-section-label">الإعداد</span>
+            <div class="hp-item">
+              <span class="ic">⌖</span>
+              <span>ساعات العمل</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">⊿</span>
+              <span>التقارير</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">≡</span>
+              <span>مشاركة</span>
+            </div>
+          </aside>
+          <main class="hp-main">
+            <div class="hp-res-head">
+              <h3>مواعيد اليوم</h3>
+              <div class="breadcrumb">٣ صفر · الجمعة ١٦ مايو · ١٨ مريض</div>
+            </div>
+            <div class="hp-res-list">
+              <div class="hp-res-row">
+                <div class="hp-res-time">10:00</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">سارة الفهد</div>
+                  <div class="hp-res-sub">متابعة بوتوكس · د. حسن</div>
+                </div>
+                <span class="hp-res-tag tag-followup">متابعة</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">10:30</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">حصة المطيري</div>
+                  <div class="hp-res-sub">استشارة · د. مريم</div>
+                </div>
+                <span class="hp-res-tag tag-new">جديدة</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">11:00</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">ميساء آل سعود</div>
+                  <div class="hp-res-sub">مراجعة فيلر · ٢٤ زيارة</div>
+                </div>
+                <span class="hp-res-tag tag-vip">VIP</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">11:30</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">نورة العتيبي</div>
+                  <div class="hp-res-sub">جلسة ليزر · د. حسن</div>
+                </div>
+                <span class="hp-res-tag tag-confirmed">مؤكد</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">12:00</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">ريما الجبير</div>
+                  <div class="hp-res-sub">استشارة · د. مريم</div>
+                </div>
+                <span class="hp-res-tag tag-confirmed">مؤكد</span>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <!-- Floating cards -->
+        <div class="hp-float hp-float-tr">
+          <div class="float-head">
+            <span>موعد جديد</span>
+            <span class="live"><span class="pulse"></span><span>مباشر</span></span>
+          </div>
+          <div class="float-row">
+            <span class="l">ليان الحربي</span>
+            <span class="r">استشارة</span>
+          </div>
+          <div class="float-row">
+            <span class="l">الاثنين · ١١:٣٠ ص</span>
+            <span class="r">د. حسن</span>
+          </div>
+          <div class="float-row">
+            <span class="l">الحالة</span>
+            <span class="r" style="color: var(--good);">تم التأكيد ✓</span>
+          </div>
+        </div>
+
+        <div class="hp-float hp-float-bl">
+          <div class="float-head">
+            <span>واتساب · عيادة ديرما</span>
+            <span style="font-family: var(--mono); font-size: 10px; color: var(--good);">✓✓</span>
+          </div>
+          <div class="float-wa in">
+            <span>تم تأكيد استشارتكِ يوم الاثنين ١١:٣٠ ص مع د. حسن. التذكير سيصل الأحد 🌸</span>
+            <span class="float-wa-time">٢:١٤ م</span>
+          </div>
+          <div class="float-wa">
+            <span>شكراً 💚</span>
+            <span class="float-wa-time">٢:١٥ م <span class="check">✓✓</span></span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>

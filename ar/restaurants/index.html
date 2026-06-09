@@ -79,6 +79,22 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   .vert-price .period { font-size: 18px; color: var(--muted); font-weight: 500; }
   .vert-price-cap { font-family: var(--mono); font-size: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); margin-block-end: 16px; }
   .vert-trial-note { margin-block-start: 16px; font-size: 14px; color: var(--ink-mid); }
+
+  /* Reservation-list dashboard mockup */
+  .hp-res-head { padding: 18px 22px 14px; border-block-end: 1px solid var(--line); }
+  .hp-res-head h3 { font-family: var(--display-ar); font-size: 18px; font-weight: 600; color: var(--ink); margin: 0 0 4px; }
+  .hp-res-head .breadcrumb { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); }
+  .hp-res-list { padding: 8px 0; }
+  .hp-res-row { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 16px; padding: 12px 22px; border-block-end: 1px solid var(--line-soft, rgba(0,0,0,0.04)); }
+  .hp-res-row:last-child { border-block-end: 0; }
+  .hp-res-time { font-family: var(--mono); font-size: 13px; font-weight: 600; color: var(--ink); direction: ltr; }
+  .hp-res-meta { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .hp-res-name { font-size: 14px; font-weight: 500; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hp-res-sub { font-size: 12px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .hp-res-tag { font-family: var(--mono); font-size: 10px; font-weight: 600; padding: 4px 10px; border-radius: 999px; letter-spacing: 0.06em; }
+  .hp-res-tag.tag-confirmed { background: rgba(16,185,129,0.12); color: #047857; }
+  .hp-res-tag.tag-vip { background: rgba(245,158,11,0.12); color: #B45309; }
+  .hp-res-tag.tag-walkin { background: rgba(107,114,128,0.12); color: #4B5563; }
 </style>
 </head>
 <body>
@@ -125,6 +141,140 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="cta-actions reveal d3" style="margin-block-start: 32px;">
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">جرّبي مجاناً ٧ أيام</a>
       <a href="/ar/contact/" class="btn btn-ghost btn-lg">تكلّمي معنا</a>
+    </div>
+
+    <!-- HERO PRODUCT MOCKUP -->
+    <div class="hero-product reveal d4" style="margin-block-start: 56px;">
+      <div class="hero-product-frame">
+        <div class="hero-product-toolbar">
+          <div class="dots"><span></span><span></span><span></span></div>
+          <div class="url">app.mawid.ai/reservations</div>
+          <div style="width: 60px;"></div>
+        </div>
+        <div class="hero-product-body">
+          <aside class="hp-side">
+            <div class="hp-org">
+              <div class="avatar"></div>
+              <div class="meta">
+                <div class="name">مقهى لطيف</div>
+                <div class="sub">الرياض · باقة المطاعم</div>
+              </div>
+              <span class="chev">⌄</span>
+            </div>
+            <span class="hp-section-label">العمليات</span>
+            <div class="hp-item active">
+              <span class="ic">⊞</span>
+              <span>الحجوزات</span>
+              <span class="badge">٤٢</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">◐</span>
+              <span>الضيوف</span>
+              <span class="badge">٢,٨٤٠</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">≡</span>
+              <span>قائمة الانتظار</span>
+            </div>
+            <span class="hp-section-label">الإعداد</span>
+            <div class="hp-item">
+              <span class="ic">⌖</span>
+              <span>ساعات العمل</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">⊿</span>
+              <span>التقارير</span>
+            </div>
+            <div class="hp-item">
+              <span class="ic">○</span>
+              <span>مشاركة</span>
+            </div>
+          </aside>
+          <main class="hp-main">
+            <div class="hp-res-head">
+              <h3>حجوزات الليلة</h3>
+              <div class="breadcrumb">٣ صفر · الجمعة ١٦ مايو · ٤٢ ضيف</div>
+            </div>
+            <div class="hp-res-list">
+              <div class="hp-res-row">
+                <div class="hp-res-time">19:30</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">سارة الفهد</div>
+                  <div class="hp-res-sub">مجموعة من ٤ · تفضّل التراس</div>
+                </div>
+                <span class="hp-res-tag tag-confirmed">مؤكد</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">20:00</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">حصة المطيري</div>
+                  <div class="hp-res-sub">مجموعة من ٢ · عيد ميلاد</div>
+                </div>
+                <span class="hp-res-tag tag-confirmed">مؤكد</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">20:30</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">ميساء آل سعود</div>
+                  <div class="hp-res-sub">مجموعة من ٨ · ٢٤ زيارة سابقة</div>
+                </div>
+                <span class="hp-res-tag tag-vip">VIP</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">21:00</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">نورة العتيبي</div>
+                  <div class="hp-res-sub">مجموعة من ٦ · حساسية: فول سوداني</div>
+                </div>
+                <span class="hp-res-tag tag-confirmed">مؤكد</span>
+              </div>
+              <div class="hp-res-row">
+                <div class="hp-res-time">21:30</div>
+                <div class="hp-res-meta">
+                  <div class="hp-res-name">أحمد الراشد</div>
+                  <div class="hp-res-sub">مجموعة من ٣ · ضيف جديد</div>
+                </div>
+                <span class="hp-res-tag tag-walkin">واقف</span>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <!-- Floating cards -->
+        <div class="hp-float hp-float-tr">
+          <div class="float-head">
+            <span>حجز جديد</span>
+            <span class="live"><span class="pulse"></span><span>مباشر</span></span>
+          </div>
+          <div class="float-row">
+            <span class="l">ليان الحربي</span>
+            <span class="r">مجموعة من ٤</span>
+          </div>
+          <div class="float-row">
+            <span class="l">الجمعة · ٩:٣٠ مساءً</span>
+            <span class="r">التراس</span>
+          </div>
+          <div class="float-row">
+            <span class="l">الحالة</span>
+            <span class="r" style="color: var(--good);">تم التأكيد ✓</span>
+          </div>
+        </div>
+
+        <div class="hp-float hp-float-bl">
+          <div class="float-head">
+            <span>واتساب · مقهى لطيف</span>
+            <span style="font-family: var(--mono); font-size: 10px; color: var(--good);">✓✓</span>
+          </div>
+          <div class="float-wa in">
+            <span>تم تأكيد حجزكِ يوم الجمعة ٩:٣٠ م لـ٤ أشخاص. أشوفكم 🌿</span>
+            <span class="float-wa-time">٢:١٤ م</span>
+          </div>
+          <div class="float-wa">
+            <span>شكراً 💚</span>
+            <span class="float-wa-time">٢:١٥ م <span class="check">✓✓</span></span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
