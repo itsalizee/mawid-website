@@ -62,10 +62,14 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     position: sticky;
     top: 64px;
     z-index: 30;
-    background: rgba(255,255,255,0.92);
-    backdrop-filter: blur(20px) saturate(140%);
-    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    /* Fully opaque background (not the previous rgba .92 + backdrop-blur)
+       because the tab panels below carry visually busy content — calendar
+       grids, WhatsApp mockups, customer database rows. Frosted-glass
+       looks clean over simple content and messy over dense mockups. A
+       solid bar + a soft shadow reads as a proper sticky nav. */
+    background: var(--bg);
     border-block-end: 1px solid var(--line);
+    box-shadow: 0 6px 20px -8px rgba(28, 20, 16, 0.08);
     margin-block-end: 64px;
   }
   .pp-tabs {
