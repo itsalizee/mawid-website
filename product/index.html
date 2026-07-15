@@ -763,6 +763,14 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   </div>
 </section>
 
+<!-- TABS + PANELS wrapped so the sticky tabs release when the user
+     scrolls past the tab-panels area. Without this outer container the
+     tabs stayed pinned to the viewport all the way down to the footer
+     and visually overlapped the closing CTA banner. position: sticky
+     only sticks within its nearest scrolling ancestor's box, so
+     scoping the wrapper to just [tabs + panels] gives them the right
+     unstick point. -->
+<div class="pp-tabs-scope">
 <!-- TABS NAV -->
 <div class="pp-tabs-wrap">
   <div class="container-wide">
@@ -1304,6 +1312,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 
   </div>
 </section>
+</div><!-- /.pp-tabs-scope -->
 
 <!-- CLOSING CTA -->
 <section class="section">
