@@ -57,7 +57,18 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 *::selection { background: var(--ink); color: var(--bg); }
 
-html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; scroll-padding-top: 88px; }
+/* overflow-x lives on <html> (not <body>) so <body> stays as a
+   scroll-root reference for position: sticky descendants. When it
+   was on <body>, sticky broke silently everywhere: the pp-tabs on
+   /product/, the SubscriptionBanner on /app, etc. `clip` (rather
+   than `hidden`) prevents horizontal scroll without creating any
+   scroll context — modern spec, supported everywhere we ship. */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  scroll-padding-top: 88px;
+  overflow-x: clip;
+}
 :target { scroll-margin-top: 88px; }
 section[id] { scroll-margin-top: 88px; }
 
@@ -71,7 +82,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "ss01", "ss02", "cv11";
-  overflow-x: hidden;
 }
 html[lang="ar"] body {
   font-family: var(--body-ar);
