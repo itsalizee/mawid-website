@@ -59,17 +59,15 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   .pp-hero { padding-block: 96px 64px; }
   .pp-hero .h-display { max-width: 18ch; }
   .pp-tabs-wrap {
-    position: sticky;
-    top: 64px;
-    z-index: 30;
-    /* Fully opaque background (not the previous rgba .92 + backdrop-blur)
-       because the tab panels below carry visually busy content — calendar
-       grids, WhatsApp mockups, customer database rows. Frosted-glass
-       looks clean over simple content and messy over dense mockups. A
-       solid bar + a soft shadow reads as a proper sticky nav. */
+    /* Intentionally NOT position: sticky. The tabs render once inline
+       under the hero and scroll off naturally with the page. Sticky was
+       tried and felt jarring — the "menu suddenly appears" moment
+       broke the reading flow when the user was mid-panel. Users still
+       have the anchor URLs (#bookings, #customers, etc.) to link
+       directly to a panel, and the top-of-page nav gives global
+       navigation. */
     background: var(--bg);
     border-block-end: 1px solid var(--line);
-    box-shadow: 0 6px 20px -8px rgba(28, 20, 16, 0.08);
     margin-block-end: 64px;
   }
   .pp-tabs {
