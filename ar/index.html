@@ -3651,11 +3651,13 @@ html[lang="ar"] .mobile-menu a {
       <p class="lede-lg" data-i18n="price.lede">Every plan includes unlimited bookings, WhatsApp + email confirmations, bilingual Arabic / English, and prayer-time aware scheduling. Start with a 7-day free trial — cancel anytime before it converts and you're not charged.</p>
     </div>
 
+    <div class="currency-switch" data-currency-switcher hidden></div>
+
     <div class="tier-grid reveal d1">
       <div class="tier">
         <div class="tier-name" data-i18n="price.t1.name">المبتدئ</div>
         <p class="tier-tag" data-i18n="price.t1.tag">للمصفِّفات المنفردات والصالونات الصغيرة حتى ٣ موظفات. فرع واحد.</p>
-        <div class="tier-price">
+        <div class="tier-price" data-plan="starter">
           <span class="currency">$</span>
           <span class="num">80</span>
           <span class="period" data-i18n="price.period">/ شهرياً</span>
@@ -3675,7 +3677,7 @@ html[lang="ar"] .mobile-menu a {
         <span class="tier-flag" data-i18n="price.featured">الأكثر طلباً</span>
         <div class="tier-name" data-i18n="price.t2.name">الاحترافي</div>
         <p class="tier-tag" data-i18n="price.t2.tag">للصالونات النامية حتى ١٠ موظفات. فرع واحد. الأكثر اختياراً.</p>
-        <div class="tier-price">
+        <div class="tier-price" data-plan="professional">
           <span class="currency">$</span>
           <span class="num">140</span>
           <span class="period" data-i18n="price.period">/ شهرياً</span>
@@ -3695,7 +3697,7 @@ html[lang="ar"] .mobile-menu a {
       <div class="tier">
         <div class="tier-name" data-i18n="price.t3.name">الاستوديو</div>
         <p class="tier-tag" data-i18n="price.t3.tag">للصالونات الكبيرة بعدد موظفات غير محدود. إعداد مخصَّص.</p>
-        <div class="tier-price">
+        <div class="tier-price" data-plan="studio">
           <span class="currency">$</span>
           <span class="num">180</span>
           <span class="period" data-i18n="price.period">/ شهرياً</span>
@@ -4660,5 +4662,6 @@ if (dialectRow && aiCustomer && aiBot) {
 })();
 </script>
 <script src="/assets/gclid.js" defer></script>
+<script src="/assets/pricing.js?v=1" defer></script>
 </body>
 </html>

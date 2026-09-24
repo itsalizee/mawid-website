@@ -102,6 +102,9 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   .hp-res-tag.tag-vip { background: rgba(245,158,11,0.12); color: #B45309; }
   .hp-res-tag.tag-followup { background: rgba(99,102,241,0.12); color: #4338CA; }
   .hp-res-tag.tag-new { background: rgba(14,165,233,0.12); color: #0369A1; }
+  /* Amount + currency render in document direction: "SAR 679" in EN,
+     "679 ر.س" in AR (order set by /assets/pricing.js). */
+  .vert-price { display: inline-flex; align-items: baseline; gap: 6px; direction: inherit; }
 </style>
 </head>
 <body>
@@ -420,8 +423,8 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 
     <div class="vert-pricing reveal">
       <div class="vert-price-cap">خطة العيادات</div>
-      <div class="vert-price">
-        <span class="currency">$</span>140<span class="period"> / شهرياً</span>
+      <div class="vert-price" data-plan="professional">
+        <span class="currency">$</span><span class="num">140</span><span class="period"> / شهرياً</span>
       </div>
       <p style="margin-block: 24px 0; font-size: 15px; line-height: 1.75; color: var(--ink-mid); max-width: 540px; margin-inline: auto;">
         مواعيد غير محدودة · تأكيدات واتساب وبريد · تذكيرات تراعي التقويم الهجري · سجل مرضى (غير طبي) · صفحة حجز ثنائية اللغة · تجربة مجانية ٧ أيام
@@ -543,5 +546,6 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <script src="/assets/i18n.js"></script>
 <script src="/assets/mawid.js"></script>
 <script src="/assets/gclid.js" defer></script>
+<script src="/assets/pricing.js?v=1" defer></script>
 </body>
 </html>
