@@ -245,8 +245,8 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="header-actions">
       <div class="lang-toggle" role="tablist">
         <span class="pill"></span>
-        <button type="button" data-lang="en" aria-pressed="true">EN</button>
-        <a href="/ar/contact/" data-lang="ar" aria-pressed="false" style="text-decoration: none; padding: 6px 12px; border-radius: 999px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.04em; position: relative; z-index: 2;">ع</a>
+        <a href="/contact/" data-lang="en" aria-pressed="true">EN</a>
+        <a href="/ar/contact/" data-lang="ar" aria-pressed="false">ع</a>
       </div>
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink" data-i18n="cta.beta">Start free trial</a>
     </div>
@@ -261,7 +261,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       <span data-i18n="contact.kicker">Contact</span>
     </span>
     <h1 class="h-display reveal d1" data-i18n="contact.title">Talk to <span class="it">us.</span></h1>
-    <p class="lede reveal d2" data-i18n="contact.lede">Whether you're a salon owner curious about the beta, a chain operator weighing the Enterprise tier, or a partner looking to integrate — pick the channel that fits and we'll respond within one business day.</p>
+    <p class="lede reveal d2" data-i18n="contact.lede">Whether you're a business owner with a question, a chain weighing the Enterprise tier, or a partner looking to integrate — pick the channel that fits and we'll respond within one business day.</p>
   </div>
 </section>
 
@@ -285,7 +285,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
               <span class="ch-label" data-i18n="contact.c2.label">Sales</span>
               <a class="email-link" href="mailto:sales@mawid.ai" data-i18n="contact.c2.email">sales@mawid.ai</a>
             </div>
-            <p data-i18n="contact.c2.body">Beta applications, demos, multi-location chains, Enterprise quotes.</p>
+            <p data-i18n="contact.c2.body">Demos, setup help, multi-location chains, Enterprise quotes.</p>
           </div>
           <div class="channel">
             <div class="label-row">
@@ -315,6 +315,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <h3 data-i18n="contact.form.title">Or send a message</h3>
 
         <form id="contact-form" novalidate>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
           <div class="field-grid">
             <div class="field">
               <label for="cf-name" data-i18n="contact.form.name">Name</label>
@@ -332,7 +333,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
           <div class="field">
             <label for="cf-subject" data-i18n="contact.form.subject">Subject</label>
             <select id="cf-subject" name="subject" required>
-              <option value="beta" data-i18n="contact.subj.beta">Beta application</option>
+              <option value="beta" data-i18n="contact.subj.beta">Setup help</option>
               <option value="demo" data-i18n="contact.subj.demo">Request a demo</option>
               <option value="enterprise" data-i18n="contact.subj.enterprise">Enterprise inquiry</option>
               <option value="partner" data-i18n="contact.subj.partner">Partnership / integration</option>
@@ -349,6 +350,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <span class="loading-text">Sending…</span>
             <span class="spinner"></span>
           </button>
+          <p id="contact-error" class="form-error" role="alert" hidden data-i18n="contact.form.error">Something went wrong. Please try again, or email hello@mawid.ai.</p>
           <p class="form-foot" data-i18n="contact.form.foot">We'll respond via email within one business day.</p>
         </form>
 
@@ -369,14 +371,14 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <span class="logo-mark">م</span>
         <span data-i18n="brand">Mawid</span>
       </a>
-      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first, AI-powered, WhatsApp-native — designed for how Saudi, Emirati, Qatari, and Kuwaiti businesses actually run.</p>
+      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first and Hijri-aware — designed for how Saudi, Emirati, Qatari and Kuwaiti businesses actually run.</p>
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.product">Product</h5>
       <ul>
         <li><a href="/#features" data-i18n="foot.product.features">Features</a></li>
         <li><a href="/pricing/" data-i18n="foot.product.pricing">Pricing</a></li>
-        <li><a href="https://app.mawid.ai/sign-up" data-i18n="foot.product.beta">Beta program</a></li>
+        <li><a href="https://app.mawid.ai/sign-up" data-i18n="foot.product.beta">Start free trial</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -401,7 +403,6 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   </div>
 </footer>
 
-<script src="/assets/i18n.js"></script>
 <script src="/assets/mawid.js"></script>
 <script src="/assets/gclid.js" defer></script>
 </body>

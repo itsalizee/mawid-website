@@ -1,57 +1,19 @@
 /* Mawid · Shared interactive behaviors
-   Loaded on every sub-page. Reads from window.MAWID_I18N. */
+   Loaded on every sub-page. */
 
 (function () {
   "use strict";
 
-  /* ===== Language toggle + i18n application ===== */
-  var STORAGE_KEY = "mawid.locale";
-  var DEFAULT = "en";
-
-  function detectInitial() {
-    /* URL is the single source of truth.
-       /ar/* → Arabic. Anything else → English.
-       localStorage is intentionally ignored to prevent stale state. */
-    return window.location.pathname.indexOf("/ar/") !== -1 ? "ar" : "en";
-  }
-
-  function applyLocale(locale) {
-    var dict = (window.MAWID_I18N && window.MAWID_I18N[locale]) || {};
-    var html = document.documentElement;
-    html.setAttribute("lang", locale);
-    html.setAttribute("dir", locale === "ar" ? "rtl" : "ltr");
-
-    /* Replace data-i18n strings */
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      var key = el.getAttribute("data-i18n");
-      var val = dict[key];
-      if (typeof val === "string") el.innerHTML = val;
-    });
-    /* Replace data-i18n-attr (e.g., placeholders) */
-    document.querySelectorAll("[data-i18n-attr]").forEach(function (el) {
-      var pair = el.getAttribute("data-i18n-attr").split(":");
-      if (pair.length !== 2) return;
-      var attr = pair[0].trim();
-      var key = pair[1].trim();
-      var val = dict[key];
-      if (typeof val === "string") el.setAttribute(attr, val);
-    });
-
-    /* Update lang toggle pressed state */
-    document.querySelectorAll("[data-lang]").forEach(function (btn) {
-      btn.setAttribute("aria-pressed", btn.getAttribute("data-lang") === locale ? "true" : "false");
-    });
-
-    try { localStorage.setItem(STORAGE_KEY, locale); } catch (e) {}
-  }
-
+  /* ===== Language toggle =====
+     Page text is baked into the HTML at build time (scripts/build.mjs), so
+     there is nothing to translate here. We only remember the visitor's
+     explicit choice in a cookie; vercel.json reads it so an Arabic-default
+     redirect never overrides someone who picked English (or vice versa). */
   function bindLangToggle() {
-    document.querySelectorAll("[data-lang]").forEach(function (btn) {
-      btn.addEventListener("click", function (e) {
-        /* If this is an anchor with href, let browser navigate naturally —
-           don't apply locale in-place because the new page will set its own. */
-        if (btn.tagName === "A" && btn.getAttribute("href")) return;
-        applyLocale(btn.getAttribute("data-lang"));
+    document.querySelectorAll("[data-lang]").forEach(function (el) {
+      el.addEventListener("click", function () {
+        var lang = el.getAttribute("data-lang") === "ar" ? "ar" : "en";
+        document.cookie = "mawid_lang=" + lang + "; path=/; max-age=31536000; SameSite=Lax";
       });
     });
   }
@@ -103,11 +65,12 @@
     });
   }
 
-  /* ===== Contact form handler ===== */
+  /* ===== Contact form → app.mawid.ai/api/public/lead ===== */
   function bindContactForm() {
     var form = document.getElementById("contact-form");
     if (!form) return;
     var success = document.getElementById("contact-success");
+    var errorBox = document.getElementById("contact-error");
     var submitBtn = form.querySelector("button[type=submit]");
 
     form.addEventListener("submit", function (e) {
@@ -129,41 +92,59 @@
         return;
       }
 
+      var fd = new FormData(form);
+      var sp = new URLSearchParams(window.location.search);
+      var utm = {};
+      ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(function (k) {
+        if (sp.get(k)) utm[k] = sp.get(k);
+      });
+      var gclidMatch = document.cookie.match(/(?:^|; )mawid_gclid=([^;]+)/);
+      var subject = form.querySelector("#cf-subject");
+      var subjectLabel = subject && subject.selectedIndex >= 0 ? subject.options[subject.selectedIndex].text : "";
+      var payload = {
+        source: "contact",
+        name: fd.get("name") || undefined,
+        email: fd.get("email") || undefined,
+        businessName: fd.get("business") || undefined,
+        message: ((subjectLabel ? "[" + subjectLabel + "] " : "") + (fd.get("message") || "")).slice(0, 2000),
+        website: fd.get("website") || undefined,
+        locale: document.documentElement.getAttribute("lang") === "ar" ? "ar" : "en",
+        pageUrl: window.location.href.slice(0, 500),
+        referrer: (document.referrer || "").slice(0, 500) || undefined,
+        utm: utm,
+        gclid: sp.get("gclid") || (gclidMatch ? decodeURIComponent(gclidMatch[1]) : undefined)
+      };
+
       if (submitBtn) {
         submitBtn.disabled = true;
         submitBtn.classList.add("is-loading");
       }
+      if (errorBox) errorBox.hidden = true;
 
-      var data = Object.fromEntries(new FormData(form).entries());
-      data.locale = document.documentElement.getAttribute("lang");
-      data.timestamp = new Date().toISOString();
-      data.referrer = document.referrer || "direct";
-      data.page = window.location.pathname;
-      data.utm_source = new URLSearchParams(window.location.search).get("utm_source") || "";
-      data.utm_medium = new URLSearchParams(window.location.search).get("utm_medium") || "";
-      data.utm_campaign = new URLSearchParams(window.location.search).get("utm_campaign") || "";
-
-      /* TODO: wire to backend endpoint
-         fetch("/api/contact", {
-           method: "POST",
-           headers: { "Content-Type": "application/json" },
-           body: JSON.stringify(data)
-         });
-      */
-      console.log("[mawid contact form]", data);
-
-      /* Conversion tracking */
-      if (typeof window.gtag === "function") {
-        window.gtag("event", "contact_submit", { method: "form", subject: data.subject });
-      }
-      if (typeof window.fbq === "function") {
-        window.fbq("track", "Contact", { content_name: "Contact form" });
-      }
-
-      setTimeout(function () {
-        form.style.display = "none";
-        if (success) success.classList.add("shown");
-      }, 500);
+      fetch("https://app.mawid.ai/api/public/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function () {
+          form.style.display = "none";
+          if (success) success.classList.add("shown");
+          /* Only count the conversion once the server has saved the lead. */
+          if (typeof window.gtag === "function") {
+            window.gtag("event", "generate_lead", { source: "contact_form", subject: fd.get("subject") });
+          }
+          if (typeof window.fbq === "function") {
+            window.fbq("track", "Contact", { content_name: "Contact form" });
+          }
+        })
+        .catch(function () {
+          if (submitBtn) {
+            submitBtn.disabled = false;
+            submitBtn.classList.remove("is-loading");
+          }
+          if (errorBox) errorBox.hidden = false;
+        });
     });
 
     form.querySelectorAll("input, select, textarea").forEach(function (el) {
@@ -200,7 +181,6 @@
 
   /* ===== Init ===== */
   function init() {
-    applyLocale(detectInitial());
     bindLangToggle();
     bindStickyHeader();
     bindReveals();

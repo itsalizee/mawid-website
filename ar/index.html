@@ -2404,6 +2404,8 @@ html[lang="ar"] .hero-trust-item { font-family: var(--body-ar); font-size: 14px;
 }
 html[lang="ar"] .form-foot { font-family: var(--body-ar); letter-spacing: 0; font-size: 12.5px; }
 
+.form-error { color: #FFB4A8; font-size: 13px; line-height: 1.5; margin: 0 0 12px; }
+.hero .reveal { opacity: 1; transform: none; transition: none; }
 .form-success { display: none; text-align: center; padding-block: 24px; }
 .form-success.shown { display: block; }
 .form-success-mark {
@@ -2799,7 +2801,7 @@ html[lang="ar"] .mobile-menu a {
         <button type="button" data-lang="ar" aria-pressed="true">AR</button>
       </div>
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink">
-        <span data-i18n="cta.header">ابدئي تجربة مجانية</span>
+        <span data-i18n="cta.header">بدء التجربة المجانية</span>
       </a>
     </div>
       <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu" type="button">
@@ -2814,7 +2816,7 @@ html[lang="ar"] .mobile-menu a {
     <a href="/ar/pricing/" data-i18n="nav.pricing">الأسعار</a>
     <a href="/ar/about/" data-i18n="nav.about">من نحن</a>
     <a href="/ar/contact/" data-i18n="nav.contact">تواصل</a>
-    <a href="https://app.mawid.ai/sign-up" class="mobile-cta" data-i18n="cta.header">ابدئي تجربة مجانية</a>
+    <a href="https://app.mawid.ai/sign-up" class="mobile-cta" data-i18n="cta.header">بدء التجربة المجانية</a>
   </nav>
 </header>
 
@@ -2835,19 +2837,19 @@ html[lang="ar"] .mobile-menu a {
 
     <h1 class="display hero-title reveal d1" data-i18n="hero.title">الحجوزات،<br/>مصمَّمة <span class="it">للخليج</span>.</h1>
 
-    <p class="hero-lede reveal d2" data-i18n="hero.lede">موعد منصة الحجوزات الأولى المصممة خصيصاً للسوق الخليجي. عربية أولاً، تعمل عبر واتساب أصلاً، وتدعم التقويم الهجري. مبنية على الطريقة التي تحجز بها عميلاتكِ فعلاً.</p>
+    <p class="hero-lede reveal d2" data-i18n="hero.lede">عملاؤكم يحجزون من رابطكم في إنستغرام أو واتساب في أقل من دقيقة — بالعربية أو الإنجليزية، وبالتقويم الهجري أو الميلادي. وكل حجز يصلكم لحظة تأكيده. مصمَّم للصالونات والعيادات والمطاعم في السعودية والإمارات وقطر والكويت.</p>
 
     <div class="hero-cta-row reveal d3">
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">
-        <span data-i18n="hero.cta">ابدئي تجربة مجانية</span>
+        <span data-i18n="hero.cta">بدء التجربة المجانية</span>
         <span class="arrow" aria-hidden="true">→</span>
       </a>
       <a href="https://mawid.ai/book/salon-rasha?lang=ar" class="btn btn-light btn-lg">
-        <span data-i18n="hero.cta2">شاهدي العرض</span>
+        <span data-i18n="hero.cta2">مشاهدة العرض</span>
       </a>
       <span class="hero-cta-meta">
         <span class="pulse" aria-hidden="true"></span>
-        <span data-i18n="hero.cta_meta">صالونات الخليج تعمل بموعد</span>
+        <span data-i18n="hero.cta_meta">تجربة مجانية ٧ أيام · إعداد في دقائق</span>
       </span>
     </div>
 
@@ -2855,7 +2857,7 @@ html[lang="ar"] .mobile-menu a {
     <div class="hero-trust-row reveal d3">
       <span class="hero-trust-item">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span data-i18n="hero.trust1">تجربة مجانية — ألغي قبل التحويل ولن تُحاسبي</span>
+        <span data-i18n="hero.trust1">تجربة مجانية — الإلغاء قبل نهايتها بدون أي رسوم</span>
       </span>
       <span class="hero-trust-item">
         <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -2870,7 +2872,7 @@ html[lang="ar"] .mobile-menu a {
     <div class="hero-stats reveal d3">
       <div class="hero-stat">
         <span class="label" data-i18n="hero.s1.l">الأسواق</span>
-        <span class="val">KSA · UAE · QA · KW</span>
+        <span class="val" data-i18n="hero.s1.v">السعودية · الإمارات · قطر · الكويت</span>
       </div>
       <div class="hero-stat">
         <span class="label" data-i18n="hero.s2.l">اللغات</span>
@@ -2881,8 +2883,8 @@ html[lang="ar"] .mobile-menu a {
         <span class="val" data-i18n="hero.s3.v">هجري <span class="accent">·</span> ميلادي</span>
       </div>
       <div class="hero-stat">
-        <span class="label" data-i18n="hero.s4.l">القناة</span>
-        <span class="val" data-i18n="hero.s4.v">واتساب <span class="accent">·</span> SMS</span>
+        <span class="label" data-i18n="hero.s4.l">رابط الحجز</span>
+        <span class="val" data-i18n="hero.s4.v">إنستغرام · واتساب</span>
       </div>
     </div>
 
@@ -2916,12 +2918,12 @@ html[lang="ar"] .mobile-menu a {
             </div>
             <div class="hp-item">
               <span class="ic">◐</span>
-              <span data-i18n="hp.cust">العميلات</span>
+              <span data-i18n="hp.cust">العملاء</span>
               <span class="badge">2,840</span>
             </div>
             <div class="hp-item">
               <span class="ic">○</span>
-              <span data-i18n="hp.staff">الموظفات</span>
+              <span data-i18n="hp.staff">الفريق</span>
             </div>
             <span class="hp-section-label" data-i18n="hp.s2">الكتالوج</span>
             <div class="hp-item">
@@ -2930,7 +2932,7 @@ html[lang="ar"] .mobile-menu a {
             </div>
             <div class="hp-item">
               <span class="ic">⌖</span>
-              <span data-i18n="hp.pay">المدفوعات</span>
+              <span data-i18n="hp.pay">الإعدادات</span>
             </div>
             <div class="hp-item">
               <span class="ic">⊿</span>
@@ -2942,11 +2944,6 @@ html[lang="ar"] .mobile-menu a {
               <div>
                 <h3 data-i18n="hp.heading">جدول هذا الأسبوع</h3>
                 <div class="breadcrumb" data-i18n="hp.bcrumb">٢٧ محرّم – ٣ صفر · ١١ – ١٧ مايو ٢٠٢٦</div>
-              </div>
-              <div class="hp-toggle">
-                <button class="active" data-i18n="hp.both">الكل</button>
-                <button data-i18n="hp.greg">ميلادي</button>
-                <button data-i18n="hp.hijri">هجري</button>
               </div>
             </div>
             <div class="hp-cal">
@@ -3015,7 +3012,7 @@ html[lang="ar"] .mobile-menu a {
             <span style="font-family: var(--mono); font-size: 10px; color: var(--good);">✓✓</span>
           </div>
           <div class="float-wa in">
-            <span data-i18n="float2.wa1">تم تأكيد حجزكِ يوم الجمعة ١٠:٠٠ ص. أشوفكِ هناك 🌸</span>
+            <span data-i18n="float2.wa1">تم تأكيد الحجز يوم الجمعة ١٠:٠٠ ص. بانتظاركم 🌸</span>
             <span class="float-wa-time">2:14 PM</span>
           </div>
           <div class="float-wa">
@@ -3031,7 +3028,7 @@ html[lang="ar"] .mobile-menu a {
 <!-- PROOF STRIP -->
 <section class="proof-strip">
   <div class="container-wide">
-    <div class="proof-label" data-i18n="proof.label">صُمِّمت بالتعاون مع صالونات وعيادات في</div>
+    <div class="proof-label" data-i18n="proof.label">مصمَّم للأعمال في</div>
     <div class="proof-grid">
       <div class="item">
         <span data-i18n="proof.1">الرياض</span>
@@ -3094,7 +3091,7 @@ html[lang="ar"] .mobile-menu a {
         <span data-i18n="ch.kicker">تعمل عبر كل القنوات</span>
       </span>
       <h2 class="h-section" style="margin-block-end: 22px;" data-i18n="ch.title">رابط واحد. <span class="it">كل المنصات.</span></h2>
-      <p class="lede-lg" style="margin-inline: auto; max-width: 56ch;" data-i18n="ch.lede">ضعي رابط حجوزات موعد في إنستغرام، تيك توك، سناب شات، فيسبوك، أو ملفكِ التجاري في جوجل — أو أرسليه على واتساب. نفس الرابط يعمل أينما تجدكِ عميلاتكِ.</p>
+      <p class="lede-lg" style="margin-inline: auto; max-width: 56ch;" data-i18n="ch.lede">ضعوا رابط الحجز في إنستغرام أو تيك توك أو سناب شات أو فيسبوك أو ملف نشاطكم على جوجل — أو أرسلوه على واتساب. الرابط نفسه يعمل أينما يجدكم عملاؤكم.</p>
     </div>
 
     <div style="display: flex; justify-content: center;" class="reveal d1">
@@ -3160,7 +3157,7 @@ html[lang="ar"] .mobile-menu a {
       </div>
     </div>
 
-    <p class="channels-foot reveal d3" data-i18n="ch.foot"><strong>لستِ مقيّدة بقناة واحدة.</strong> نوسم كل حجز بالمصدر الذي جاء منه — تعرفين أيّ منصة تجلب لكِ أكثر العميلات الدافعات، فتركّزين على ما يعمل.</p>
+    <p class="channels-foot reveal d3" data-i18n="ch.foot"><strong>لستم مقيّدين بقناة واحدة.</strong> رابط واحد لكل مكان، أو رابط مخصص لكل قناة من تبويب المشاركة.</p>
   </div>
 </section>
 
@@ -3169,23 +3166,23 @@ html[lang="ar"] .mobile-menu a {
   <div class="marquee">
     <span>
       <span data-i18n="m.1">صالونات</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.2">عيادات تجميل</span><span class="sep">✦</span>
-      <span data-i18n="m.3">مراكز سبا</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.4">طب الأسنان</span><span class="sep">✦</span>
-      <span data-i18n="m.5">جلدية</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.6">ملاعب بادل</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.2">صالونات حلاقة</span><span class="sep">✦</span>
+      <span data-i18n="m.3">عيادات تجميل</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.4">عيادات أسنان</span><span class="sep">✦</span>
+      <span data-i18n="m.5">مراكز سبا</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.6">مطاعم</span><span class="sep">✦</span>
       <span data-i18n="m.7">استوديوهات لياقة</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.8">مدربون شخصيون</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.8">عيادات جلدية</span><span class="sep">✦</span>
     </span>
     <span aria-hidden="true">
       <span data-i18n="m.1">صالونات</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.2">عيادات تجميل</span><span class="sep">✦</span>
-      <span data-i18n="m.3">مراكز سبا</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.4">طب الأسنان</span><span class="sep">✦</span>
-      <span data-i18n="m.5">جلدية</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.6">ملاعب بادل</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.2">صالونات حلاقة</span><span class="sep">✦</span>
+      <span data-i18n="m.3">عيادات تجميل</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.4">عيادات أسنان</span><span class="sep">✦</span>
+      <span data-i18n="m.5">مراكز سبا</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.6">مطاعم</span><span class="sep">✦</span>
       <span data-i18n="m.7">استوديوهات لياقة</span><span class="sep">✦</span>
-      <span class="it" data-i18n="m.8">مدربون شخصيون</span><span class="sep">✦</span>
+      <span class="it" data-i18n="m.8">عيادات جلدية</span><span class="sep">✦</span>
     </span>
   </div>
 </section>
@@ -3199,7 +3196,7 @@ html[lang="ar"] .mobile-menu a {
         <span class="dot"></span>
         <span data-i18n="feat.kicker">ما الذي يميز موعد</span>
       </span>
-      <h2 class="h-section" data-i18n="feat.title">ست خصائص <span class="it">لم تبنها</span> منصة حجوزات في الخليج.</h2>
+      <h2 class="h-section" data-i18n="feat.title">ست خصائص <span class="it">مبنية</span> لطريقة الحجز في الخليج.</h2>
       <p class="lede-lg" data-i18n="feat.lede">ست خصائص هندست من الصفر للطريقة التي تعمل بها الخدمات الخليجية فعلاً. لم تُكيَّف. ولم تُترجم.</p>
     </div>
 
@@ -3208,15 +3205,15 @@ html[lang="ar"] .mobile-menu a {
       <div class="feat feat-large reveal">
         <div class="feat-content">
           <span class="label" data-i18n="feat.1.label">٠١ — القناة</span>
-          <h3 data-i18n="feat.1.title">عملاؤكِ لا يحمّلون تطبيقاً. يكتبون رسالة.</h3>
-          <p data-i18n="feat.1.body">التأكيدات، التذكيرات، إعادة الجدولة — كل تواصل يصل عبر واتساب، بلغتهم. لا حسابات، لا كلمات مرور، لا احتكاك. الحجز يعيش في المحادثة المفتوحة عندهم أصلاً.</p>
+          <h3 data-i18n="feat.1.title">عملاؤكم لا يحمّلون تطبيقاً. يضغطون على رابطكم.</h3>
+          <p data-i18n="feat.1.body">صفحة الحجز موجودة حيث يتواجد عملاؤكم أصلاً — في سيرة إنستغرام، ومحادثات واتساب، وملفكم على جوجل. يختارون الخدمة والوقت ويحجزون في أقل من دقيقة، بلغتهم. بدون حسابات أو كلمات مرور. ولأي استفسار، ضغطة واحدة تفتح محادثة واتساب معكم. التأكيدات والتذكيرات التلقائية عبر واتساب قادمة قريباً.</p>
         </div>
         <div class="feat-visual">
           <div class="feat-wa">
             <div class="msg" data-i18n="feat.1.wa1">هاي، ممكن الجمعة ١٠ الصبح صبغة وقص؟</div>
             <div class="msg out">
-              <span data-i18n="feat.1.wa2">تم تأكيد الحجز الجمعة ١٠:٠٠ ص مع ميساء. راح نرسل تذكير يوم الخميس.</span>
-              <a class="pay-link" href="#" aria-label="Manage booking">
+              <span data-i18n="feat.1.wa2">الجمعة ١٠:٠٠ متاح ✓ الحجز من الرابط يأخذ ٣٠ ثانية 👇</span>
+              <a class="pay-link" href="#" aria-label="Booking page">
                 <span class="pl-icon">
                   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <rect x="3" y="4" width="18" height="18" rx="2"/>
@@ -3226,13 +3223,13 @@ html[lang="ar"] .mobile-menu a {
                   </svg>
                 </span>
                 <span class="pl-meta">
-                  <span class="pl-title" data-i18n="feat.1.paytitle">تعديل أو إلغاء</span>
-                  <span class="pl-url">book.mawid.ai/r/k7f9</span>
+                  <span class="pl-title" data-i18n="feat.1.paytitle">الحجز في صالون رشا</span>
+                  <span class="pl-url">mawid.ai/book/salon-rasha</span>
                 </span>
               </a>
               <span class="time">2:14 PM ✓✓</span>
             </div>
-            <div class="msg" data-i18n="feat.1.wa3">تمام — أشوفكِ يوم الجمعة 🌸</div>
+            <div class="msg" data-i18n="feat.1.wa3">تم — حجزت للجمعة 🌸</div>
             <div class="typing"><span></span><span></span><span></span></div>
           </div>
         </div>
@@ -3243,7 +3240,7 @@ html[lang="ar"] .mobile-menu a {
         <div class="feat-content">
           <span class="label" data-i18n="feat.2.label">٠٢ — التقويم</span>
           <h3 data-i18n="feat.2.title">هجري وميلادي، جنباً إلى جنب.</h3>
-          <p data-i18n="feat.2.body">أم القرى الرسمي للسعودية، فلكي للإمارات وقطر والكويت. أعياد العيد، اليوم الوطني، رمضان مكتشفة تلقائياً لكل دولة. صلاة الجمعة محجوبة افتراضياً للصالونات السعودية.</p>
+          <p data-i18n="feat.2.body">صفحة الحجز تعرض كل تاريخ بالهجري والميلادي جنباً إلى جنب. صباح الجمعة مغلق افتراضياً للأعمال في السعودية، وإضافة إجازات العيد واليوم الوطني ودوام رمضان تتم في ثوانٍ.</p>
         </div>
         <div class="feat-visual">
           <div class="feat-cal-mini">
@@ -3274,47 +3271,50 @@ html[lang="ar"] .mobile-menu a {
         </div>
       </div>
 
-      <!-- AI assistant -->
+      <!-- Team & schedules -->
       <div class="feat reveal d2">
         <div class="feat-content">
-          <span class="label" data-i18n="feat.3.label">٠٣ — الذكاء الاصطناعي</span>
-          <h3 data-i18n="feat.3.title">مساعد يفهم اللهجة، لا يترجمها.</h3>
-          <p data-i18n="feat.3.body">يرد بلهجة طبيعية — نجدية أو إماراتية أو قطرية أو كويتية. يتنبأ بحالات عدم الحضور قبل ٢٤ ساعة، ويعيد تنشيط من لم تحجز منذ شهرين. مدعوم بأحدث نماذج الذكاء الاصطناعي.</p>
+          <span class="label" data-i18n="feat.3.label">٠٣ — الفريق</span>
+          <h3 data-i18n="feat.3.title">يوم كل عضو في الفريق على شاشة واحدة.</h3>
+          <p data-i18n="feat.3.body">ساعات العمل والإجازات لكل موظف. أوقات الصلاة وصباح الجمعة محجوبة تلقائياً، فلا يرى العملاء إلا الأوقات المتاحة فعلاً.</p>
         </div>
         <div class="feat-visual">
-          <div class="feat-ai">
-            <div class="ai-head">
-              <span class="ic">⌥</span>
-              <span data-i18n="feat.3.head">موعد</span>
+          <div class="feat-cust">
+            <div class="cust-head">
+              <span data-i18n="feat.3.head">اليوم · الخميس</span>
+              <span class="cust-count">4</span>
             </div>
-            <div class="dialect-row" id="dialect-row">
-              <button class="dialect-chip active" data-dialect="najdi">
-                <span data-i18n="feat.3.d1">نجدي</span>
-                <span class="ar-name">نجدي</span>
-              </button>
-              <button class="dialect-chip" data-dialect="emirati">
-                <span data-i18n="feat.3.d2">إماراتي</span>
-                <span class="ar-name">إماراتي</span>
-              </button>
-              <button class="dialect-chip" data-dialect="qatari">
-                <span data-i18n="feat.3.d3">قطري</span>
-                <span class="ar-name">قطري</span>
-              </button>
-              <button class="dialect-chip" data-dialect="kuwaiti">
-                <span data-i18n="feat.3.d4">كويتي</span>
-                <span class="ar-name">كويتي</span>
-              </button>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.3.r1n">ميساء</div>
+                <div class="cust-sub" data-i18n="feat.3.r1s">١٠:٠٠ – ١٨:٠٠ · ٥ حجوزات</div>
+              </div>
+              <span class="cust-tag tag-reg" data-i18n="feat.3.tagOn">دوام</span>
             </div>
-            <div class="ai-msg">
-              <div class="who" data-i18n="feat.3.who1">العميلة</div>
-              <div id="ai-msg-customer">يا حياتي، أبي أغير موعدي اللي يوم الأربعاء لأي يوم ثاني الأسبوع الجاي 🙏</div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.3.r2n">حصة</div>
+                <div class="cust-sub" data-i18n="feat.3.r2s">إجازة</div>
+              </div>
+              <span class="cust-tag tag-lapsed" data-i18n="feat.3.tagOff">إجازة</span>
             </div>
-            <div class="ai-msg bot">
-              <div class="who" data-i18n="feat.3.who2">موعد</div>
-              <div id="ai-msg-bot">أكيد حياتي. متوفرنا الإثنين ٢:٣٠ م، الثلاثاء ١١:٠٠ ص، أو الخميس ٤:٠٠ م. أيهم يناسبك؟</div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.3.r3n">صلاة الظهر</div>
+                <div class="cust-sub" data-i18n="feat.3.r3s">١٢:٠٥ – ١٢:٣٥ · لا يمكن الحجز</div>
+              </div>
+              <span class="cust-tag tag-vip" data-i18n="feat.3.tagAuto">تلقائي</span>
+            </div>
+            <div class="cust-row">
+              <div class="cust-meta">
+                <div class="cust-name" data-i18n="feat.3.r4n">نورة</div>
+                <div class="cust-sub" data-i18n="feat.3.r4s">١٤:٠٠ – ٢٢:٠٠ · ٣ حجوزات</div>
+              </div>
+              <span class="cust-tag tag-reg" data-i18n="feat.3.tagOn">دوام</span>
             </div>
           </div>
         </div>
+      </div>
       </div>
 
       <!-- Bilingual -->
@@ -3322,7 +3322,7 @@ html[lang="ar"] .mobile-menu a {
         <div class="feat-content">
           <span class="label" data-i18n="feat.4.label">٠٤ — طبقة البيانات</span>
           <h3 data-i18n="feat.4.title">ثنائية اللغة في صميم النظام.</h3>
-          <p data-i18n="feat.4.body">كل خدمة، ملف موظفة، ورسالة قالب — قابلة للتأليف بالعربية والإنجليزية معاً. الواجهة تتبدل لكل مستخدمة على حدة. الاتجاه ينعكس بسلاسة. RTL مبني من الأساس.</p>
+          <p data-i18n="feat.4.body">كل خدمة وملف موظف يُكتب بالعربية والإنجليزية معاً. كل مستخدم يختار لغة واجهته، والاتجاه ينعكس بسلاسة. دعم RTL مبني من الأساس.</p>
         </div>
         <div class="feat-visual">
           <div class="feat-bilingual">
@@ -3343,14 +3343,14 @@ html[lang="ar"] .mobile-menu a {
       <!-- Customer database -->
       <div class="feat reveal d2">
         <div class="feat-content">
-          <span class="label" data-i18n="feat.5.label">٠٥ — العميلات</span>
-          <h3 data-i18n="feat.5.title">العروس من الربيع الماضي. والمنتظمة من قبل سنتين. كلهن في شاشة واحدة.</h3>
-          <p data-i18n="feat.5.body">موعد يحتفظ بسجل قابل للبحث لكل عميلة حجزت يوماً — تاريخ الزيارات، الموظفة المفضلة، عدد مرات الغياب، آخر زيارة. فريقكِ يتعامل مع كل زائرة كأنه يتذكرها بالاسم، لأن النظام يتذكر.</p>
+          <span class="label" data-i18n="feat.5.label">٠٥ — العملاء</span>
+          <h3 data-i18n="feat.5.title">كل عميل حجز لديكم يوماً، في شاشة واحدة.</h3>
+          <p data-i18n="feat.5.body">موعد يحتفظ بسجل قابل للبحث لكل من يحجز لديكم — الزيارات، وعدد مرات الغياب، وآخر زيارة، والملاحظات. فريقكم يستقبل العملاء العائدين كأنهم يعرفونهم، لأن النظام يتذكر.</p>
         </div>
         <div class="feat-visual">
           <div class="feat-cust">
             <div class="cust-head">
-              <span data-i18n="feat.5.head">العميلات</span>
+              <span data-i18n="feat.5.head">العملاء</span>
               <span class="cust-count">2,840</span>
             </div>
             <div class="cust-row">
@@ -3365,7 +3365,7 @@ html[lang="ar"] .mobile-menu a {
                 <div class="cust-name" data-i18n="feat.5.c2n">حصة المطيري</div>
                 <div class="cust-sub" data-i18n="feat.5.c2s">٤ زيارات · آخرها ٩ مايو</div>
               </div>
-              <span class="cust-tag tag-reg" data-i18n="feat.5.tagReg">منتظمة</span>
+              <span class="cust-tag tag-reg" data-i18n="feat.5.tagReg">منتظم</span>
             </div>
             <div class="cust-row">
               <div class="cust-meta">
@@ -3379,36 +3379,36 @@ html[lang="ar"] .mobile-menu a {
                 <div class="cust-name" data-i18n="feat.5.c4n">نورة العتيبي</div>
                 <div class="cust-sub" data-i18n="feat.5.c4s">آخر زيارة قبل ٤ أشهر</div>
               </div>
-              <span class="cust-tag tag-lapsed" data-i18n="feat.5.tagLapsed">متغيّبة</span>
+              <span class="cust-tag tag-lapsed" data-i18n="feat.5.tagLapsed">متوقف</span>
             </div>
-            <div class="cust-more" data-i18n="feat.5.more">+ ٢,٨٣٦ أخريات</div>
+            <div class="cust-more" data-i18n="feat.5.more">+ ٢٬٨٣٦ آخرون</div>
           </div>
         </div>
       </div>
 
-      <!-- Vertical templates — large -->
+      <!-- Business types — large -->
       <div class="feat feat-large reveal d1">
         <div class="feat-content">
-          <span class="label" data-i18n="feat.6.label">٠٦ — قوالب القطاعات</span>
-          <h3 data-i18n="feat.6.title">قالب الصالون يعرف معادلات الصبغة. قالب العيادة يعرف نماذج ما قبل العلاج.</h3>
-          <p data-i18n="feat.6.body">أدوات الحجز العامة تجبركِ على إعداد كل شيء بنفسكِ. موعد يأتي بقوالب تعرف قطاعكِ: الصالونات تأتي مع تتبع معادلات الصبغة وتفضيلات المصففات، العيادات تأتي مع نماذج الموافقة وتاريخ المريض، ملاعب البادل تأتي مع مطابقة الشركاء وحجز المعدات. تعدّين عملكِ في دقائق، لا أيام.</p>
+          <span class="label" data-i18n="feat.6.label">٠٦ — أنواع الأعمال</span>
+          <h3 data-i18n="feat.6.title">في الصالون يُحجز المختص، وفي المطعم الطاولة، وفي العيادة الموعد.</h3>
+          <p data-i18n="feat.6.body">اختاروا نوع نشاطكم عند التسجيل، وموعد يضبط طريقة الحجز تلقائياً: الصالونات والسبا تحصل على قائمة خدمات واختيار المختص، والمطاعم على عدد الأشخاص وسعة الطاولات، والعيادات على مواعيد بسيطة. إعداد في دقائق لا أيام.</p>
         </div>
         <div class="feat-visual">
           <div class="vt-grid">
             <div class="vt-card">
-              <div class="vt-head" data-i18n="feat.6.t1">صالون · معادلة الصبغة</div>
+              <div class="vt-head" data-i18n="feat.6.t1">صالون · خدمة + مختص</div>
               <div class="vt-rows">
-                <div class="vt-row"><span class="vt-l" data-i18n="feat.6.t1a">الأساس</span><span class="vt-r">Wella 7N + 6%</span></div>
-                <div class="vt-row"><span class="vt-l" data-i18n="feat.6.t1b">الهايلايت</span><span class="vt-r">L'Oréal 9.21</span></div>
-                <div class="vt-row"><span class="vt-l" data-i18n="feat.6.t1c">الجلوس</span><span class="vt-r">Redken Shades</span></div>
+                <div class="vt-row"><span class="vt-l" data-i18n="feat.6.t1a">الخدمة</span><span class="vt-r" data-i18n="feat.6.t1av">صبغة + قص</span></div>
+                <div class="vt-row"><span class="vt-l" data-i18n="feat.6.t1b">المختص</span><span class="vt-r" data-i18n="feat.6.t1bv">ميساء</span></div>
+                <div class="vt-row"><span class="vt-l" data-i18n="feat.6.t1c">الموعد</span><span class="vt-r" data-i18n="feat.6.t1cv">الجمعة ١٠:٠٠</span></div>
               </div>
             </div>
             <div class="vt-card">
-              <div class="vt-head" data-i18n="feat.6.t2">عيادة · ما قبل العلاج</div>
+              <div class="vt-head" data-i18n="feat.6.t2">مطعم · حجز طاولة</div>
               <div class="vt-rows">
-                <div class="vt-check"><span class="vt-box done"></span><span data-i18n="feat.6.t2a">نموذج الحساسية مكتمل</span></div>
-                <div class="vt-check"><span class="vt-box done"></span><span data-i18n="feat.6.t2b">التاريخ المرضي مراجَع</span></div>
-                <div class="vt-check"><span class="vt-box"></span><span class="vt-pending" data-i18n="feat.6.t2c">موافقة الصور قيد الانتظار</span></div>
+                <div class="vt-check"><span class="vt-box done"></span><span data-i18n="feat.6.t2a">٤ أشخاص</span></div>
+                <div class="vt-check"><span class="vt-box done"></span><span data-i18n="feat.6.t2b">سعة الطاولات متاحة</span></div>
+                <div class="vt-check"><span class="vt-box"></span><span class="vt-pending" data-i18n="feat.6.t2c">ملاحظة: الجلسة الخارجية، عيد ميلاد</span></div>
               </div>
             </div>
           </div>
@@ -3428,7 +3428,7 @@ html[lang="ar"] .mobile-menu a {
         <span data-i18n="prev.kicker">داخل المنتج</span>
       </span>
       <h2 class="h-section" data-i18n="prev.title">واجهة واحدة. <span class="it">لغتان.</span> تقويمان.</h2>
-      <p class="lede-lg" data-i18n="prev.lede">كل تفصيلة من الواجهة الإدارية تعمل في اتجاهين، وأي تاريخ يُعرَض بالميلادي والهجري معاً. هكذا يبدو شكل الجدول الأسبوعي الفعلي عند صالوناتنا التجريبية.</p>
+      <p class="lede-lg" data-i18n="prev.lede">كل شاشة في لوحة الإدارة تعمل بالعربية والإنجليزية، من اليمين ومن اليسار، والتواريخ تظهر بالميلادي والهجري معاً. الأرقام المعروضة للتوضيح.</p>
     </div>
 
     <div class="preview-frame reveal d1">
@@ -3443,29 +3443,24 @@ html[lang="ar"] .mobile-menu a {
             <div class="av"></div>
             <div class="meta">
               <div class="nm" data-i18n="prev.org">صالون رشا</div>
-              <div class="sub" data-i18n="prev.org_sub">٣ فروع · السعودية</div>
+              <div class="sub" data-i18n="prev.org_sub">الرياض · خطة الاستوديو</div>
             </div>
           </div>
           <span class="hp-section-label" data-i18n="prev.s1">العمليات</span>
           <div class="hp-item active"><span class="ic">⊞</span><span data-i18n="prev.cal">التقويم</span><span class="badge">42</span></div>
           <div class="hp-item"><span class="ic">≡</span><span data-i18n="prev.book">الحجوزات</span></div>
-          <div class="hp-item"><span class="ic">◐</span><span data-i18n="prev.cust">العميلات</span><span class="badge">2,840</span></div>
-          <div class="hp-item"><span class="ic">○</span><span data-i18n="prev.staff">الموظفات</span></div>
+          <div class="hp-item"><span class="ic">◐</span><span data-i18n="prev.cust">العملاء</span><span class="badge">2,840</span></div>
+          <div class="hp-item"><span class="ic">○</span><span data-i18n="prev.staff">الفريق</span></div>
           <span class="hp-section-label" data-i18n="prev.s2">الكتالوج</span>
           <div class="hp-item"><span class="ic">▦</span><span data-i18n="prev.svc">الخدمات</span></div>
-          <div class="hp-item"><span class="ic">⌖</span><span data-i18n="prev.pay">المدفوعات</span></div>
+          <div class="hp-item"><span class="ic">⌖</span><span data-i18n="prev.pay">الإعدادات</span></div>
           <div class="hp-item"><span class="ic">⊿</span><span data-i18n="prev.rep">التقارير</span></div>
         </aside>
         <main class="pv-main">
           <div class="hp-head">
             <div>
               <h3 data-i18n="prev.heading">أسبوع ١١ مايو ٢٠٢٦</h3>
-              <div class="breadcrumb" data-i18n="prev.bcrumb">٢٧ محرّم – ٣ صفر ١٤٤٨ · ١٤ خدمة · ٦ موظفات</div>
-            </div>
-            <div class="hp-toggle">
-              <button class="active" data-i18n="prev.both">الكل</button>
-              <button data-i18n="prev.greg">ميلادي</button>
-              <button data-i18n="prev.hijri">هجري</button>
+              <div class="breadcrumb" data-i18n="prev.bcrumb">٢٧ محرّم – ٣ صفر ١٤٤٨ · ١٤ خدمة · ٦ أعضاء في الفريق</div>
             </div>
           </div>
           <div class="hp-cal">
@@ -3494,18 +3489,18 @@ html[lang="ar"] .mobile-menu a {
           </div>
           <div class="pv-aside-card">
             <span class="label" data-i18n="prev.k2">نسبة عدم الحضور</span>
-            <div class="val">4.2%</div>
-            <div class="delta" data-i18n="prev.k2d">↓ ٦٠٪ قبل موعد</div>
+            <div class="val">4.8%</div>
+            <div class="delta" data-i18n="prev.k2d">٢ من ٤٢ حجزاً</div>
           </div>
           <div class="pv-aside-card">
-            <span class="label" data-i18n="prev.k3">العميلات المنتظمات</span>
+            <span class="label" data-i18n="prev.k3">العملاء العائدون</span>
             <div class="val">68%</div>
-            <div class="delta" data-i18n="prev.k3d">مقابل ٤١٪ قبل موعد</div>
+            <div class="delta" data-i18n="prev.k3d">من حجوزات الأسبوع</div>
           </div>
           <div class="pv-aside-card">
-            <span class="label" data-i18n="prev.k4">ردود الذكاء الاصطناعي</span>
-            <div class="val">312</div>
-            <div class="delta" data-i18n="prev.k4d">٨٧٪ تُحلّ بدون موظفة</div>
+            <span class="label" data-i18n="prev.k4">حجوزات أونلاين</span>
+            <div class="val">31</div>
+            <div class="delta" data-i18n="prev.k4d">من ٤٢ هذا الأسبوع</div>
           </div>
         </aside>
       </div>
@@ -3521,17 +3516,17 @@ html[lang="ar"] .mobile-menu a {
         <span class="kicker" style="margin-bottom: 24px;">
           <span class="num">04</span>
           <span class="dot"></span>
-          <span data-i18n="exp.kicker">تجربة العميلة</span>
+          <span data-i18n="exp.kicker">تجربة العميل</span>
         </span>
         <h2 class="h-section" data-i18n="exp.title">كيف <span class="it">يحجزون</span>.</h2>
-        <p class="lede-lg" data-i18n="exp.lede">عميلاتكِ ينتقلن من رابط إنستغرام إلى موعد مؤكد في أقل من ستين ثانية. موعد يدير تجربة الحجز، وسجل العميلات، ومتابعات الواتساب — والدفع يتم في الصالون كما اعتدتِ. نحن نأخذ اشتراك شهري ثابت. لا رسوم على المعاملات، لا اقتطاع، لا مفاجآت.</p>
+        <p class="lede-lg" data-i18n="exp.lede">عملاؤكم ينتقلون من رابط إنستغرام إلى موعد مؤكد في أقل من دقيقة. موعد يدير صفحة الحجز وسجل العملاء — والدفع يتم لديكم كما اعتدتم. اشتراك شهري ثابت: بدون رسوم على المعاملات، بدون عمولة، بدون مفاجآت.</p>
 
         <ul class="exp-steps">
           <li>
             <span class="step-num">01</span>
             <div>
-              <h4 data-i18n="exp.s1.h">يكتشفونكِ على إنستغرام.</h4>
-              <p data-i18n="exp.s1.b">رابط الحجز المخصص لكِ موجود في سيرة حسابكِ، وفي ستوريز، وفي رسائلكِ. ضغطة واحدة وهم على صفحتكِ — لا تحميل، لا تسجيل.</p>
+              <h4 data-i18n="exp.s1.h">يجدونكم على إنستغرام.</h4>
+              <p data-i18n="exp.s1.b">رابط الحجز الخاص بكم في سيرة حسابكم، وفي الستوريز، وفي رسائلكم. ضغطة واحدة ويصلون إلى صفحتكم — بدون تحميل أو تسجيل.</p>
             </div>
           </li>
           <li>
@@ -3544,15 +3539,15 @@ html[lang="ar"] .mobile-menu a {
           <li>
             <span class="step-num">03</span>
             <div>
-              <h4 data-i18n="exp.s3.h">يصلهن تذكير يحترم التقويم الهجري.</h4>
-              <p data-i18n="exp.s3.b">صباح الخميس، تذكير على واتساب يحوي التاريخ بالتقويمين وعنوان الصالون. صباح الجمعة، رسالة "أشوفكِ الساعة ١٠". عميلاتكِ يتوقفن عن النسيان لأن الصالون يتذكر عنهن.</p>
+              <h4 data-i18n="exp.s3.h">يصلكم الحجز فوراً.</h4>
+              <p data-i18n="exp.s3.b">يظهر الحجز في تقويمكم وتصلكم رسالة بريد لحظة تأكيده — باسم العميل والخدمة والوقت ورقم الجوال.</p>
             </div>
           </li>
           <li>
             <span class="step-num">04</span>
             <div>
-              <h4 data-i18n="exp.s4.h">واتساب يؤكد. للأبد.</h4>
-              <p data-i18n="exp.s4.b">التأكيد، التذكيرات، إعادة الجدولة، المتابعات — كلها على القناة التي يستخدمونها كل يوم. وأنتِ ترين كل حجز لحظة وصوله.</p>
+              <h4 data-i18n="exp.s4.h">استفسار؟ ضغطة واحدة إلى واتساب.</h4>
+              <p data-i18n="exp.s4.b">كل صفحة حجز فيها زر واتساب يفتح محادثة معكم مباشرة، فيسأل العملاء عبر القناة التي يستخدمونها يومياً. التأكيدات والتذكيرات التلقائية عبر واتساب قادمة قريباً.</p>
             </div>
           </li>
         </ul>
@@ -3574,9 +3569,9 @@ html[lang="ar"] .mobile-menu a {
                 </div>
               </div>
 
-              <h3 class="book-h" data-i18n="exp.bp.h">احجزي موعدكِ.</h3>
+              <h3 class="book-h" data-i18n="exp.bp.h">حجز موعد.</h3>
 
-              <span class="svc-label" data-i18n="exp.bp.svcs">اختاري الخدمة</span>
+              <span class="svc-label" data-i18n="exp.bp.svcs">اختيار الخدمة</span>
               <div class="svc-list">
                 <div class="svc-item selected">
                   <div>
@@ -3588,7 +3583,7 @@ html[lang="ar"] .mobile-menu a {
                 <div class="svc-item">
                   <div>
                     <div class="nm" data-i18n="exp.bp.s2">كيراتين برازيلي</div>
-                    <div class="meta" data-i18n="exp.bp.s2m">١٢٠ دقيقة · أي مصففة</div>
+                    <div class="meta" data-i18n="exp.bp.s2m">١٢٠ دقيقة · أي مختص</div>
                   </div>
                   <div class="price">SAR 450</div>
                 </div>
@@ -3606,10 +3601,9 @@ html[lang="ar"] .mobile-menu a {
               </button>
 
               <div class="book-pay-row">
-                <span data-i18n="exp.bp.confirm">تأكيد عبر</span>
+                <span data-i18n="exp.bp.confirm">للاستفسار:</span>
                 <span class="pay-tags">
                   <span class="pay-tag">WhatsApp</span>
-                  <span class="pay-tag">SMS</span>
                 </span>
               </div>
 
@@ -3624,7 +3618,7 @@ html[lang="ar"] .mobile-menu a {
             <span class="live"><span class="pulse"></span><span data-i18n="exp.wa.live">مباشر</span></span>
           </div>
           <div class="exp-wa-msg">
-            <span data-i18n="exp.wa.body">هلا سارة — تم تأكيد موعدكِ يوم الجمعة ١٠:٠٠ ص مع ميساء. أشوفكِ الجمعة 🌸</span>
+            <span data-i18n="exp.wa.body">هلا صالون رشا 🌸 أنا سارة حجزت توّي.</span>
             <span class="exp-wa-time">2:14 PM <span class="check">✓✓</span></span>
           </div>
         </div>
@@ -3642,8 +3636,8 @@ html[lang="ar"] .mobile-menu a {
         <span class="dot"></span>
         <span data-i18n="price.kicker">الأسعار</span>
       </span>
-      <h2 class="h-section" data-i18n="price.title">سعرٌ بسيط. <span class="it">يكبر معكِ.</span></h2>
-      <p class="lede-lg" data-i18n="price.lede">كل الخطط تشمل حجوزات غير محدودة، تأكيدات واتساب وبريد، عربي وإنجليزي بالكامل، وجدولة تراعي أوقات الصلاة. ابدئي بتجربة مجانية ٧ أيام — ألغي قبل التحويل ولن تُحاسَبي.</p>
+      <h2 class="h-section" data-i18n="price.title">سعرٌ بسيط. <span class="it">ينمو معكم.</span></h2>
+      <p class="lede-lg" data-i18n="price.lede">كل الخطط تشمل حجوزات غير محدودة، وتنبيهات الحجز بالبريد، وزر محادثة واتساب، والعربية والإنجليزية بالكامل، وجدولة تراعي أوقات الصلاة. تجربة مجانية ٧ أيام — والإلغاء قبل نهايتها بدون أي رسوم.</p>
     </div>
 
     <div class="currency-switch" data-currency-switcher hidden></div>
@@ -3651,27 +3645,27 @@ html[lang="ar"] .mobile-menu a {
     <div class="tier-grid reveal d1">
       <div class="tier">
         <div class="tier-name" data-i18n="price.t1.name">المبتدئ</div>
-        <p class="tier-tag" data-i18n="price.t1.tag">للمصفِّفات المنفردات والصالونات الصغيرة حتى ٣ موظفات. فرع واحد.</p>
+        <p class="tier-tag" data-i18n="price.t1.tag">للمختصين المستقلين والأعمال الصغيرة حتى ٣ موظفين. فرع واحد.</p>
         <div class="tier-price" data-plan="starter">
           <span class="currency">$</span>
           <span class="num">80</span>
           <span class="period" data-i18n="price.period">/ شهرياً</span>
         </div>
         <ul>
-          <li data-i18n="price.t1.f1">حتى ٣ موظفات</li>
+          <li data-i18n="price.t1.f1">حتى ٣ موظفين</li>
           <li data-i18n="price.t1.f2">حجوزات غير محدودة</li>
-          <li data-i18n="price.t1.f3">تأكيدات وتذكيرات على واتساب والبريد</li>
-          <li data-i18n="price.t1.f4">قاعدة بيانات العميلات</li>
+          <li data-i18n="price.t1.f3">تنبيهات الحجز بالبريد وزر واتساب</li>
+          <li data-i18n="price.t1.f4">قاعدة بيانات العملاء</li>
           <li data-i18n="price.t1.f5">عربي وإنجليزي بالكامل</li>
           <li data-i18n="price.t1.f6">تقويم هجري وميلادي</li>
         </ul>
-        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t1.cta">ابدئي تجربة ٧ أيام</span><span class="arrow">→</span></a>
+        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t1.cta">بدء تجربة ٧ أيام</span><span class="arrow">→</span></a>
       </div>
 
       <div class="tier featured">
-        <span class="tier-flag" data-i18n="price.featured">الأكثر طلباً</span>
+        <span class="tier-flag" data-i18n="price.featured">الخيار المقترح</span>
         <div class="tier-name" data-i18n="price.t2.name">الاحترافي</div>
-        <p class="tier-tag" data-i18n="price.t2.tag">للصالونات النامية حتى ١٠ موظفات. فرع واحد. الأكثر اختياراً.</p>
+        <p class="tier-tag" data-i18n="price.t2.tag">للأعمال النامية حتى ١٠ موظفين. فرع واحد.</p>
         <div class="tier-price" data-plan="professional">
           <span class="currency">$</span>
           <span class="num">140</span>
@@ -3679,19 +3673,19 @@ html[lang="ar"] .mobile-menu a {
         </div>
         <ul>
           <li data-i18n="price.t2.f1">كل ما في خطة المبتدئ</li>
-          <li data-i18n="price.t2.f2">حتى ١٠ موظفات وجداولهن</li>
-          <li data-i18n="price.t2.f3">جدولة متعددة المصفِّفات</li>
+          <li data-i18n="price.t2.f2">حتى ١٠ موظفين وجداولهم</li>
+          <li data-i18n="price.t2.f3">جدولة لعدة موظفين</li>
           <li data-i18n="price.t2.f4">جدولة تراعي أوقات الصلاة</li>
           <li data-i18n="price.t2.f5">تقارير الأداء</li>
           <li data-i18n="price.t2.f6">تخصيص لون وشعار العلامة</li>
           <li data-i18n="price.t2.f7">دعم ذو أولوية</li>
         </ul>
-        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t2.cta">ابدئي تجربة ٧ أيام</span><span class="arrow">→</span></a>
+        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t2.cta">بدء تجربة ٧ أيام</span><span class="arrow">→</span></a>
       </div>
 
       <div class="tier">
         <div class="tier-name" data-i18n="price.t3.name">الاستوديو</div>
-        <p class="tier-tag" data-i18n="price.t3.tag">للصالونات الكبيرة بعدد موظفات غير محدود. إعداد مخصَّص.</p>
+        <p class="tier-tag" data-i18n="price.t3.tag">للأعمال الكبيرة بعدد موظفين غير محدود. إعداد مخصَّص.</p>
         <div class="tier-price" data-plan="studio">
           <span class="currency">$</span>
           <span class="num">180</span>
@@ -3699,14 +3693,14 @@ html[lang="ar"] .mobile-menu a {
         </div>
         <ul>
           <li data-i18n="price.t3.f1">كل ما في خطة الاحترافي</li>
-          <li data-i18n="price.t3.f2">موظفات غير محدودات</li>
+          <li data-i18n="price.t3.f2">عدد موظفين غير محدود</li>
           <li data-i18n="price.t3.f3">تخصيص علامة صفحة الحجز</li>
           <li data-i18n="price.t3.f4">إعداد مخصَّص</li>
           <li data-i18n="price.t3.f5">تواصل مباشر مع المؤسِّسين</li>
           <li data-i18n="price.t3.f6">دعم واتساب ذو أولوية</li>
           <li data-i18n="price.t3.f7">أولوية في تجربة الميزات الجديدة</li>
         </ul>
-        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t3.cta">ابدئي تجربة ٧ أيام</span><span class="arrow">→</span></a>
+        <a href="https://app.mawid.ai/sign-up" class="btn"><span data-i18n="price.t3.cta">بدء تجربة ٧ أيام</span><span class="arrow">→</span></a>
       </div>
     </div>
 
@@ -3714,88 +3708,13 @@ html[lang="ar"] .mobile-menu a {
     <div class="enterprise reveal d2">
       <div class="enterprise-name">
         <span data-i18n="price.t4.name">المؤسسي</span>
-        <span class="pricing-tag" data-i18n="price.t4.tag">٥+ فروع · تكاملات مخصصة · اشتراك بالتفاوض</span>
+        <span class="pricing-tag" data-i18n="price.t4.tag">عدة فروع · تسعير حسب الحجم · تواصلوا معنا</span>
       </div>
-      <p class="enterprise-body" data-i18n="price.t4.body">للسلاسل الكبرى والامتيازات والمشغّلين متعددي العلامات. تكاملات مخصصة، بنية تحتية مخصصة، اتفاقيات مستوى خدمة، مراجعة أمنية، وفريق حساب مخصص. تسعير قابل للتفاوض حسب الحجم على الاشتراك ورسوم المنصة.</p>
+      <p class="enterprise-body" data-i18n="price.t4.body">للسلاسل والامتيازات والمشغّلين متعددي العلامات. دعم الفروع المتعددة ضمن خطتنا القادمة — تواصلوا معنا للوصول المبكر والإعداد المخصص والتسعير حسب الحجم.</p>
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">
-        <span data-i18n="price.t4.cta">تحدثي مع المبيعات</span>
+        <span data-i18n="price.t4.cta">التواصل مع المبيعات</span>
         <span class="arrow">→</span>
       </a>
-    </div>
-  </div>
-</section>
-
-<!-- ROADMAP / COMING SOON -->
-<style>
-  .roadmap-grid {
-    display: grid;
-    gap: 18px;
-    grid-template-columns: repeat(3, 1fr);
-    margin-block-start: 48px;
-  }
-  @media (max-width: 860px) { .roadmap-grid { grid-template-columns: 1fr; } }
-  .roadmap-item {
-    border: 1px solid var(--line);
-    background: var(--bg);
-    border-radius: 16px;
-    padding: 24px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-  }
-  .roadmap-when {
-    display: inline-flex;
-    align-items: center;
-    align-self: flex-start;
-    padding: 4px 10px;
-    border-radius: 999px;
-    background: var(--primary-tint, rgba(11, 61, 49, 0.08));
-    color: var(--primary, #0B3D31);
-    font-family: var(--body-ar);
-    font-size: 12px;
-    font-weight: 600;
-  }
-  .roadmap-title {
-    font-family: var(--display-ar);
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.4;
-    color: var(--ink);
-  }
-  .roadmap-body {
-    font-size: 14px;
-    line-height: 1.65;
-    color: var(--ink-mid);
-  }
-</style>
-<section class="section bg-soft" id="roadmap">
-  <div class="container-wide">
-    <div class="section-header center reveal">
-      <span class="kicker">
-        <span class="num">٠٤</span>
-        <span class="dot"></span>
-        <span data-i18n="roadmap.kicker">خارطة الطريق</span>
-      </span>
-      <h2 class="h-section" data-i18n="roadmap.title">ما هو <span class="it">القادم.</span></h2>
-      <p class="lede" data-i18n="roadmap.lede">نُركّز على تجربة المُشغِّلات أولاً. هذه الميزات في الطريق لصالوناتنا المشتركة.</p>
-    </div>
-
-    <div class="roadmap-grid reveal d1">
-      <article class="roadmap-item">
-        <span class="roadmap-when" data-i18n="roadmap.q3">الربع الثالث ٢٠٢٦</span>
-        <h3 class="roadmap-title" data-i18n="roadmap.r1.title">تحصيل التأمين وحماية من عدم الحضور</h3>
-        <p class="roadmap-body" data-i18n="roadmap.r1.body">تحصيل تأمين من العميلة وقت الحجز. يُحتفظ به حتى تأتي العميلة، ويُحوَّل لحسابكِ تلقائياً.</p>
-      </article>
-      <article class="roadmap-item">
-        <span class="roadmap-when" data-i18n="roadmap.q4">الربع الرابع ٢٠٢٦</span>
-        <h3 class="roadmap-title" data-i18n="roadmap.r2.title">دعم تعدُّد الفروع</h3>
-        <p class="roadmap-body" data-i18n="roadmap.r2.body">أديري فروعاً متعددة من حساب موعد واحد. قاعدة بيانات عميلات مشتركة، فريق وجداول وتقارير لكل فرع.</p>
-      </article>
-      <article class="roadmap-item">
-        <span class="roadmap-when" data-i18n="roadmap.q4">الربع الرابع ٢٠٢٦</span>
-        <h3 class="roadmap-title" data-i18n="roadmap.r3.title">توقُّع عدم الحضور بالذكاء الاصطناعي</h3>
-        <p class="roadmap-body" data-i18n="roadmap.r3.body">اكتشفي حالات عدم الحضور قبل وقوعها. تأكيد تلقائي عبر واتساب، حجز زائد آمن، وحماية إيراداتكِ.</p>
-      </article>
     </div>
   </div>
 </section>
@@ -3805,26 +3724,28 @@ html[lang="ar"] .mobile-menu a {
   <div class="container-wide">
     <div class="beta-grid">
       <div class="reveal">
-        <span class="kicker" data-i18n="beta.kicker">العمل معنا</span>
-        <h2 class="h-section" data-i18n="beta.title">لصالونات تأخذ نفسها على محمل الجد.</h2>
-        <p class="beta-lede" data-i18n="beta.body">موعد يدير الحجوزات، وتأكيدات الواتساب، وسجل العميلات لصالونات راقية في الرياض ودبي وأبوظبي والدوحة ومدينة الكويت. أخبرينا عن صالونكِ.</p>
+        <span class="kicker" data-i18n="beta.kicker">المساعدة في الإعداد</span>
+        <h2 class="h-section" data-i18n="beta.title">تفضّلون أن نجهّزه معكم؟</h2>
+        <p class="beta-lede" data-i18n="beta.body">أخبرونا عن نشاطكم وسنجهّز معكم الخدمات والفريق وساعات العمل — غالباً في مكالمة قصيرة واحدة. المؤسسون يردّون على كل رسالة.</p>
         <ul class="beta-perks">
           <li><span class="num">01</span><span data-i18n="beta.p1">إعداد كامل من فريقنا — لا أدلة مساعدة.</span></li>
-          <li><span class="num">02</span><span data-i18n="beta.p2">خدماتكِ وفريقكِ وسجلاتكِ ننقلها بأنفسنا.</span></li>
-          <li><span class="num">03</span><span data-i18n="beta.p3">دعم مباشر — تواصلي مع الفريق الذي بنى موعد.</span></li>
-          <li><span class="num">04</span><span data-i18n="beta.p4">تدريب ثنائي اللغة لكِ ولفريقكِ.</span></li>
-          <li><span class="num">05</span><span data-i18n="beta.p5">ميزات مخصصة بناءً على احتياجات الصالونات النشطة.</span></li>
+          <li><span class="num">02</span><span data-i18n="beta.p2">ننقل خدماتكم وفريقكم وسجلاتكم بأنفسنا.</span></li>
+          <li><span class="num">03</span><span data-i18n="beta.p3">دعم مباشر — من الفريق الذي بنى موعد نفسه.</span></li>
+          <li><span class="num">04</span><span data-i18n="beta.p4">تدريب بالعربية والإنجليزية لكم ولفريقكم.</span></li>
+          <li><span class="num">05</span><span data-i18n="beta.p5">ميزات مخصصة بناءً على احتياجات العملاء النشطين.</span></li>
         </ul>
       </div>
       <div class="beta-form reveal d1" id="beta-form">
         <form id="signup-form" novalidate>
+          <!-- Honeypot: hidden from people, filled by bots -->
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
           <div class="form-row">
-            <label for="biz" data-i18n="beta.f.biz">اسم الصالون</label>
+            <label for="biz" data-i18n="beta.f.biz">اسم النشاط</label>
             <input id="biz" name="business" required type="text" data-i18n-placeholder="beta.f.biz_ph" placeholder="صالون رشا" />
           </div>
           <div class="form-grid">
             <div class="form-row">
-              <label for="name" data-i18n="beta.f.name">اسمكِ</label>
+              <label for="name" data-i18n="beta.f.name">الاسم</label>
               <input id="name" name="name" required type="text" data-i18n-placeholder="beta.f.name_ph" placeholder="رشا الفهد" />
             </div>
             <div class="form-row">
@@ -3836,7 +3757,7 @@ html[lang="ar"] .mobile-menu a {
             <div class="form-row">
               <label for="country" data-i18n="beta.f.country">الدولة</label>
               <select id="country" name="country" required>
-                <option value="" data-i18n="beta.f.country_ph">اختاري الدولة</option>
+                <option value="" data-i18n="beta.f.country_ph">اختيار الدولة</option>
                 <option value="SA" data-i18n="beta.c.sa">السعودية</option>
                 <option value="AE" data-i18n="beta.c.ae">الإمارات</option>
                 <option value="QA" data-i18n="beta.c.qa">قطر</option>
@@ -3846,8 +3767,10 @@ html[lang="ar"] .mobile-menu a {
             <div class="form-row">
               <label for="vertical" data-i18n="beta.f.vert">القطاع</label>
               <select id="vertical" name="vertical" required>
-                <option value="" data-i18n="beta.f.vert_ph">اختاري القطاع</option>
+                <option value="" data-i18n="beta.f.vert_ph">اختيار القطاع</option>
                 <option value="salon" data-i18n="beta.v.salon">صالون / تجميل</option>
+                  <option value="barbershop" data-i18n="beta.v.barber">صالون حلاقة</option>
+                  <option value="restaurant" data-i18n="beta.v.restaurant">مطعم</option>
                 <option value="spa" data-i18n="beta.v.spa">سبا / عافية</option>
                 <option value="clinic" data-i18n="beta.v.clinic">عيادة تجميل</option>
                 <option value="dental" data-i18n="beta.v.dental">أسنان</option>
@@ -3867,25 +3790,26 @@ html[lang="ar"] .mobile-menu a {
             </span>
             <span class="trust-item">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 7l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-              <span data-i18n="beta.t3">أماكن محدودة</span>
+              <span data-i18n="beta.t3">إعداد بإشراف المؤسسين</span>
             </span>
           </div>
+          <p id="form-error" class="form-error" role="alert" hidden data-i18n="beta.f.error">حدث خطأ. يرجى المحاولة مجدداً، أو مراسلتنا على hello@mawid.ai.</p>
           <button type="submit" class="submit" id="submit-btn">
             <span class="submit-default">
-              <span data-i18n="beta.f.submit">احجزي مكانكِ</span>
+              <span data-i18n="beta.f.submit">طلب مكالمة إعداد</span>
               <span class="arrow" aria-hidden="true">→</span>
             </span>
             <span class="submit-loading" aria-hidden="true">
               <span class="spinner"></span>
-              <span data-i18n="beta.f.submitting">جاري الحجز…</span>
+              <span data-i18n="beta.f.submitting">جارٍ الإرسال…</span>
             </span>
           </button>
-          <p class="form-foot" data-i18n="beta.f.foot">سنتواصل معكِ عبر واتساب قريباً.</p>
+          <p class="form-foot" data-i18n="beta.f.foot">سنتواصل معكم عبر واتساب.</p>
         </form>
         <div class="form-success" id="form-success">
           <div class="form-success-mark">✓</div>
-          <h3 data-i18n="beta.s.title">سُجِّلتِ في القائمة.</h3>
-          <p data-i18n="beta.s.body">سيتواصل فريقنا معكِ عبر واتساب لترتيب جلسة إعداد قصيرة.</p>
+          <h3 data-i18n="beta.s.title">وصلنا طلبكم، شكراً.</h3>
+          <p data-i18n="beta.s.body">سنراسلكم عبر واتساب لترتيب مكالمة قصيرة.</p>
         </div>
       </div>
     </div>
@@ -3901,7 +3825,7 @@ html[lang="ar"] .mobile-menu a {
           <span class="logo-mark">م</span>
           <span data-i18n="brand">موعد</span>
         </div>
-        <p data-i18n="footer.about">منصة الحجوزات الأولى المصمَّمة للسوق الخليجي. عربية أولاً، تعمل عبر واتساب، تدعم التقويم الهجري، وتفهم ثقافة عملكِ.</p>
+        <p data-i18n="footer.about">منصة الحجوزات المصمَّمة للخليج. عربية أولاً، تدعم التقويم الهجري، ومبنية على طريقة حجز عملائكم الفعلية — عبر إنستغرام وواتساب.</p>
       </div>
       <div class="footer-col">
         <h5 data-i18n="footer.product">المنتج</h5>
@@ -3911,7 +3835,7 @@ html[lang="ar"] .mobile-menu a {
           <li><a href="/ar/clinics/" data-i18n="footer.forClinics">للعيادات</a></li>
           <li><a href="https://mawid.ai/book/salon-rasha?lang=ar" data-i18n="footer.demo">صفحة صالون نموذجي</a></li>
           <li><a href="/ar/pricing/" data-i18n="footer.pricing">الأسعار</a></li>
-          <li><a href="https://app.mawid.ai/sign-up" data-i18n="footer.beta">ابدئي تجربة مجانية</a></li>
+          <li><a href="https://app.mawid.ai/sign-up" data-i18n="footer.beta">بدء التجربة المجانية</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -3966,694 +3890,128 @@ html[lang="ar"] .mobile-menu a {
 </footer>
 
 <script>
-const I18N = {
-  en: {
-    "brand": "Mawid",
-    "nav.home": "Home",
-    "nav.product": "Product",
-    "nav.preview": "Preview",
-    "nav.experience": "Experience",
-    "nav.pricing": "Pricing",
-    "nav.about": "About",
-    "nav.contact": "Contact",
-    "cta.header": "Start free trial",
+/* Mawid homepage runtime. Copy is baked into the HTML (scripts/build.mjs),
+   so there is no translation step here. */
+(function () {
+  "use strict";
+  var isAr = document.documentElement.lang === "ar";
 
-    "ch.kicker": "Channel-agnostic",
-    "ch.title": "One link. <span class=\"it\">Every platform.</span>",
-    "ch.lede": "Drop your Mawid booking page into Instagram, TikTok, Snapchat, Facebook, or your Google business profile — or send it on WhatsApp. The same link works everywhere your customers actually find you.",
-    "ch.ig.name": "Instagram", "ch.ig.tag": "Bio link",
-    "ch.tt.name": "TikTok", "ch.tt.tag": "Bio link",
-    "ch.sn.name": "Snapchat", "ch.sn.tag": "Profile link",
-    "ch.fb.name": "Facebook", "ch.fb.tag": "Page link",
-    "ch.gg.name": "Google", "ch.gg.tag": "Business profile",
-    "ch.wa.name": "WhatsApp", "ch.wa.tag": "Direct share",
-    "ch.foot": "<strong>You're not locked into one funnel.</strong> Stamp every booking with where it came from — see which platforms send you the most paying customers, double down on what works.",
-
-    "hero.tag": "متاح",
-    "hero.tag_body": "السعودية · الإمارات · قطر · الكويت",
-    "hero.kicker": "Booking infrastructure for the Gulf",
-    "hero.title": "Booking, <span class=\"it\">built</span><br/>for the Gulf.",
-    "hero.lede": "Mawid is the Arabic-first, AI-powered booking platform for premium service businesses across Saudi Arabia, the UAE, Qatar, and Kuwait. WhatsApp-native. Hijri-aware. Built for how your customers actually book.",
-    "hero.cta": "ابدئي تجربة مجانية",
-    "hero.cta2": "شاهدي العرض",
-    "hero.cta_meta": "صالونات الخليج تعمل بموعد",
-    "hero.trust1": "تجربة مجانية — ألغي قبل التحويل ولن تُحاسبي",
-    "hero.trust2": "إلغاء في أي وقت — بدون عقد طويل الأمد",
-    "hero.trust3": "دعم مباشر من الفريق الذي بنى المنصة",
-    "hero.s1.l": "Markets",
-    "hero.s2.l": "Languages", "hero.s2.v": "Arabic <span class=\"accent\">·</span> English",
-    "hero.s3.l": "Calendars", "hero.s3.v": "Hijri <span class=\"accent\">·</span> Gregorian",
-    "hero.s4.l": "Channel", "hero.s4.v": "WhatsApp <span class=\"accent\">·</span> SMS",
-
-    "hp.org": "Salon Rasha",
-    "hp.org_sub": "Riyadh · Studio plan",
-    "hp.s1": "Operations", "hp.s2": "Catalog",
-    "hp.cal": "Calendar", "hp.book": "Bookings", "hp.cust": "Customers", "hp.staff": "Staff",
-    "hp.svc": "Services", "hp.pay": "Payments", "hp.rep": "Reports",
-    "hp.heading": "This week's schedule",
-    "hp.bcrumb": "27 Muharram – 3 Safar · May 11 – 17, 2026",
-    "hp.both": "Both", "hp.greg": "Gregorian", "hp.hijri": "Hijri",
-    "hp.e1": "Maysa · Color", "hp.e2": "3 bookings", "hp.e3": "Hessa · Keratin",
-    "hp.e4": "5 bookings", "hp.e5": "Fri · evening", "hp.e6": "6 bookings", "hp.e7": "Fully booked",
-
-    "cal.sun": "Sun", "cal.mon": "Mon", "cal.tue": "Tue",
-    "cal.wed": "Wed", "cal.thu": "Thu", "cal.fri": "Fri", "cal.sat": "Sat",
-
-    "float1.head": "New booking", "float1.live": "live",
-    "float1.r1": "Sara Al-Fahad", "float1.r1v": "Color + Cut",
-    "float1.r2": "Friday · 10:00 AM",
-    "float1.r3": "Status",
-    "float1.r3v": "Confirmed ✓",
-    "float2.head": "WhatsApp · Salon",
-    "float2.wa1": "Your Friday 10:00 AM appointment is confirmed. We'll see you then 🌸",
-    "float2.wa2": "Thank you ❤️",
-
-    "proof.label": "Designed in collaboration with salons & clinics across",
-    "proof.1": "Riyadh", "proof.2": "Jeddah", "proof.3": "Dubai", "proof.4": "Doha", "proof.5": "Kuwait City",
-
-    "m.1": "Salons", "m.2": "Cosmetic clinics", "m.3": "Spas", "m.4": "Dental",
-    "m.5": "Dermatology", "m.6": "Padel courts", "m.7": "Fitness studios", "m.8": "Personal trainers",
-
-    "feat.kicker": "Why Mawid",
-    "feat.title": "Six things <span class=\"it\">no booking platform</span> in the GCC has built.",
-    "feat.lede": "Six things engineered ground-up for how Gulf service businesses actually run. None of them retrofitted. None of them translated.",
-    "feat.1.label": "01 — Channel",
-    "feat.1.title": "Your customers don't install an app. They send a message.",
-    "feat.1.body": "Confirmations, reminders, rescheduling — every touchpoint flows through WhatsApp, in their language. No accounts. No passwords. No friction. The booking lives in the conversation they already have open.",
-    "feat.1.wa1": "Hey, can I get Friday 10am for color + cut?",
-    "feat.1.wa2": "Confirmed for Friday 10:00 AM with Maysa. We'll send a reminder Thursday.",
-    "feat.1.paytitle": "Reschedule or cancel",
-    "feat.1.wa3": "Perfect — see you Friday 🌸",
-    "feat.2.label": "02 — Calendar",
-    "feat.2.title": "Hijri and Gregorian, side by side.",
-    "feat.2.body": "Umm al-Qura for KSA, astronomical for UAE/QA/KW. Eid, National Day, Ramadan auto-detected per country. Friday morning blocked by default for Saudi salons. Prayer times respected.",
-    "feat.3.label": "03 — AI",
-    "feat.3.title": "An assistant that speaks the dialect, not translates it.",
-    "feat.3.body": "Replies in natural Najdi, Emirati, Qatari, or Kuwaiti dialect. Predicts no-shows 24h ahead. Reactivates customers who haven't booked in two months. Powered by frontier AI.",
-    "feat.3.head": "Mawid AI",
-    "feat.3.who1": "Customer", "feat.3.who2": "Mawid AI",
-    "feat.3.d1": "Najdi", "feat.3.d2": "Emirati", "feat.3.d3": "Qatari", "feat.3.d4": "Kuwaiti",
-    "feat.4.label": "04 — Data layer",
-    "feat.4.title": "Bilingual at the row level.",
-    "feat.4.body": "Every service, staff bio, and message template can be authored in Arabic, English, or both. UI language is per-user. Direction flips smoothly. RTL is built-in, not retrofitted.",
-    "feat.4.svc_en": "Brazilian Keratin", "feat.4.dur_en": "90 min · SAR 450",
-    "feat.5.label": "05 — Customers",
-    "feat.5.title": "The bride from last spring. The regular from two years ago. All on one screen.",
-    "feat.5.body": "Mawid keeps a searchable record of every customer who's ever booked — visit history, preferred staff, no-show count, last seen. Your team treats every walk-in like they remember her by name, because the system does.",
-    "feat.5.head": "Customers",
-    "feat.5.c1n": "Sara Al-Fahad",
-    "feat.5.c1s": "12 visits · prefers Maysa",
-    "feat.5.c2n": "Hessa Al-Mutairi",
-    "feat.5.c2s": "4 visits · last May 9",
-    "feat.5.c3n": "Maysa Al-Saud",
-    "feat.5.c3s": "24 visits · every month",
-    "feat.5.c4n": "Nora Al-Otaibi",
-    "feat.5.c4s": "Last seen 4 months ago",
-    "feat.5.tagVip": "VIP",
-    "feat.5.tagVip2": "VIP",
-    "feat.5.tagReg": "Regular",
-    "feat.5.tagLapsed": "Lapsed",
-    "feat.5.more": "+ 2,836 more",
-    "feat.6.label": "06 — Vertical templates",
-    "feat.6.title": "The salon template knows about color formulas. The clinic template knows about pre-treatment forms.",
-    "feat.6.body": "Generic booking tools force you to configure everything. Mawid ships with vertical-aware templates: salons get hair color tracking and stylist preferences out of the box, clinics get consent forms and patient histories, padel courts get partner-matching and equipment booking. Set up your business in minutes, not days.",
-    "feat.6.t1": "Salon · color formula",
-    "feat.6.t1a": "Base", "feat.6.t1b": "Highlights", "feat.6.t1c": "Gloss",
-    "feat.6.t2": "Clinic · pre-treatment",
-    "feat.6.t2a": "Allergies form completed",
-    "feat.6.t2b": "Medical history reviewed",
-    "feat.6.t2c": "Photo consent pending",
-
-    "prev.kicker": "Inside the product",
-    "prev.title": "One interface. <span class=\"it\">Two languages.</span> Two calendars.",
-    "prev.lede": "Every detail of the admin console works in both directions, and any date renders in Gregorian and Hijri at once. This is what an actual week looks like for one of our beta salons.",
-    "prev.org": "Salon Rasha", "prev.org_sub": "3 locations · KSA",
-    "prev.s1": "Operations", "prev.s2": "Catalog",
-    "prev.cal": "Calendar", "prev.book": "Bookings", "prev.cust": "Customers", "prev.staff": "Staff",
-    "prev.svc": "Services", "prev.pay": "Payments", "prev.rep": "Reports",
-    "prev.heading": "Week of May 11, 2026",
-    "prev.bcrumb": "27 Muharram – 3 Safar 1448 · 14 services · 6 staff",
-    "prev.both": "Both", "prev.greg": "Gregorian", "prev.hijri": "Hijri",
-    "prev.e1": "Maysa · Color", "prev.e2": "3 bookings", "prev.e3": "Hessa · Keratin",
-    "prev.e4": "5 bookings", "prev.e5": "Fri · evening", "prev.e6": "6 bookings", "prev.e7": "Fully booked",
-    "prev.k1": "This week", "prev.k1d": "↑ 12% vs last week",
-    "prev.k2": "No-show rate", "prev.k2d": "↓ 60% vs pre-Mawid",
-    "prev.k3": "Returning customers", "prev.k3d": "vs 41% pre-Mawid",
-    "prev.k4": "AI replies sent", "prev.k4d": "87% resolved without staff",
-
-    "exp.kicker": "Customer experience",
-    "exp.title": "How <span class=\"it\">they</span> book.",
-    "exp.lede": "Your customers go from Instagram link to confirmed appointment in under sixty seconds. Mawid runs the booking experience, the customer history, and the WhatsApp follow-ups — payment happens at your salon, the way it always has. We charge a flat monthly subscription. No transaction fees, no platform cuts, no surprises.",
-    "exp.s1.h": "They find you on Instagram.",
-    "exp.s1.b": "Your branded booking link sits in your bio, in your stories, and in your DMs. One tap and they're on your page — no download, no signup.",
-    "exp.s2.h": "They book in their language.",
-    "exp.s2.b": "Your public booking page renders in Arabic or English based on their phone. Services, prices, calendar — all of it bilingual at the row level.",
-    "exp.s3.h": "They get a Hijri-aware reminder.",
-    "exp.s3.b": "Thursday morning, a WhatsApp reminder with the date in both calendars and the salon's location. Friday morning, a \"see you at 10\" nudge. Your customers stop forgetting because the salon remembers for them.",
-    "exp.s4.h": "WhatsApp confirms. Forever.",
-    "exp.s4.b": "Confirmation, reminders, reschedules, follow-ups — all on the channel they use every day. You see every booking the moment it lands.",
-    "exp.bp.name": "Salon Rasha",
-    "exp.bp.loc": "Riyadh · Olaya",
-    "exp.bp.h": "Book your appointment.",
-    "exp.bp.svcs": "Choose a service",
-    "exp.bp.s1": "Color + Cut", "exp.bp.s1m": "90 min · with Maysa",
-    "exp.bp.s2": "Brazilian Keratin", "exp.bp.s2m": "120 min · any stylist",
-    "exp.bp.s3": "Manicure + Pedicure", "exp.bp.s3m": "60 min · with Hessa",
-    "exp.bp.cta": "Continue · Friday, 10:00 AM",
-    "exp.bp.confirm": "Confirmation sent via",
-    "exp.bp.foot": "Powered by Mawid",
-    "exp.wa.head": "WhatsApp · Salon Rasha",
-    "exp.wa.live": "live",
-    "exp.wa.body": "Hi Sara — your appointment is confirmed for Friday 10:00 AM with Maysa. We'll see you then 🌸",
-
-    "price.kicker": "Pricing",
-    "price.title": "Simple price. <span class=\"it\">Scales with you.</span>",
-    "price.lede": "Every plan includes unlimited bookings, WhatsApp + email confirmations, bilingual Arabic / English, and prayer-time aware scheduling. Start with a 7-day free trial — cancel anytime before it converts and you're not charged.",
-    "price.period": "/ month",
-    "price.featured": "Most popular",
-    "price.t1.name": "Starter",
-    "price.t1.tag": "Solo stylists and small salons up to 3 staff. Single location.",
-    "price.t1.fee": "",
-    "price.t1.f1": "Up to 3 staff members",
-    "price.t1.f2": "Unlimited bookings",
-    "price.t1.f3": "WhatsApp & email confirmations",
-    "price.t1.f4": "Customer database",
-    "price.t1.f5": "Bilingual Arabic / English",
-    "price.t1.f6": "Hijri + Gregorian calendars",
-    "price.t1.cta": "Start 7-day trial",
-    "price.t2.name": "Professional",
-    "price.t2.tag": "Growing salons up to 10 staff. Single location. Most chosen tier.",
-    "price.t2.fee": "",
-    "price.t2.f1": "Everything in Starter",
-    "price.t2.f2": "Up to 10 staff & schedules",
-    "price.t2.f3": "Multi-stylist scheduling",
-    "price.t2.f4": "Prayer-time aware scheduling",
-    "price.t2.f5": "Performance reports",
-    "price.t2.f6": "Custom brand color & logo",
-    "price.t2.f7": "Priority support",
-    "price.t2.cta": "Start 7-day trial",
-    "price.t3.name": "Studio",
-    "price.t3.tag": "Larger salons with unlimited staff. Hands-on onboarding.",
-    "price.t3.fee": "",
-    "price.t3.f1": "Everything in Professional",
-    "price.t3.f2": "Unlimited staff",
-    "price.t3.f3": "Custom booking page branding",
-    "price.t3.f4": "Dedicated onboarding",
-    "price.t3.f5": "Direct line to the founders",
-    "price.t3.f6": "Priority WhatsApp support",
-    "price.t3.f7": "First in line for new features",
-    "price.t3.cta": "Start 7-day trial",
-    "price.t4.name": "Enterprise",
-    "price.t4.tag": "5+ locations · Custom integrations · Negotiated subscription",
-    "price.t4.body": "Large chains, franchises, and multi-brand operators. Custom integrations, dedicated infrastructure, SLAs, security review, and a named account team. Volume-negotiated pricing on subscription and platform fees.",
-    "price.t4.cta": "Talk to sales",
-
-    "beta.kicker": "العمل معنا",
-    "beta.title": "لصالونات تأخذ نفسها على محمل الجد.",
-    "beta.body": "موعد يدير الحجوزات، وتأكيدات الواتساب، وسجل العميلات لصالونات راقية في الرياض ودبي وأبوظبي والدوحة ومدينة الكويت. أخبرينا عن صالونكِ.",
-    "beta.p1": "إعداد كامل من فريقنا — لا أدلة مساعدة.",
-    "beta.p2": "خدماتكِ وفريقكِ وسجلاتكِ ننقلها بأنفسنا.",
-    "beta.p3": "دعم مباشر — تواصلي مع الفريق الذي بنى موعد.",
-    "beta.p4": "تدريب ثنائي اللغة لكِ ولفريقكِ.",
-    "beta.p5": "ميزات مخصصة بناءً على احتياجات الصالونات النشطة.",
-    "beta.f.biz": "Salon name", "beta.f.biz_ph": "Salon Rasha",
-    "beta.f.name": "Your name", "beta.f.name_ph": "Rasha Al-Fahad",
-    "beta.f.phone": "WhatsApp number",
-    "beta.f.country": "Country", "beta.f.country_ph": "Select country",
-    "beta.c.sa": "Saudi Arabia", "beta.c.ae": "United Arab Emirates", "beta.c.qa": "Qatar", "beta.c.kw": "Kuwait",
-    "beta.f.vert": "Business type", "beta.f.vert_ph": "Select your vertical",
-    "beta.v.salon": "Salon / Beauty", "beta.v.spa": "Spa / Wellness", "beta.v.clinic": "Cosmetic clinic",
-    "beta.v.dental": "Dental", "beta.v.fitness": "Fitness / Padel", "beta.v.other": "Other",
-    "beta.f.submit": "Reserve my spot",
-    "beta.f.submitting": "Reserving…",
-    "beta.t1": "Free trial",
-    "beta.t2": "Cancel anytime",
-    "beta.t3": "Limited spots",
-    "beta.f.foot": "We'll be in touch via WhatsApp shortly.",
-    "beta.s.title": "You're on the list.",
-    "beta.s.body": "Our team will be in touch via WhatsApp to schedule a short onboarding call.",
-
-    "roadmap.kicker": "Roadmap",
-    "roadmap.title": "What's <span class=\"it\">coming next.</span>",
-    "roadmap.lede": "We're laser-focused on the operator experience first. Here's what's already on the way for our paying salons.",
-    "roadmap.q3": "Q3 2026",
-    "roadmap.q4": "Q4 2026",
-    "roadmap.r1.title": "Deposit collection & no-show protection",
-    "roadmap.r1.body": "Collect a deposit online when the customer books. Held until they show up, refunded to your account automatically.",
-    "roadmap.r2.title": "Multi-location support",
-    "roadmap.r2.body": "Run multiple branches from one Mawid account. Shared customer database, location-specific staff, schedules, and reports.",
-    "roadmap.r3.title": "AI-powered no-show prediction",
-    "roadmap.r3.body": "Catch likely no-shows before they happen. Auto-confirm by WhatsApp, overbook safely, protect your revenue.",
-    "footer.about": "The booking platform built for the Gulf. Arabic-first, WhatsApp-native, Hijri-aware, and culturally fluent in how your business actually runs.",
-    "footer.product": "Product", "footer.features": "Features", "footer.demo": "See a sample salon",
-    "footer.pricing": "Pricing", "footer.beta": "ابدئي تجربة مجانية",
-    "footer.markets": "Markets", "footer.ksa": "Saudi Arabia", "footer.uae": "United Arab Emirates",
-    "footer.qatar": "Qatar", "footer.kuwait": "Kuwait",
-    "footer.company": "Company", "footer.sales": "Talk to sales",
-    "footer.aboutlink": "About", "footer.contactlink": "Contact",
-    "footer.privacy": "Privacy", "footer.terms": "Terms", "footer.refund": "Refunds",
-    "footer.copy": "© 2026 Mawid · Made for the Gulf"
-  },
-
-  ar: {
-    "brand": "موعد",
-    "nav.home": "الرئيسية",
-    "nav.product": "المنتج",
-    "nav.preview": "العرض",
-    "nav.experience": "التجربة",
-    "nav.pricing": "الأسعار",
-    "nav.about": "من نحن",
-    "nav.contact": "تواصل",
-    "cta.header": "ابدئي تجربة مجانية",
-
-    "ch.kicker": "تعمل عبر كل القنوات",
-    "ch.title": "رابط واحد. <span class=\"it\">كل المنصات.</span>",
-    "ch.lede": "ضعي رابط حجوزات موعد في إنستغرام، تيك توك، سناب شات، فيسبوك، أو ملفكِ التجاري في جوجل — أو أرسليه على واتساب. نفس الرابط يعمل أينما تجدكِ عميلاتكِ.",
-    "ch.ig.name": "إنستغرام", "ch.ig.tag": "رابط البايو",
-    "ch.tt.name": "تيك توك", "ch.tt.tag": "رابط البايو",
-    "ch.sn.name": "سناب شات", "ch.sn.tag": "رابط الملف",
-    "ch.fb.name": "فيسبوك", "ch.fb.tag": "رابط الصفحة",
-    "ch.gg.name": "جوجل", "ch.gg.tag": "ملف النشاط",
-    "ch.wa.name": "واتساب", "ch.wa.tag": "مشاركة مباشرة",
-    "ch.foot": "<strong>لستِ مقيّدة بقناة واحدة.</strong> نوسم كل حجز بالمصدر الذي جاء منه — تعرفين أيّ منصة تجلب لكِ أكثر العميلات الدافعات، فتركّزين على ما يعمل.",
-
-    "hero.tag": "متاح",
-    "hero.tag_body": "السعودية · الإمارات · قطر · الكويت",
-    "hero.kicker": "البنية التحتية للحجوزات في الخليج",
-    "hero.title": "الحجوزات،<br/>مصمَّمة <span class=\"it\">للخليج</span>.",
-    "hero.lede": "موعد منصة الحجوزات الأولى المصممة خصيصاً للسوق الخليجي. عربية أولاً، تعمل عبر واتساب أصلاً، وتدعم التقويم الهجري. مبنية على الطريقة التي تحجز بها عميلاتكِ فعلاً.",
-    "hero.cta": "ابدئي تجربة مجانية",
-    "hero.cta2": "شاهدي العرض",
-    "hero.cta_meta": "صالونات الخليج تعمل بموعد",
-    "hero.trust1": "تجربة مجانية — ألغي قبل التحويل ولن تُحاسبي",
-    "hero.trust2": "إلغاء في أي وقت — بدون عقد طويل الأمد",
-    "hero.trust3": "دعم مباشر من الفريق الذي بنى المنصة",
-    "hero.s1.l": "الأسواق",
-    "hero.s2.l": "اللغات", "hero.s2.v": "العربية <span class=\"accent\">·</span> الإنجليزية",
-    "hero.s3.l": "التقاويم", "hero.s3.v": "هجري <span class=\"accent\">·</span> ميلادي",
-    "hero.s4.l": "القناة", "hero.s4.v": "واتساب <span class=\"accent\">·</span> SMS",
-
-    "hp.org": "صالون رشا",
-    "hp.org_sub": "الرياض · خطة الاستوديو",
-    "hp.s1": "العمليات", "hp.s2": "الكتالوج",
-    "hp.cal": "التقويم", "hp.book": "الحجوزات", "hp.cust": "العميلات", "hp.staff": "الموظفات",
-    "hp.svc": "الخدمات", "hp.pay": "المدفوعات", "hp.rep": "التقارير",
-    "hp.heading": "جدول هذا الأسبوع",
-    "hp.bcrumb": "٢٧ محرّم – ٣ صفر · ١١ – ١٧ مايو ٢٠٢٦",
-    "hp.both": "الكل", "hp.greg": "ميلادي", "hp.hijri": "هجري",
-    "hp.e1": "ميساء · صبغة", "hp.e2": "٣ مواعيد", "hp.e3": "حصة · كيراتين",
-    "hp.e4": "٥ مواعيد", "hp.e5": "جمعة · مساءً", "hp.e6": "٦ مواعيد", "hp.e7": "يوم مكتمل",
-
-    "cal.sun": "الأحد", "cal.mon": "الإثنين", "cal.tue": "الثلاثاء",
-    "cal.wed": "الأربعاء", "cal.thu": "الخميس", "cal.fri": "الجمعة", "cal.sat": "السبت",
-
-    "float1.head": "حجز جديد", "float1.live": "مباشر",
-    "float1.r1": "سارة الفهد", "float1.r1v": "صبغة + قص",
-    "float1.r2": "الجمعة، ١٠:٠٠ ص",
-    "float1.r3": "الحالة",
-    "float1.r3v": "تم التأكيد ✓",
-    "float2.head": "واتساب · الصالون",
-    "float2.wa1": "تم تأكيد حجزكِ يوم الجمعة ١٠:٠٠ ص. أشوفكِ هناك 🌸",
-    "float2.wa2": "شكراً ❤️",
-
-    "proof.label": "صُمِّمت بالتعاون مع صالونات وعيادات في",
-    "proof.1": "الرياض", "proof.2": "جدة", "proof.3": "دبي", "proof.4": "الدوحة", "proof.5": "الكويت",
-
-    "m.1": "صالونات", "m.2": "عيادات تجميل", "m.3": "مراكز سبا", "m.4": "طب الأسنان",
-    "m.5": "جلدية", "m.6": "ملاعب بادل", "m.7": "استوديوهات لياقة", "m.8": "مدربون شخصيون",
-
-    "feat.kicker": "ما الذي يميز موعد",
-    "feat.title": "ست خصائص <span class=\"it\">لم تبنها</span> منصة حجوزات في الخليج.",
-    "feat.lede": "ست خصائص هندست من الصفر للطريقة التي تعمل بها الخدمات الخليجية فعلاً. لم تُكيَّف. ولم تُترجم.",
-    "feat.1.label": "٠١ — القناة",
-    "feat.1.title": "عملاؤكِ لا يحمّلون تطبيقاً. يكتبون رسالة.",
-    "feat.1.body": "التأكيدات، التذكيرات، إعادة الجدولة — كل تواصل يصل عبر واتساب، بلغتهم. لا حسابات، لا كلمات مرور، لا احتكاك. الحجز يعيش في المحادثة المفتوحة عندهم أصلاً.",
-    "feat.1.wa1": "هاي، ممكن الجمعة ١٠ الصبح صبغة وقص؟",
-    "feat.1.wa2": "تم تأكيد الحجز الجمعة ١٠:٠٠ ص مع ميساء. راح نرسل تذكير يوم الخميس.",
-    "feat.1.paytitle": "تعديل أو إلغاء",
-    "feat.1.wa3": "تمام — أشوفكِ يوم الجمعة 🌸",
-    "feat.2.label": "٠٢ — التقويم",
-    "feat.2.title": "هجري وميلادي، جنباً إلى جنب.",
-    "feat.2.body": "أم القرى الرسمي للسعودية، فلكي للإمارات وقطر والكويت. أعياد العيد، اليوم الوطني، رمضان مكتشفة تلقائياً لكل دولة. صلاة الجمعة محجوبة افتراضياً للصالونات السعودية.",
-    "feat.3.label": "٠٣ — الذكاء الاصطناعي",
-    "feat.3.title": "مساعد يفهم اللهجة، لا يترجمها.",
-    "feat.3.body": "يرد بلهجة طبيعية — نجدية أو إماراتية أو قطرية أو كويتية. يتنبأ بحالات عدم الحضور قبل ٢٤ ساعة، ويعيد تنشيط من لم تحجز منذ شهرين. مدعوم بأحدث نماذج الذكاء الاصطناعي.",
-    "feat.3.head": "موعد",
-    "feat.3.who1": "العميلة", "feat.3.who2": "موعد",
-    "feat.3.d1": "نجدي", "feat.3.d2": "إماراتي", "feat.3.d3": "قطري", "feat.3.d4": "كويتي",
-    "feat.4.label": "٠٤ — طبقة البيانات",
-    "feat.4.title": "ثنائية اللغة في صميم النظام.",
-    "feat.4.body": "كل خدمة، ملف موظفة، ورسالة قالب — قابلة للتأليف بالعربية والإنجليزية معاً. الواجهة تتبدل لكل مستخدمة على حدة. الاتجاه ينعكس بسلاسة. RTL مبني من الأساس.",
-    "feat.4.svc_en": "كيراتين برازيلي", "feat.4.dur_en": "٩٠ دقيقة · ٤٥٠ ر.س",
-    "feat.5.label": "٠٥ — العميلات",
-    "feat.5.title": "العروس من الربيع الماضي. والمنتظمة من قبل سنتين. كلهن في شاشة واحدة.",
-    "feat.5.body": "موعد يحتفظ بسجل قابل للبحث لكل عميلة حجزت يوماً — تاريخ الزيارات، الموظفة المفضلة، عدد مرات الغياب، آخر زيارة. فريقكِ يتعامل مع كل زائرة كأنه يتذكرها بالاسم، لأن النظام يتذكر.",
-    "feat.5.head": "العميلات",
-    "feat.5.c1n": "سارة الفهد",
-    "feat.5.c1s": "١٢ زيارة · تفضّل ميساء",
-    "feat.5.c2n": "حصة المطيري",
-    "feat.5.c2s": "٤ زيارات · آخرها ٩ مايو",
-    "feat.5.c3n": "ميساء آل سعود",
-    "feat.5.c3s": "٢٤ زيارة · شهرياً",
-    "feat.5.c4n": "نورة العتيبي",
-    "feat.5.c4s": "آخر زيارة قبل ٤ أشهر",
-    "feat.5.tagVip": "VIP",
-    "feat.5.tagVip2": "VIP",
-    "feat.5.tagReg": "منتظمة",
-    "feat.5.tagLapsed": "متغيّبة",
-    "feat.5.more": "+ ٢,٨٣٦ أخريات",
-    "feat.6.label": "٠٦ — قوالب القطاعات",
-    "feat.6.title": "قالب الصالون يعرف معادلات الصبغة. قالب العيادة يعرف نماذج ما قبل العلاج.",
-    "feat.6.body": "أدوات الحجز العامة تجبركِ على إعداد كل شيء بنفسكِ. موعد يأتي بقوالب تعرف قطاعكِ: الصالونات تأتي مع تتبع معادلات الصبغة وتفضيلات المصففات، العيادات تأتي مع نماذج الموافقة وتاريخ المريض، ملاعب البادل تأتي مع مطابقة الشركاء وحجز المعدات. تعدّين عملكِ في دقائق، لا أيام.",
-    "feat.6.t1": "صالون · معادلة الصبغة",
-    "feat.6.t1a": "الأساس", "feat.6.t1b": "الهايلايت", "feat.6.t1c": "الجلوس",
-    "feat.6.t2": "عيادة · ما قبل العلاج",
-    "feat.6.t2a": "نموذج الحساسية مكتمل",
-    "feat.6.t2b": "التاريخ المرضي مراجَع",
-    "feat.6.t2c": "موافقة الصور قيد الانتظار",
-
-    "prev.kicker": "داخل المنتج",
-    "prev.title": "واجهة واحدة. <span class=\"it\">لغتان.</span> تقويمان.",
-    "prev.lede": "كل تفصيلة من الواجهة الإدارية تعمل في اتجاهين، وأي تاريخ يُعرَض بالميلادي والهجري معاً. هكذا يبدو شكل الجدول الأسبوعي الفعلي عند صالوناتنا التجريبية.",
-    "prev.org": "صالون رشا", "prev.org_sub": "٣ فروع · السعودية",
-    "prev.s1": "العمليات", "prev.s2": "الكتالوج",
-    "prev.cal": "التقويم", "prev.book": "الحجوزات", "prev.cust": "العميلات", "prev.staff": "الموظفات",
-    "prev.svc": "الخدمات", "prev.pay": "المدفوعات", "prev.rep": "التقارير",
-    "prev.heading": "أسبوع ١١ مايو ٢٠٢٦",
-    "prev.bcrumb": "٢٧ محرّم – ٣ صفر ١٤٤٨ · ١٤ خدمة · ٦ موظفات",
-    "prev.both": "الكل", "prev.greg": "ميلادي", "prev.hijri": "هجري",
-    "prev.e1": "ميساء · صبغة", "prev.e2": "٣ مواعيد", "prev.e3": "حصة · كيراتين",
-    "prev.e4": "٥ مواعيد", "prev.e5": "جمعة · مساءً", "prev.e6": "٦ مواعيد", "prev.e7": "يوم مكتمل",
-    "prev.k1": "هذا الأسبوع", "prev.k1d": "↑ ١٢٪ مقارنة بالأسبوع الماضي",
-    "prev.k2": "نسبة عدم الحضور", "prev.k2d": "↓ ٦٠٪ قبل موعد",
-    "prev.k3": "العميلات المنتظمات", "prev.k3d": "مقابل ٤١٪ قبل موعد",
-    "prev.k4": "ردود الذكاء الاصطناعي", "prev.k4d": "٨٧٪ تُحلّ بدون موظفة",
-
-    "exp.kicker": "تجربة العميلة",
-    "exp.title": "كيف <span class=\"it\">يحجزون</span>.",
-    "exp.lede": "عميلاتكِ ينتقلن من رابط إنستغرام إلى موعد مؤكد في أقل من ستين ثانية. موعد يدير تجربة الحجز، وسجل العميلات، ومتابعات الواتساب — والدفع يتم في الصالون كما اعتدتِ. نحن نأخذ اشتراك شهري ثابت. لا رسوم على المعاملات، لا اقتطاع، لا مفاجآت.",
-    "exp.s1.h": "يكتشفونكِ على إنستغرام.",
-    "exp.s1.b": "رابط الحجز المخصص لكِ موجود في سيرة حسابكِ، وفي ستوريز، وفي رسائلكِ. ضغطة واحدة وهم على صفحتكِ — لا تحميل، لا تسجيل.",
-    "exp.s2.h": "يحجزون بلغتهم.",
-    "exp.s2.b": "صفحة الحجز العامة تظهر بالعربية أو الإنجليزية حسب جوّالاتهم. الخدمات، الأسعار، التقويم — كلها ثنائية اللغة في صميم النظام.",
-    "exp.s3.h": "يصلهن تذكير يحترم التقويم الهجري.",
-    "exp.s3.b": "صباح الخميس، تذكير على واتساب يحوي التاريخ بالتقويمين وعنوان الصالون. صباح الجمعة، رسالة \"أشوفكِ الساعة ١٠\". عميلاتكِ يتوقفن عن النسيان لأن الصالون يتذكر عنهن.",
-    "exp.s4.h": "واتساب يؤكد. للأبد.",
-    "exp.s4.b": "التأكيد، التذكيرات، إعادة الجدولة، المتابعات — كلها على القناة التي يستخدمونها كل يوم. وأنتِ ترين كل حجز لحظة وصوله.",
-    "exp.bp.name": "صالون رشا",
-    "exp.bp.loc": "الرياض · العليا",
-    "exp.bp.h": "احجزي موعدكِ.",
-    "exp.bp.svcs": "اختاري الخدمة",
-    "exp.bp.s1": "صبغة + قص", "exp.bp.s1m": "٩٠ دقيقة · مع ميساء",
-    "exp.bp.s2": "كيراتين برازيلي", "exp.bp.s2m": "١٢٠ دقيقة · أي مصففة",
-    "exp.bp.s3": "مانيكير + باديكير", "exp.bp.s3m": "٦٠ دقيقة · مع حصة",
-    "exp.bp.cta": "متابعة · الجمعة، ١٠:٠٠ ص",
-    "exp.bp.confirm": "تأكيد عبر",
-    "exp.bp.foot": "بدعم من موعد",
-    "exp.wa.head": "واتساب · صالون رشا",
-    "exp.wa.live": "مباشر",
-    "exp.wa.body": "هلا سارة — تم تأكيد موعدكِ يوم الجمعة ١٠:٠٠ ص مع ميساء. أشوفكِ الجمعة 🌸",
-
-    "price.kicker": "الأسعار",
-    "price.title": "سعرٌ بسيط. <span class=\"it\">يكبر معكِ.</span>",
-    "price.lede": "كل الخطط تشمل حجوزات غير محدودة، تأكيدات واتساب وبريد، عربي وإنجليزي بالكامل، وجدولة تراعي أوقات الصلاة. ابدئي بتجربة مجانية ٧ أيام — ألغي قبل التحويل ولن تُحاسَبي.",
-    "price.period": "/ شهرياً",
-    "price.featured": "الأكثر طلباً",
-    "price.t1.name": "المبتدئ",
-    "price.t1.tag": "للمصفِّفات المنفردات والصالونات الصغيرة حتى ٣ موظفات. فرع واحد.",
-    "price.t1.fee": "",
-    "price.t1.f1": "حتى ٣ موظفات",
-    "price.t1.f2": "حجوزات غير محدودة",
-    "price.t1.f3": "تأكيدات وتذكيرات على واتساب والبريد",
-    "price.t1.f4": "قاعدة بيانات العميلات",
-    "price.t1.f5": "عربي وإنجليزي بالكامل",
-    "price.t1.f6": "تقويم هجري وميلادي",
-    "price.t1.cta": "ابدئي تجربة ٧ أيام",
-    "price.t2.name": "الاحترافي",
-    "price.t2.tag": "للصالونات النامية حتى ١٠ موظفات. فرع واحد. الأكثر اختياراً.",
-    "price.t2.fee": "",
-    "price.t2.f1": "كل ما في خطة المبتدئ",
-    "price.t2.f2": "حتى ١٠ موظفات وجداولهن",
-    "price.t2.f3": "جدولة متعددة المصفِّفات",
-    "price.t2.f4": "جدولة تراعي أوقات الصلاة",
-    "price.t2.f5": "تقارير الأداء",
-    "price.t2.f6": "تخصيص لون وشعار العلامة",
-    "price.t2.f7": "دعم ذو أولوية",
-    "price.t2.cta": "ابدئي تجربة ٧ أيام",
-    "price.t3.name": "الاستوديو",
-    "price.t3.tag": "للصالونات الكبيرة بعدد موظفات غير محدود. إعداد مخصَّص.",
-    "price.t3.fee": "",
-    "price.t3.f1": "كل ما في خطة الاحترافي",
-    "price.t3.f2": "موظفات غير محدودات",
-    "price.t3.f3": "تخصيص علامة صفحة الحجز",
-    "price.t3.f4": "إعداد مخصَّص",
-    "price.t3.f5": "تواصل مباشر مع المؤسِّسين",
-    "price.t3.f6": "دعم واتساب ذو أولوية",
-    "price.t3.f7": "أولوية في تجربة الميزات الجديدة",
-    "price.t3.cta": "ابدئي تجربة ٧ أيام",
-    "price.t4.name": "المؤسسي",
-    "price.t4.tag": "٥+ فروع · تكاملات مخصصة · اشتراك بالتفاوض",
-    "price.t4.body": "للسلاسل الكبرى والامتيازات والمشغّلين متعددي العلامات. تكاملات مخصصة، بنية تحتية مخصصة، اتفاقيات مستوى خدمة، مراجعة أمنية، وفريق حساب مخصص. تسعير قابل للتفاوض حسب الحجم على الاشتراك ورسوم المنصة.",
-    "price.t4.cta": "تحدثي مع المبيعات",
-
-    "beta.kicker": "العمل معنا",
-    "beta.title": "لصالونات تأخذ نفسها على محمل الجد.",
-    "beta.body": "موعد يدير الحجوزات، وتأكيدات الواتساب، وسجل العميلات لصالونات راقية في الرياض ودبي وأبوظبي والدوحة ومدينة الكويت. أخبرينا عن صالونكِ.",
-    "beta.p1": "إعداد كامل من فريقنا — لا أدلة مساعدة.",
-    "beta.p2": "خدماتكِ وفريقكِ وسجلاتكِ ننقلها بأنفسنا.",
-    "beta.p3": "دعم مباشر — تواصلي مع الفريق الذي بنى موعد.",
-    "beta.p4": "تدريب ثنائي اللغة لكِ ولفريقكِ.",
-    "beta.p5": "ميزات مخصصة بناءً على احتياجات الصالونات النشطة.",
-    "beta.f.biz": "اسم الصالون", "beta.f.biz_ph": "صالون رشا",
-    "beta.f.name": "اسمكِ", "beta.f.name_ph": "رشا الفهد",
-    "beta.f.phone": "رقم الواتساب",
-    "beta.f.country": "الدولة", "beta.f.country_ph": "اختاري الدولة",
-    "beta.c.sa": "السعودية", "beta.c.ae": "الإمارات", "beta.c.qa": "قطر", "beta.c.kw": "الكويت",
-    "beta.f.vert": "القطاع", "beta.f.vert_ph": "اختاري القطاع",
-    "beta.v.salon": "صالون / تجميل", "beta.v.spa": "سبا / عافية", "beta.v.clinic": "عيادة تجميل",
-    "beta.v.dental": "أسنان", "beta.v.fitness": "لياقة / بادل", "beta.v.other": "قطاع آخر",
-    "beta.f.submit": "احجزي مكانكِ",
-    "beta.f.submitting": "جاري الحجز…",
-    "beta.t1": "تجربة مجانية",
-    "beta.t2": "إلغاء في أي وقت",
-    "beta.t3": "أماكن محدودة",
-    "beta.f.foot": "سنتواصل معكِ عبر واتساب قريباً.",
-    "beta.s.title": "سُجِّلتِ في القائمة.",
-    "beta.s.body": "سيتواصل فريقنا معكِ عبر واتساب لترتيب جلسة إعداد قصيرة.",
-
-    "roadmap.kicker": "خارطة الطريق",
-    "roadmap.title": "ما هو <span class=\"it\">القادم.</span>",
-    "roadmap.lede": "نُركّز على تجربة المُشغِّلات أولاً. هذه الميزات في الطريق لصالوناتنا المشتركة.",
-    "roadmap.q3": "الربع الثالث ٢٠٢٦",
-    "roadmap.q4": "الربع الرابع ٢٠٢٦",
-    "roadmap.r1.title": "تحصيل التأمين وحماية من عدم الحضور",
-    "roadmap.r1.body": "تحصيل تأمين من العميلة وقت الحجز. يُحتفظ به حتى تأتي العميلة، ويُحوَّل لحسابكِ تلقائياً.",
-    "roadmap.r2.title": "دعم تعدُّد الفروع",
-    "roadmap.r2.body": "أديري فروعاً متعددة من حساب موعد واحد. قاعدة بيانات عميلات مشتركة، فريق وجداول وتقارير لكل فرع.",
-    "roadmap.r3.title": "توقُّع عدم الحضور بالذكاء الاصطناعي",
-    "roadmap.r3.body": "اكتشفي حالات عدم الحضور قبل وقوعها. تأكيد تلقائي عبر واتساب، حجز زائد آمن، وحماية إيراداتكِ.",
-    "footer.about": "منصة الحجوزات الأولى المصمَّمة للسوق الخليجي. عربية أولاً، تعمل عبر واتساب، تدعم التقويم الهجري، وتفهم ثقافة عملكِ.",
-    "footer.product": "المنتج", "footer.features": "المميزات", "footer.demo": "صفحة صالون نموذجي",
-    "footer.pricing": "الأسعار", "footer.beta": "ابدئي تجربة مجانية",
-    "footer.markets": "الأسواق", "footer.ksa": "السعودية", "footer.uae": "الإمارات",
-    "footer.qatar": "قطر", "footer.kuwait": "الكويت",
-    "footer.company": "الشركة", "footer.sales": "تحدثي مع المبيعات",
-    "footer.aboutlink": "من نحن", "footer.contactlink": "تواصل",
-    "footer.privacy": "الخصوصية", "footer.terms": "الشروط", "footer.refund": "الاسترداد",
-    "footer.copy": "© ٢٠٢٦ موعد · صُنع للخليج"
-  }
-};
-
-const STORAGE_KEY = "mawid.locale";
-function detectInitial() {
-  /* URL is the single source of truth. /ar/* → ar, anything else → en */
-  return window.location.pathname.indexOf("/ar/") !== -1 ? "ar" : "en";
-}
-function applyLocale(locale) {
-  const dict = I18N[locale];
-  const html = document.documentElement;
-  html.setAttribute("lang", locale);
-  html.setAttribute("dir", locale === "ar" ? "rtl" : "ltr");
-  document.querySelectorAll("[data-i18n]").forEach((el) => {
-    const key = el.getAttribute("data-i18n");
-    if (dict[key] != null) el.innerHTML = dict[key];
-  });
-  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
-    const key = el.getAttribute("data-i18n-placeholder");
-    if (dict[key] != null) el.setAttribute("placeholder", dict[key]);
-  });
-  document.querySelectorAll("[data-lang]").forEach((btn) => {
-    btn.setAttribute("aria-pressed", btn.getAttribute("data-lang") === locale ? "true" : "false");
-  });
-  document.title = locale === "ar"
-    ? "موعد · Mawid — منصة الحجوزات الخليجية"
-    : "Mawid · Booking, built for the Gulf.";
-  localStorage.setItem(STORAGE_KEY, locale);
-}
-document.querySelectorAll("[data-lang]").forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    /* Anchors handle navigation themselves; don't flash the wrong locale */
-    if (btn.tagName === "A" && btn.getAttribute("href")) return;
-    applyLocale(btn.getAttribute("data-lang"));
-  });
-});
-applyLocale(detectInitial());
-
-const header = document.getElementById("header");
-const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 12);
-window.addEventListener("scroll", onScroll, { passive: true });
-onScroll();
-
-const io = new IntersectionObserver(
-  (entries) => entries.forEach((entry) => {
-    if (entry.isIntersecting) { entry.target.classList.add("in"); io.unobserve(entry.target); }
-  }),
-  { threshold: 0.1, rootMargin: "0px 0px -60px 0px" }
-);
-document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
-
-const form = document.getElementById("signup-form");
-const success = document.getElementById("form-success");
-const submitBtn = document.getElementById("submit-btn");
-
-form.addEventListener("submit", async (e) => {
-  e.preventDefault();
-
-  // Basic validation
-  const required = form.querySelectorAll("[required]");
-  let firstInvalid = null;
-  required.forEach((el) => {
-    if (!el.value.trim()) {
-      el.style.borderColor = "#E07070";
-      if (!firstInvalid) firstInvalid = el;
-    } else {
-      el.style.borderColor = "";
-    }
-  });
-  if (firstInvalid) {
-    firstInvalid.focus();
-    firstInvalid.scrollIntoView({ behavior: "smooth", block: "center" });
-    return;
-  }
-
-  // Loading state
-  submitBtn.classList.add("is-loading");
-  submitBtn.disabled = true;
-
-  const data = Object.fromEntries(new FormData(form).entries());
-  data.locale = document.documentElement.getAttribute("lang");
-  data.timestamp = new Date().toISOString();
-  data.referrer = document.referrer || "direct";
-  data.utm_source = new URLSearchParams(window.location.search).get("utm_source") || "";
-  data.utm_medium = new URLSearchParams(window.location.search).get("utm_medium") || "";
-  data.utm_campaign = new URLSearchParams(window.location.search).get("utm_campaign") || "";
-
-  // TODO: wire to backend endpoint
-  // try {
-  //   await fetch("/api/beta", {
-  //     method: "POST",
-  //     headers: { "Content-Type": "application/json" },
-  //     body: JSON.stringify(data)
-  //   });
-  // } catch (err) { console.error(err); }
-
-  console.log("[mawid beta signup]", data);
-
-  // Simulate brief delay so loading state is visible
-  await new Promise((r) => setTimeout(r, 600));
-
-  form.style.display = "none";
-  success.classList.add("shown");
-
-  // Conversion tracking hooks
-  if (typeof gtag === "function") {
-    gtag("event", "beta_signup", { method: "form", country: data.country, vertical: data.vertical });
-  }
-  if (typeof fbq === "function") {
-    fbq("track", "Lead", { content_name: "Beta signup", content_category: data.vertical });
-  }
-});
-
-// Reset border color on input
-form.querySelectorAll("input, select").forEach((el) => {
-  el.addEventListener("input", () => { el.style.borderColor = ""; });
-  el.addEventListener("change", () => { el.style.borderColor = ""; });
-});
-
-document.querySelectorAll(".hp-toggle button, .preview .hp-toggle button").forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btn.parentElement.querySelectorAll("button").forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-  });
-});
-
-/* Dialect switcher — authentic per-dialect examples */
-const DIALECTS = {
-  najdi: {
-    customer: "يا حياتي، أبي أغيّر موعدي اللي يوم الأربعاء لأي يوم ثاني الأسبوع الياي 🙏",
-    bot: "أكيد حياتي. متوفر عندنا الإثنين ٢:٣٠ العصر، الثلاثاء ١١:٠٠ الصبح، أو الخميس ٤:٠٠ العصر. أيهم يناسبكِ؟"
-  },
-  emirati: {
-    customer: "هلا حبيبتي، أبا أغيّر الموعد مالي اللي يوم الأربعاء لأي يوم ثاني السبوع الياي 🙏",
-    bot: "أكيد حبيبتي. عندنا الإثنين الساعة ٢:٣٠ العصر، الثلاثاء الساعة ١١:٠٠ الصبح، ولا الخميس الساعة ٤:٠٠ العصر. شو يناسبكِ؟"
-  },
-  qatari: {
-    customer: "هلا والله، أبغى أبدّل موعدي اللي يوم الأربعاء لأي يوم ثاني الأسبوع الياي 🙏",
-    bot: "حياكِ الله. متوفر عندنا الإثنين الساعة ٢:٣٠، الثلاثاء الساعة ١١:٠٠ الصبح، أو الخميس الساعة ٤:٠٠. أيهم أنسب لكِ؟"
-  },
-  kuwaiti: {
-    customer: "هلا حبيبتي، أبي أغيّر موعدي اللي يوم الأربعاء لأي يوم بالأسبوع اليّاي 🙏",
-    bot: "هلا والله حبيبتي. عدنا الإثنين الساعة ٢:٣٠ العصر، الثلاثاء الساعة ١١:٠٠ الصبح، ولا الخميس الساعة ٤:٠٠ العصر. شنو يناسبج؟"
-  }
-};
-
-const dialectRow = document.getElementById("dialect-row");
-const aiCustomer = document.getElementById("ai-msg-customer");
-const aiBot = document.getElementById("ai-msg-bot");
-if (dialectRow && aiCustomer && aiBot) {
-  dialectRow.querySelectorAll(".dialect-chip").forEach((chip) => {
-    chip.addEventListener("click", () => {
-      const key = chip.getAttribute("data-dialect");
-      const d = DIALECTS[key];
-      if (!d) return;
-      dialectRow.querySelectorAll(".dialect-chip").forEach((c) => c.classList.remove("active"));
-      chip.classList.add("active");
-      aiCustomer.style.opacity = "0";
-      aiBot.style.opacity = "0";
-      setTimeout(() => {
-        aiCustomer.textContent = d.customer;
-        aiBot.textContent = d.bot;
-        aiCustomer.style.opacity = "1";
-        aiBot.style.opacity = "1";
-      }, 180);
+  /* Remember an explicit language choice so the Arabic-default redirect
+     (vercel.json) never overrides it. */
+  document.querySelectorAll("[data-lang]").forEach(function (a) {
+    a.addEventListener("click", function () {
+      document.cookie = "mawid_lang=" + a.getAttribute("data-lang") + "; path=/; max-age=31536000; samesite=lax";
     });
   });
-  // Apply transition
-  aiCustomer.style.transition = "opacity 0.18s ease";
-  aiBot.style.transition = "opacity 0.18s ease";
-}
 
-/* Mobile menu */
-(function () {
+  /* Sticky header shadow */
+  var header = document.getElementById("header");
+  if (header) {
+    var onScroll = function () { header.classList.toggle("scrolled", window.scrollY > 12); };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
+  }
+
+  /* Reveal on scroll. Elements already in view at load are shown at once,
+     so the hero never waits on this script. */
+  var reveals = document.querySelectorAll(".reveal");
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { rootMargin: "0px 0px -8% 0px" });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(function (el) { el.classList.add("in"); });
+  }
+
+  /* Setup-call form → app.mawid.ai/api/public/lead */
+  var form = document.getElementById("signup-form");
+  if (form) {
+    var success = document.getElementById("form-success");
+    var errorBox = document.getElementById("form-error");
+    var submitBtn = document.getElementById("submit-btn");
+    form.querySelectorAll("input, select").forEach(function (el) {
+      var reset = function () { el.style.borderColor = ""; };
+      el.addEventListener("input", reset);
+      el.addEventListener("change", reset);
+    });
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+      var firstInvalid = null;
+      form.querySelectorAll("[required]").forEach(function (el) {
+        if (!el.value.trim()) { el.style.borderColor = "#E07070"; firstInvalid = firstInvalid || el; }
+      });
+      if (firstInvalid) { firstInvalid.focus(); return; }
+
+      var fd = new FormData(form);
+      var sp = new URLSearchParams(location.search);
+      var utm = {};
+      ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"].forEach(function (k) {
+        if (sp.get(k)) utm[k] = sp.get(k);
+      });
+      var gclidMatch = document.cookie.match(/(?:^|; )mawid_gclid=([^;]+)/);
+      var payload = {
+        source: "home",
+        businessName: fd.get("business") || undefined,
+        name: fd.get("name") || undefined,
+        phone: fd.get("phone") || undefined,
+        country: fd.get("country") || undefined,
+        vertical: fd.get("vertical") || undefined,
+        website: fd.get("website") || undefined,
+        locale: isAr ? "ar" : "en",
+        pageUrl: location.href.slice(0, 500),
+        referrer: (document.referrer || "").slice(0, 500) || undefined,
+        utm: utm,
+        gclid: sp.get("gclid") || (gclidMatch ? decodeURIComponent(gclidMatch[1]) : undefined)
+      };
+
+      submitBtn.classList.add("is-loading");
+      submitBtn.disabled = true;
+      if (errorBox) errorBox.hidden = true;
+
+      fetch("https://app.mawid.ai/api/public/lead", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload)
+      })
+        .then(function (r) { return r.ok ? r.json() : Promise.reject(r.status); })
+        .then(function () {
+          form.style.display = "none";
+          success.classList.add("shown");
+          /* Only count a lead once the server has actually saved it. */
+          if (typeof gtag === "function") {
+            gtag("event", "generate_lead", { source: "home_setup_form", vertical: payload.vertical, country: payload.country });
+          }
+          if (typeof fbq === "function") {
+            fbq("track", "Lead", { content_name: "Setup call", content_category: payload.vertical });
+          }
+        })
+        .catch(function () {
+          submitBtn.classList.remove("is-loading");
+          submitBtn.disabled = false;
+          if (errorBox) errorBox.hidden = false;
+        });
+    });
+  }
+
+  /* Mobile menu */
   var btn = document.querySelector(".mobile-menu-btn");
   var menu = document.getElementById("mobile-menu");
-  if (!btn || !menu) return;
-  function setOpen(open) {
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-    menu.classList.toggle("open", open);
-    document.body.style.overflow = open ? "hidden" : "";
+  if (btn && menu) {
+    var setOpen = function (open) {
+      btn.setAttribute("aria-expanded", open ? "true" : "false");
+      menu.classList.toggle("open", open);
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+    btn.addEventListener("click", function () { setOpen(btn.getAttribute("aria-expanded") !== "true"); });
+    menu.querySelectorAll("a").forEach(function (a) { a.addEventListener("click", function () { setOpen(false); }); });
+    document.addEventListener("keydown", function (e) { if (e.key === "Escape") setOpen(false); });
+    var mql = window.matchMedia("(min-width: 941px)");
+    var onChange = function (e) { if (e.matches) setOpen(false); };
+    if (mql.addEventListener) mql.addEventListener("change", onChange); else if (mql.addListener) mql.addListener(onChange);
   }
-  btn.addEventListener("click", function () {
-    setOpen(btn.getAttribute("aria-expanded") !== "true");
-  });
-  menu.querySelectorAll("a").forEach(function (a) {
-    a.addEventListener("click", function () { setOpen(false); });
-  });
-  document.addEventListener("keydown", function (e) {
-    if (e.key === "Escape" && btn.getAttribute("aria-expanded") === "true") setOpen(false);
-  });
-  var mql = window.matchMedia("(min-width: 941px)");
-  mql.addEventListener("change", function (e) { if (e.matches) setOpen(false); });
 })();
 </script>
 <script src="/assets/gclid.js" defer></script>

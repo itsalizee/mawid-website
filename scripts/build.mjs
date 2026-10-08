@@ -6,8 +6,10 @@
 // content by seconds on phones. Now each page's text is in its HTML.
 //
 // Source of truth for copy:
-//   i18n/home.json  →  index.html, ar/index.html
-//   i18n/site.json  →  every other page
+//   i18n/home.json     →  index.html, ar/index.html
+//   i18n/product.json  →  product/index.html, ar/product/index.html
+//                         (merged over site.json for shared header/footer)
+//   i18n/site.json     →  every other page
 // Pages under ar/ get the "ar" strings, everything else "en".
 //
 // Elements opt in with data-i18n="key" (replaces inner HTML),
@@ -30,6 +32,17 @@ const dicts = {
   home: JSON.parse(readFileSync(join(ROOT, 'i18n/home.json'), 'utf8')),
   site: JSON.parse(readFileSync(join(ROOT, 'i18n/site.json'), 'utf8')),
 };
+const product = JSON.parse(readFileSync(join(ROOT, 'i18n/product.json'), 'utf8'));
+dicts.product = {
+  en: { ...dicts.site.en, ...product.en },
+  ar: { ...dicts.site.ar, ...product.ar },
+};
+const DICT_FOR = {
+  'index.html': 'home',
+  'ar/index.html': 'home',
+  'product/index.html': 'product',
+  'ar/product/index.html': 'product',
+};
 
 function htmlFiles(dir) {
   const out = [];
@@ -50,12 +63,13 @@ const report = [];
 for (const file of htmlFiles(ROOT).sort()) {
   const rel = relative(ROOT, file).split(sep).join('/');
   const locale = rel.startsWith('ar/') ? 'ar' : 'en';
-  const dict = rel === 'index.html' || rel === 'ar/index.html' ? dicts.home : dicts.site;
+  const dict = dicts[DICT_FOR[rel] ?? 'site'];
   const strings = dict[locale] ?? {};
   const src = readFileSync(file, 'utf8');
   const doc = parse(src, { sourceCodeLocationInfo: true });
   const edits = [];
   const missing = new Set();
+  const unclosed = new Set();
   let applied = 0;
 
   const attrLoc = (node, name) => node.sourceCodeLocation?.attrs?.[name];
@@ -93,7 +107,7 @@ for (const file of htmlFiles(ROOT).sort()) {
         edits.push([loc.startTag.endOffset, loc.endTag.startOffset, String(v)]);
         applied++;
         return; // the value replaces the whole subtree
-      }
+      } else unclosed.add(key); // malformed source (e.g. <a>…</div>) — fix the HTML
     }
     const kids = node.nodeName === 'template' ? node.content?.childNodes : node.childNodes;
     for (const c of kids ?? []) walk(c);
@@ -108,10 +122,12 @@ for (const file of htmlFiles(ROOT).sort()) {
     stale++;
     if (!CHECK) writeFileSync(file, out);
   }
-  if (applied || missing.size) {
+  if (unclosed.size) stale++;
+  if (applied || missing.size || unclosed.size) {
     report.push(
       `${rel.padEnd(28)} ${locale}  applied ${String(applied).padStart(3)}` +
         (missing.size ? `  missing: ${[...missing].join(', ')}` : '') +
+        (unclosed.size ? `  UNCLOSED: ${[...unclosed].join(', ')}` : '') +
         (out !== src ? (CHECK ? '  STALE' : '  updated') : ''),
     );
   }

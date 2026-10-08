@@ -32,7 +32,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
 <title>Clinics · Mawid · Booking for Gulf medical clinics</title>
-<meta name="description" content="Mawid for clinics. Arabic-first booking, WhatsApp confirmations, Hijri-aware reminders. Front-desk booking only — your existing EHR keeps the medical records. Built for dermatology, dental, and aesthetic clinics in Saudi Arabia, UAE, Qatar, and Kuwait." />
+<meta name="description" content="Mawid for clinics. Arabic-first online booking with Hijri and Gregorian dates and a one-tap WhatsApp button. Front-desk booking only — your existing EHR keeps the medical records. Built for dermatology, dental, and aesthetic clinics in Saudi Arabia, UAE, Qatar, and Kuwait." />
 <link rel="canonical" href="https://mawid.ai/clinics/" />
 <link rel="alternate" hreflang="en" href="https://mawid.ai/clinics/" />
 <link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/clinics/" />
@@ -40,7 +40,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Clinics · Mawid · Booking for Gulf medical clinics" />
-<meta property="og:description" content="Arabic-first booking. WhatsApp confirmations. Hijri-aware reminders. Front-desk only — your EHR keeps the records." />
+<meta property="og:description" content="Arabic-first booking. Hijri + Gregorian dates. One tap to WhatsApp. Front-desk only — your EHR keeps the records." />
 <meta property="og:url" content="https://mawid.ai/clinics/" />
 <meta property="og:image" content="https://mawid.ai/og-image.png" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -160,10 +160,6 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="header-actions">
       <div class="lang-toggle" role="tablist">
         <span class="pill"></span>
-        <!-- Anchor tags (not buttons) so clicking EN/AR navigates to the
-             matched-vertical page in the other locale. assets/mawid.js
-             explicitly skips in-place applyLocale() when the target is
-             an <a> with an href, letting the browser follow the link. -->
         <a href="/clinics/" data-lang="en" aria-pressed="true">EN</a>
         <a href="/ar/clinics/" data-lang="ar" aria-pressed="false">ع</a>
       </div>
@@ -181,7 +177,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       <span>For clinics</span>
     </span>
     <h1 class="h-display reveal d1">The booking page your <span class="it">patients deserve.</span></h1>
-    <p class="lede reveal d2">Arabic-first. WhatsApp-native. Hijri-aware. Built for dermatology, dental, and aesthetic clinics across the Gulf — the front-desk software your EHR was never going to be.</p>
+    <p class="lede reveal d2">Arabic-first. Hijri-aware. One tap to WhatsApp. Built for dermatology, dental, and aesthetic clinics across the Gulf — the front-desk booking page your EHR was never going to be.</p>
     <div class="cta-actions reveal d3" style="margin-block-start: 32px;">
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink btn-lg">Start free 7-day trial</a>
       <a href="/contact/" class="btn btn-ghost btn-lg">Talk to us</a>
@@ -201,7 +197,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
               <div class="avatar"></div>
               <div class="meta">
                 <div class="name">Clinic Derma</div>
-                <div class="sub">Riyadh · Clinic plan</div>
+                <div class="sub">Riyadh · Professional plan</div>
               </div>
               <span class="chev">⌄</span>
             </div>
@@ -237,7 +233,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
           <main class="hp-main">
             <div class="hp-res-head">
               <h3>Today's appointments</h3>
-              <div class="breadcrumb">3 Safar · Friday, May 16 · 18 patients</div>
+              <div class="breadcrumb">29 Dhu al-Qadah · Saturday, May 16 · 18 patients</div>
             </div>
             <div class="hp-res-list">
               <div class="hp-res-row">
@@ -309,13 +305,13 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
             <span>WhatsApp · Clinic Derma</span>
             <span style="font-family: var(--mono); font-size: 10px; color: var(--good);">✓✓</span>
           </div>
-          <div class="float-wa in">
-            <span>Your Monday 11:30 AM consultation with Dr. Hassan is confirmed. Reminder will arrive Sunday 🌸</span>
-            <span class="float-wa-time">2:14 PM</span>
-          </div>
           <div class="float-wa">
-            <span>Thank you 💚</span>
-            <span class="float-wa-time">2:15 PM <span class="check">✓✓</span></span>
+            <span>Hi Clinic Derma 🌸 This is Layan, I just booked.</span>
+            <span class="float-wa-time">2:14 PM <span class="check">✓✓</span></span>
+          </div>
+          <div class="float-wa in">
+            <span>Welcome Layan! See you Monday at 11:30 with Dr. Hassan 💚</span>
+            <span class="float-wa-time">2:16 PM</span>
           </div>
         </div>
       </div>
@@ -329,7 +325,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="scope-callout reveal">
       <div class="scope-callout-tag">What Mawid is — and isn't</div>
       <h3>Front-desk booking. Not an EHR.</h3>
-      <p>Mawid handles patient appointments, confirmations, and reminders. It stores names, phone numbers, visit history, and any notes your team chooses to add — same level of data as a paper appointment book.</p>
+      <p>Mawid handles patient appointments: the booking page, the schedule and the front-desk view. It stores names, phone numbers, visit history, and any notes your team chooses to add — same level of data as a paper appointment book.</p>
       <p>Mawid does <strong>not</strong> store medical records, lab results, prescriptions, diagnoses, or insurance claims. We're a booking platform, not regulated medical software. Your existing EHR (or your team) handles that, and we integrate with nothing — we just keep the front desk smooth.</p>
     </div>
   </div>
@@ -351,22 +347,22 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       <div class="vert-prob reveal">
         <div class="vert-prob-tag">WhatsApp + paper</div>
         <h3>Two systems, one mess.</h3>
-        <p>Patients book on WhatsApp, the receptionist writes them in the paper book. Half the time something falls through. No-shows hit 20%.</p>
+        <p>Patients book on WhatsApp, the receptionist writes them in the paper book. Something always falls through, and no-shows go untracked.</p>
       </div>
       <div class="vert-prob reveal d1">
         <div class="vert-prob-tag">Online directories</div>
-        <h3>You're a number on Vezeeta.</h3>
-        <p>Marketplace platforms compete you on price, take commission per booking, and own your patient relationship. Your brand disappears.</p>
+        <h3>You're one listing among many.</h3>
+        <p>Directory apps list you next to the clinic down the street, often charge per booking, and own the patient relationship. Your brand disappears.</p>
       </div>
       <div class="vert-prob reveal d2">
         <div class="vert-prob-tag">Generic SaaS</div>
-        <h3>Calendly doesn't speak Arabic.</h3>
-        <p>Global booking tools assume English-speaking patients on Western calendars. RTL is an afterthought. Hijri dates don't exist. Friday morning isn't a "weekend."</p>
+        <h3>Global tools weren't built for the Gulf.</h3>
+        <p>Most booking tools assume English-speaking patients on a Western calendar. Arabic and RTL come second, Hijri dates are missing, and Friday is just another weekday.</p>
       </div>
       <div class="vert-prob reveal d3">
         <div class="vert-prob-tag">Full clinic suites</div>
-        <h3>SevenRooms is overkill.</h3>
-        <p>Enterprise EHR + billing platforms start at $500/month and take three months to onboard. You wanted a booking page, not a hospital system.</p>
+        <h3>Hospital systems are overkill.</h3>
+        <p>Enterprise EHR and billing suites are priced and paced for hospitals, with months of onboarding. You wanted a booking page, not a hospital system.</p>
       </div>
     </div>
   </div>
@@ -394,7 +390,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       <div class="vert-step reveal d1">
         <span class="vert-step-num">02 · PATIENT</span>
         <h3>Gets confirmed.</h3>
-        <p>WhatsApp confirmation arrives instantly with the date in Hijri and Gregorian. 24h before the appointment, a reminder. 2h before, a nudge with your clinic's location pin.</p>
+        <p>The confirmation screen shows the date in Hijri and Gregorian, adds it to their calendar in one tap, and has a WhatsApp button if they have a question. Automated WhatsApp reminders are coming soon.</p>
       </div>
       <div class="vert-step reveal d2">
         <span class="vert-step-num">03 · RECEPTION</span>
@@ -414,7 +410,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <span class="dot"></span>
         <span>What you get</span>
       </span>
-      <h2 class="h-section">Four things <span class="it">no other booking platform</span> in the Gulf gives you.</h2>
+      <h2 class="h-section">Four things <span class="it">built for</span> Gulf clinics.</h2>
     </div>
 
     <div class="values-grid">
@@ -425,18 +421,18 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       </div>
       <div class="value-card reveal d1">
         <span class="value-num">02</span>
-        <h3>WhatsApp confirmations + reminders.</h3>
-        <p>The patient doesn't install anything, doesn't make an account. Confirmations land in WhatsApp with a tap-to-reschedule link. Reminders are timed to your clinic's no-show patterns.</p>
+        <h3>WhatsApp, one tap away.</h3>
+        <p>Patients don't install anything or make an account. Your booking page and every confirmation have a WhatsApp button that opens a chat with your clinic. Automated WhatsApp confirmations and reminders are coming soon; until then, your team gets an email for every new booking.</p>
       </div>
       <div class="value-card reveal d2">
         <span class="value-num">03</span>
         <h3>Hijri + Gregorian, side by side.</h3>
-        <p>Reminders carry both calendars. Friday morning prayer time is blocked by default for KSA clinics. Ramadan-shifted hours are respected. We built for the Gulf calendar, not against it.</p>
+        <p>Your booking page shows both calendars. Friday mornings are closed by default for Saudi clinics, prayer breaks are blocked automatically, and Ramadan hours or Eid closures go in in seconds. Built for the Gulf calendar, not against it.</p>
       </div>
       <div class="value-card reveal d3">
         <span class="value-num">04</span>
         <h3>Patient database — non-clinical.</h3>
-        <p>Names, phones, visit count, last seen, preferred provider, optional free-text notes. Your existing EHR keeps the medical record. Mawid keeps the front desk's institutional memory so your reception remembers every regular.</p>
+        <p>Names, phones, visit count, no-shows, last visit, optional free-text notes. Your existing EHR keeps the medical record. Mawid keeps the front desk's institutional memory so your reception remembers every regular.</p>
       </div>
     </div>
   </div>
@@ -452,16 +448,16 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <span>Pricing</span>
       </span>
       <h2 class="h-section">Flat monthly. <span class="it">No per-appointment fees.</span></h2>
-      <p class="lede">No setup costs. No commission. No surcharges for SMS or support. Cancel anytime.</p>
+      <p class="lede">No setup costs. No commission. No surcharges for support. Cancel anytime.</p>
     </div>
 
     <div class="vert-pricing reveal">
-      <div class="vert-price-cap">Clinic plan</div>
+      <div class="vert-price-cap">Professional plan</div>
       <div class="vert-price" data-plan="professional">
         <span class="currency">$</span><span class="num">140</span><span class="period"> / month</span>
       </div>
       <p style="margin-block: 24px 0; font-size: 15px; line-height: 1.65; color: var(--ink-mid); max-width: 540px; margin-inline: auto;">
-        Unlimited appointments · WhatsApp + email confirmations · Hijri-aware reminders · Patient database (non-clinical) · Bilingual booking page · 7-day free trial
+        Unlimited appointments · Email booking alerts · WhatsApp chat button · Hijri + Gregorian booking page · Patient database (non-clinical) · Bilingual booking page · 7-day free trial
       </p>
       <div class="vert-trial-note">Card required to start the trial. Cancel before day 8 and you're not charged.</div>
       <div class="cta-actions" style="margin-block-start: 24px; justify-content: center;">
@@ -487,15 +483,15 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
     <div class="vert-faq reveal">
       <details>
         <summary>Is Mawid HIPAA / Saudi PDPL compliant?</summary>
-        <p>Mawid does not handle Protected Health Information (PHI) or anything that falls under HIPAA or Saudi PDPL medical data scope. We store patient names, phone numbers, appointment times, and optional free-text notes — the same data category as a paper appointment book. Your existing EHR keeps the medical record. If you need an EHR + billing suite, talk to platforms like Cura, Medscope, or Yashfeen instead — that's not what Mawid does.</p>
+        <p>Mawid does not handle Protected Health Information (PHI) or anything that falls under HIPAA or Saudi PDPL medical data scope. We store patient names, phone numbers, appointment times, and optional free-text notes — the same data category as a paper appointment book. Your existing EHR keeps the medical record. If you need an EHR and billing suite, run a dedicated medical system alongside Mawid — that's not what Mawid does.</p>
       </details>
       <details>
         <summary>Do you integrate with NPHIES / Sehhaty / our EHR?</summary>
-        <p>Not in V1. Mawid is a standalone front-desk booking platform. Your team uses Mawid for appointments + reminders, and continues using your existing EHR (or Sehhaty for public-sector connectivity) for medical workflows. Direct integrations are on the roadmap once we have enough customer demand for specific integrations.</p>
+        <p>Not in V1. Mawid is a standalone front-desk booking platform. Your team uses Mawid for appointments, and continues using your existing EHR (or Sehhaty for public-sector connectivity) for medical workflows. Direct integrations are on the roadmap once we have enough customer demand for specific integrations.</p>
       </details>
       <details>
-        <summary>Can patients reschedule via WhatsApp?</summary>
-        <p>Yes. Every confirmation includes a tap-to-reschedule link. The change reaches your dashboard in real time so the front desk always sees the truth.</p>
+        <summary>Can patients reschedule?</summary>
+        <p>Yes. They tap the WhatsApp button on their confirmation to message your clinic; your team cancels the old slot and sends the booking link so they can pick a new time. One-tap self-serve rescheduling is on the roadmap.</p>
       </details>
       <details>
         <summary>Do we need a website?</summary>
@@ -503,7 +499,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
       </details>
       <details>
         <summary>What about insurance verification?</summary>
-        <p>Out of scope for V1. Mawid asks the patient an optional "insurance provider" free-text field at booking so your team has it before the visit. We don't run real-time eligibility checks — your existing billing system or third-party tool handles that.</p>
+        <p>Out of scope for V1. Patients can mention their insurance provider in the optional note at booking, so your team has it before the visit. We don't run real-time eligibility checks — your existing billing system or third-party tool handles that.</p>
       </details>
       <details>
         <summary>How many doctors can use one account?</summary>
@@ -543,7 +539,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <span class="logo-mark">م</span>
         <span data-i18n="brand">Mawid</span>
       </a>
-      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first, AI-powered, WhatsApp-native — designed for how Saudi, Emirati, Qatari, and Kuwaiti businesses actually run.</p>
+      <p data-i18n="foot.tagline">Booking, built for the Gulf. Arabic-first and Hijri-aware — designed for how Saudi, Emirati, Qatari and Kuwaiti businesses actually run.</p>
     </div>
     <div class="footer-col">
       <h5 data-i18n="foot.product">Product</h5>
@@ -552,7 +548,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
         <li><a href="/pricing/" data-i18n="foot.product.pricing">Pricing</a></li>
         <li><a href="/restaurants/">For restaurants</a></li>
         <li><a href="/clinics/">For clinics</a></li>
-        <li><a href="https://app.mawid.ai/sign-up" data-i18n="foot.product.beta">Beta program</a></li>
+        <li><a href="https://app.mawid.ai/sign-up" data-i18n="foot.product.beta">Start free trial</a></li>
       </ul>
     </div>
     <div class="footer-col">
@@ -577,7 +573,6 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   </div>
 </footer>
 
-<script src="/assets/i18n.js"></script>
 <script src="/assets/mawid.js"></script>
 <script src="/assets/gclid.js" defer></script>
 <script src="/assets/pricing.js?v=1" defer></script>

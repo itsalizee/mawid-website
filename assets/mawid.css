@@ -1267,3 +1267,6 @@ html[lang="ar"] .feat-card p { line-height: 1.8; }
   display: grid;
   place-items: center;
 }
+
+/* Form submit error (contact page) */
+.form-error { color: #B3261E; font-size: 13px; line-height: 1.5; margin: 12px 0 0; }
