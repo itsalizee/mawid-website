@@ -1,0 +1,9 @@
+{
+  "name": "mawid-website-scripts",
+  "private": true,
+  "type": "module",
+  "description": "Build tooling for the static site. Not deployed as an app — Vercel serves the repo root as static files.",
+  "dependencies": {
+    "parse5": "7.3.0"
+  }
+}
