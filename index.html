@@ -617,7 +617,8 @@ html[lang="ar"] .logo { font-family: var(--display-ar); font-weight: 600; font-s
   position: relative;
   z-index: 2;
 }
-.lang-toggle button[aria-pressed="true"] { color: var(--bg); }
+.lang-toggle button[aria-pressed="true"],
+.lang-toggle a[aria-current="page"] { color: var(--bg); }
 .lang-toggle .pill {
   position: absolute;
   inset-block: 3px;
@@ -2909,7 +2910,7 @@ html[lang="ar"] .mobile-menu a {
       <div class="lang-toggle" role="group" aria-label="Language">
         <span class="pill" aria-hidden="true"></span>
         <button type="button" data-lang="en" aria-pressed="true">EN</button>
-        <a href="/ar/" data-lang="ar" aria-pressed="false" style="text-decoration: none; padding: 6px 12px; border-radius: 999px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.04em; position: relative; z-index: 2;">AR</a>
+        <a href="/ar/" data-lang="ar" style="text-decoration: none; padding: 6px 12px; border-radius: 999px; color: var(--muted); font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.04em; position: relative; z-index: 2;">AR</a>
       </div>
       <a href="https://app.mawid.ai/sign-up" class="btn btn-ink">
         <span data-i18n="cta.header">Start free trial</span>

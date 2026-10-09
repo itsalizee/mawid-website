@@ -505,7 +505,7 @@ html[lang="ar"] .mobile-menu a {
   align-items: center;
 }
 .lang-toggle button[aria-pressed="true"],
-.lang-toggle a[aria-pressed="true"] { color: var(--bg); }
+.lang-toggle a[aria-current="page"] { color: var(--bg); }
 .lang-toggle .pill {
   position: absolute;
   inset-block: 3px;
