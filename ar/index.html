@@ -2,8 +2,9 @@
 <html lang="ar" dir="rtl">
 <head>
 <!-- Google tag (gtag.js) — GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7V29X4R34"></script>
 <script>
+  /* GA4 + Meta Pixel. The vendor scripts load once the page is idle so
+     they don't compete with first paint; earlier calls are queued. */
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -11,19 +12,26 @@
   gtag('config', 'G-Y7V29X4R34', {
     linker: { domains: ['mawid.ai', 'app.mawid.ai'] }
   });
-</script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1016451274045170');
-fbq('track', 'PageView');
+  !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
+  fbq('init', '1016451274045170');
+  fbq('track', 'PageView');
+  (function () {
+    function load() {
+      ['https://www.googletagmanager.com/gtag/js?id=G-Y7V29X4R34',
+       'https://connect.facebook.net/en_US/fbevents.js'].forEach(function (src) {
+        var s = document.createElement('script');
+        s.async = true; s.src = src; document.head.appendChild(s);
+      });
+    }
+    function later() {
+      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2500 });
+      else setTimeout(load, 1200);
+    }
+    if (document.readyState === 'complete') later();
+    else window.addEventListener('load', later);
+  })();
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
@@ -39,9 +47,8 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <meta name="apple-mobile-web-app-title" content="Mawid" />
 
 <!-- Primary SEO -->
-<title>موعد · منصة الحجوزات الأولى للخليج</title>
-<meta name="description" content="موعد · منصة الحجوزات الذكية للصالونات والعيادات والاستوديوهات في السعودية والإمارات وقطر والكويت. عربية أولاً، تعمل عبر واتساب." />
-<meta name="keywords" content="booking platform GCC, salon booking software Saudi Arabia, salon booking UAE, Arabic booking system, WhatsApp booking, Hijri calendar booking, Gulf SaaS, salon software Riyadh, salon software Dubai, clinic booking Kuwait, beauty booking Qatar, موعد, نظام حجز, حجز صالون" />
+<title>موعد · نظام حجز مواعيد أونلاين للصالونات والعيادات والمطاعم</title>
+<meta name="description" content="نظام حجز مواعيد عربي أولاً للصالونات والعيادات والسبا والمطاعم في السعودية والإمارات وقطر والكويت. تاريخ هجري، زر واتساب، وتجربة مجانية ٧ أيام." />
 <meta name="author" content="Mawid" />
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
 <meta name="googlebot" content="index, follow" />
@@ -51,26 +58,26 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <link rel="alternate" hreflang="en" href="https://mawid.ai/" />
 <link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/" />
 <link rel="alternate" hreflang="x-default" href="https://mawid.ai/" />
-
-<!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:site_name" content="Mawid" />
-<meta property="og:title" content="Mawid · Booking, built for the Gulf." />
-<meta property="og:description" content="The Arabic-first booking platform for Gulf service businesses. WhatsApp-native. Hijri-aware. Bilingual customer experience." />
-<meta property="og:url" content="https://mawid.ai/" />
-<meta property="og:image" content="https://mawid.ai/og-image.png" />
+<meta property="og:site_name" content="موعد" />
+<meta property="og:title" content="موعد · نظام حجز مواعيد أونلاين للصالونات والعيادات والمطاعم" />
+<meta property="og:description" content="نظام حجز مواعيد عربي أولاً للصالونات والعيادات والسبا والمطاعم في السعودية والإمارات وقطر والكويت. تاريخ هجري، زر واتساب، وتجربة مجانية ٧ أيام." />
+<meta property="og:url" content="https://mawid.ai/ar/" />
+<meta property="og:image" content="https://mawid.ai/og-image-ar.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="Mawid — Booking platform for Gulf service businesses" />
-<meta property="og:locale" content="en_US" />
-<meta property="og:locale:alternate" content="ar_SA" />
+<meta property="og:image:alt" content="موعد · نظام حجز مواعيد للخليج" />
+<meta property="og:locale" content="ar_SA" />
+<meta property="og:locale:alternate" content="en_US" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="موعد · نظام حجز مواعيد أونلاين للصالونات والعيادات والمطاعم" />
+<meta name="twitter:description" content="نظام حجز مواعيد عربي أولاً للصالونات والعيادات والسبا والمطاعم في السعودية والإمارات وقطر والكويت. تاريخ هجري، زر واتساب، وتجربة مجانية ٧ أيام." />
+<meta name="twitter:image" content="https://mawid.ai/og-image-ar.png" />
+<meta name="twitter:image:alt" content="موعد · نظام حجز مواعيد للخليج" />
+
+<!-- Open Graph -->
 
 <!-- Twitter / X -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Mawid · Booking, built for the Gulf." />
-<meta name="twitter:description" content="Arabic-first booking platform for Gulf service businesses. WhatsApp-native. Hijri-aware. Bilingual customer experience." />
-<meta name="twitter:image" content="https://mawid.ai/og-image.png" />
-<meta name="twitter:image:alt" content="Mawid — Booking platform for Gulf service businesses" />
 
 <!-- Favicons (inline SVG, no external request) -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0F0D'/%3E%3Ctext x='32' y='46' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='38' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
@@ -81,34 +88,59 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap" /></noscript>
 
 <!-- JSON-LD: Organization -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Organization",
+  "@id": "https://mawid.ai/#org",
   "name": "Mawid",
   "alternateName": "موعد",
-  "url": "https://mawid.ai",
+  "url": "https://mawid.ai/",
   "logo": "https://mawid.ai/logo.png",
-  "description": "Arabic-first, AI-powered booking platform for Gulf service businesses across Saudi Arabia, UAE, Qatar, and Kuwait.",
+  "description": "منصة حجز مواعيد أونلاين عربية أولاً للصالونات والعيادات والسبا والمطاعم في السعودية والإمارات وقطر والكويت.",
   "areaServed": [
-    {"@type":"Country","name":"Saudi Arabia"},
-    {"@type":"Country","name":"United Arab Emirates"},
-    {"@type":"Country","name":"Qatar"},
-    {"@type":"Country","name":"Kuwait"}
+    {
+      "@type": "Country",
+      "name": "Saudi Arabia"
+    },
+    {
+      "@type": "Country",
+      "name": "United Arab Emirates"
+    },
+    {
+      "@type": "Country",
+      "name": "Qatar"
+    },
+    {
+      "@type": "Country",
+      "name": "Kuwait"
+    }
   ],
   "parentOrganization": {
     "@type": "Organization",
-    "name": "Mawid",
-    "address": {"@type":"PostalAddress","addressCountry":"US","addressRegion":"Wyoming"}
+    "name": "Diyar Holdings LLC",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "30 N Gould Street, Suite R",
+      "addressLocality": "Sheridan",
+      "addressRegion": "WY",
+      "postalCode": "82801",
+      "addressCountry": "US"
+    }
   },
   "contactPoint": {
     "@type": "ContactPoint",
     "email": "hello@mawid.ai",
     "contactType": "customer support",
-    "availableLanguage": ["English","Arabic"]
+    "availableLanguage": [
+      "English",
+      "Arabic"
+    ]
   }
 }
 </script>
@@ -120,21 +152,98 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
   "@type": "SoftwareApplication",
   "name": "Mawid",
   "applicationCategory": "BusinessApplication",
-  "applicationSubCategory": "Booking & Scheduling",
-  "operatingSystem": "Web, iOS, Android",
-  "description": "Arabic-first booking platform for Gulf service businesses. WhatsApp-native, Hijri-aware, bilingual customer experience.",
-  "url": "https://mawid.ai",
+  "applicationSubCategory": "Booking & scheduling",
+  "operatingSystem": "Web",
+  "url": "https://mawid.ai/ar/",
+  "inLanguage": "ar",
+  "description": "منصة حجز مواعيد أونلاين عربية أولاً للصالونات والعيادات والسبا والمطاعم في السعودية والإمارات وقطر والكويت.",
+  "publisher": {
+    "@id": "https://mawid.ai/#org"
+  },
   "offers": [
-    {"@type":"Offer","name":"Starter","price":"80","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"80","priceCurrency":"USD","unitText":"MONTH"}},
-    {"@type":"Offer","name":"Professional","price":"140","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"140","priceCurrency":"USD","unitText":"MONTH"}},
-    {"@type":"Offer","name":"Studio","price":"180","priceCurrency":"USD","priceSpecification":{"@type":"UnitPriceSpecification","price":"180","priceCurrency":"USD","unitText":"MONTH"}}
+    {
+      "@type": "Offer",
+      "name": "Starter",
+      "price": "80",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "80",
+        "priceCurrency": "USD",
+        "unitText": "MONTH"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Starter",
+      "price": "299",
+      "priceCurrency": "SAR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "299",
+        "priceCurrency": "SAR",
+        "unitText": "MONTH"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Professional",
+      "price": "140",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "140",
+        "priceCurrency": "USD",
+        "unitText": "MONTH"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Professional",
+      "price": "529",
+      "priceCurrency": "SAR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "529",
+        "priceCurrency": "SAR",
+        "unitText": "MONTH"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Studio",
+      "price": "180",
+      "priceCurrency": "USD",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "180",
+        "priceCurrency": "USD",
+        "unitText": "MONTH"
+      }
+    },
+    {
+      "@type": "Offer",
+      "name": "Studio",
+      "price": "679",
+      "priceCurrency": "SAR",
+      "priceSpecification": {
+        "@type": "UnitPriceSpecification",
+        "price": "679",
+        "priceCurrency": "SAR",
+        "unitText": "MONTH"
+      }
+    }
   ],
   "featureList": [
-    "WhatsApp-native bookings","Hijri & Gregorian calendars",
-    "Bilingual Arabic/English data layer",
-    "Searchable customer database with visit history",
-    "Prayer-time aware scheduling",
-    "7-day free trial"
+    "صفحة حجز بالعربية والإنجليزية",
+    "التاريخ الهجري والميلادي",
+    "أوقات حجز تراعي أوقات الصلاة",
+    "إغلاق الجمعة والإجازات",
+    "سجل عملاء بالزيارات ومرات الغياب والملاحظات",
+    "زر واتساب في كل صفحة حجز",
+    "تنبيه بالبريد مع كل حجز",
+    "نمط المطاعم مع عدد الضيوف وسعة الطاولات",
+    "تجربة مجانية ٧ أيام"
   ]
 }
 </script>

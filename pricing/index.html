@@ -2,8 +2,9 @@
 <html lang="en" dir="ltr">
 <head>
 <!-- Google tag (gtag.js) — GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Y7V29X4R34"></script>
 <script>
+  /* GA4 + Meta Pixel. The vendor scripts load once the page is idle so
+     they don't compete with first paint; earlier calls are queued. */
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
@@ -11,19 +12,26 @@
   gtag('config', 'G-Y7V29X4R34', {
     linker: { domains: ['mawid.ai', 'app.mawid.ai'] }
   });
-</script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1016451274045170');
-fbq('track', 'PageView');
+  !function(f){if(f.fbq)return;var n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];}(window);
+  fbq('init', '1016451274045170');
+  fbq('track', 'PageView');
+  (function () {
+    function load() {
+      ['https://www.googletagmanager.com/gtag/js?id=G-Y7V29X4R34',
+       'https://connect.facebook.net/en_US/fbevents.js'].forEach(function (src) {
+        var s = document.createElement('script');
+        s.async = true; s.src = src; document.head.appendChild(s);
+      });
+    }
+    function later() {
+      if ('requestIdleCallback' in window) requestIdleCallback(load, { timeout: 2500 });
+      else setTimeout(load, 1200);
+    }
+    if (document.readyState === 'complete') later();
+    else window.addEventListener('load', later);
+  })();
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
@@ -32,39 +40,94 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <meta name="theme-color" content="#FFFFFF" />
-<title>Pricing · Mawid · Booking platform for Gulf service businesses</title>
-<meta name="description" content="Starter, Professional and Studio monthly plans, plus custom Enterprise. 7-day free trial on every paid plan. No setup fees, cancel anytime." />
+<title>Pricing · Mawid booking software · SAR, AED, QAR, KWD</title>
+<meta name="description" content="Flat monthly plans in SAR, AED, QAR, KWD or USD. Starter, Professional and Studio with a 7-day free trial, no setup fees and no commission. Cancel anytime." />
 <link rel="canonical" href="https://mawid.ai/pricing/" />
 <link rel="alternate" hreflang="en" href="https://mawid.ai/pricing/" />
 <link rel="alternate" hreflang="ar" href="https://mawid.ai/ar/pricing/" />
 <link rel="alternate" hreflang="x-default" href="https://mawid.ai/pricing/" />
-
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Pricing · Mawid" />
-<meta property="og:description" content="Flat monthly subscription. 7-day free trial. Built for Gulf service businesses. No setup fees, cancel anytime." />
+<meta property="og:site_name" content="Mawid" />
+<meta property="og:title" content="Pricing · Mawid booking software · SAR, AED, QAR, KWD" />
+<meta property="og:description" content="Flat monthly plans in SAR, AED, QAR, KWD or USD. Starter, Professional and Studio with a 7-day free trial, no setup fees and no commission. Cancel anytime." />
 <meta property="og:url" content="https://mawid.ai/pricing/" />
 <meta property="og:image" content="https://mawid.ai/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Mawid · Booking, built for the Gulf" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:locale:alternate" content="ar_SA" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Pricing · Mawid booking software · SAR, AED, QAR, KWD" />
+<meta name="twitter:description" content="Flat monthly plans in SAR, AED, QAR, KWD or USD. Starter, Professional and Studio with a 7-day free trial, no setup fees and no commission. Cancel anytime." />
+<meta name="twitter:image" content="https://mawid.ai/og-image.png" />
+<meta name="twitter:image:alt" content="Mawid · Booking, built for the Gulf" />
+
 
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0F0D'/%3E%3Ctext x='32' y='46' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='38' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%230A0F0D'/%3E%3Ctext x='90' y='128' font-family='IBM Plex Sans Arabic,Arial,sans-serif' font-size='108' font-weight='700' fill='white' text-anchor='middle'%3E%D9%85%3C/text%3E%3C/svg%3E" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap" media="print" onload="this.media='all'" />
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Reem+Kufi:wght@600&display=swap" /></noscript>
 <link rel="stylesheet" href="/assets/mawid.css" />
 
-<script type="application/ld+json">
+<script type="application/ld+json" data-faq="price.faq">
 {
   "@context": "https://schema.org",
   "@type": "FAQPage",
+  "inLanguage": "en",
   "mainEntity": [
-    {"@type":"Question","name":"When do I start paying?","acceptedAnswer":{"@type":"Answer","text":"Start with a 7-day free trial. Your card is on file but not charged until day 8. Cancel anytime in those 7 days and you are never charged."}},
-    {"@type":"Question","name":"Do customer payments go through Mawid?","acceptedAnswer":{"@type":"Answer","text":"Not in V1. Your customer books online, you collect payment in person at the salon. Online deposit collection is on the roadmap for the Professional tier later."}},
-    {"@type":"Question","name":"Can I switch tiers mid-month?","acceptedAnswer":{"@type":"Answer","text":"Yes. Upgrades take effect immediately and are prorated. Downgrades take effect at the start of the next billing cycle."}},
-    {"@type":"Question","name":"Do you charge for SMS or WhatsApp messages?","acceptedAnswer":{"@type":"Answer","text":"Standard usage is included on every tier — confirmations and reminders. Heavy outbound marketing campaigns above 5,000 messages per month are billed at cost, with no markup."}},
-    {"@type":"Question","name":"What happens if I cancel?","acceptedAnswer":{"@type":"Answer","text":"Cancel anytime from your Mawid account. Your subscription continues until the end of the current billing period. We export your full customer database and booking history in CSV format on request."}},
-    {"@type":"Question","name":"Is there a setup fee?","acceptedAnswer":{"@type":"Answer","text":"No. Onboarding, data import, and bilingual training are all included on every tier."}}
+    {
+      "@type": "Question",
+      "name": "When do I start paying?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Start with a 7-day free trial. Your card is on file but not charged until day 8. Cancel anytime in those 7 days and you are never charged."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do customer payments go through Mawid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Your customers book online and pay you in person, the same as today. Online deposits are on our roadmap."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I switch tiers mid-month?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Plan changes take effect immediately, and the difference for the rest of the month is prorated on your next invoice."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do you charge for SMS or WhatsApp messages?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Booking alerts are included on every plan. When automated WhatsApp confirmations and reminders launch, standard usage will be included too."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if I cancel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Cancel anytime from your Mawid account. Your subscription continues until the end of the current billing period. We export your full customer database and booking history in CSV format on request."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is there a setup fee?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. Onboarding, data import, and bilingual training are all included on every tier."
+      }
+    }
   ]
 }
 </script>
@@ -231,7 +294,7 @@ src="https://www.facebook.com/tr?id=1016451274045170&ev=PageView&noscript=1"
           <span class="faq-icon">+</span>
         </button>
         <div class="faq-answer">
-          <div class="faq-answer-inner" data-i18n="price.faq.a3">Yes. Upgrades take effect immediately and are prorated. Downgrades take effect at the start of the next billing cycle.</div>
+          <div class="faq-answer-inner" data-i18n="price.faq.a3">Yes. Plan changes take effect immediately, and the difference for the rest of the month is prorated on your next invoice.</div>
         </div>
       </div>
       <div class="faq-item">

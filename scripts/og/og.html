@@ -1,0 +1,42 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=block" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { width: 1200px; height: 630px; }
+  body { background: #F5F4EF; font-family: Geist, sans-serif; color: #0A0F0D; position: relative; overflow: hidden; }
+  html { overflow: hidden; }
+  .bg { position: absolute; inset: 0; overflow: hidden; }
+  .glow { position: absolute; width: 760px; height: 760px; border-radius: 50%; background: radial-gradient(circle, rgba(11,61,49,0.14), rgba(11,61,49,0) 65%); inset-inline-end: -220px; top: -260px; }
+  .wrap { position: absolute; inset: 72px 80px; display: flex; flex-direction: column; justify-content: space-between; }
+  .brand { display: flex; align-items: center; gap: 18px; }
+  .brand img { width: 64px; height: 64px; }
+  .brand span { font-size: 34px; font-weight: 600; letter-spacing: -0.02em; }
+  h1 { font-size: 84px; line-height: 1.02; letter-spacing: -0.035em; font-weight: 500; max-width: 900px; }
+  h1 .it { font-family: "Instrument Serif", serif; font-style: italic; font-weight: 400; color: #0B3D31; }
+  p.sub { margin-top: 22px; font-size: 30px; color: #4A524E; max-width: 900px; line-height: 1.35; }
+  .foot { display: flex; justify-content: space-between; align-items: center; font-size: 24px; color: #4A524E; }
+  .pill { background: #0A0F0D; color: #fff; padding: 12px 22px; border-radius: 999px; font-weight: 500; }
+  html[lang="ar"] body { font-family: "IBM Plex Sans Arabic", sans-serif; }
+  html[lang="ar"] h1 { font-size: 80px; line-height: 1.2; letter-spacing: 0; font-weight: 700; }
+  html[lang="ar"] h1 .it { font-family: inherit; font-style: normal; font-weight: 700; }
+  html[lang="ar"] p.sub { font-size: 32px; line-height: 1.5; }
+  html[lang="ar"] .brand span { font-weight: 700; }
+</style></head>
+<body>
+<div class="bg"><div class="glow"></div></div>
+<div class="wrap">
+  <div class="brand"><img src="mark.png" alt=""><span id="name"></span></div>
+  <div><h1 id="h"></h1><p class="sub" id="s"></p></div>
+  <div class="foot"><span id="m"></span><span class="pill">mawid.ai</span></div>
+</div>
+<script>
+const L = location.hash === '#ar' ? 'ar' : 'en';
+const T = {
+  en: { name: 'Mawid', h: 'Booking, built for <span class="it">the Gulf.</span>', s: 'Online booking for salons, clinics and restaurants. Arabic-first, Hijri-aware, one tap to WhatsApp.', m: 'Saudi Arabia · UAE · Qatar · Kuwait' },
+  ar: { name: 'موعد', h: 'حجوزات مبنية <span class="it">للخليج.</span>', s: 'نظام حجز مواعيد أونلاين للصالونات والعيادات والمطاعم. عربي أولاً، بالتاريخ الهجري، وواتساب بضغطة.', m: 'السعودية · الإمارات · قطر · الكويت' },
+}[L];
+document.documentElement.lang = L; document.documentElement.dir = L === 'ar' ? 'rtl' : 'ltr';
+for (const k of ['name','h','s','m']) document.getElementById(k).innerHTML = T[k];
+</script>
+</body></html>

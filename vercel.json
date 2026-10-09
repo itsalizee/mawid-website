@@ -1,6 +1,71 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "cookie",
+          "key": "mawid_lang",
+          "value": "ar"
+        }
+      ],
+      "destination": "/ar/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "mawid_lang"
+        }
+      ],
+      "has": [
+        {
+          "type": "header",
+          "key": "accept-language",
+          "value": "^ar.*"
+        }
+      ],
+      "destination": "/ar/",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "missing": [
+        {
+          "type": "cookie",
+          "key": "mawid_lang"
+        }
+      ],
+      "has": [
+        {
+          "type": "header",
+          "key": "x-vercel-ip-country",
+          "value": "^(SA|KW|QA)$"
+        }
+      ],
+      "destination": "/ar/",
+      "permanent": false
+    },
+    {
+      "source": "/ar",
+      "destination": "/ar/",
+      "permanent": true
+    },
+    {
+      "source": "/:page(about|pricing|contact|product|clinics|restaurants|privacy|terms|refund)",
+      "destination": "/:page/",
+      "permanent": true
+    },
+    {
+      "source": "/ar/:page(about|pricing|contact|product|clinics|restaurants|privacy|terms|refund)",
+      "destination": "/ar/:page/",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/book",
@@ -22,6 +87,15 @@
         {
           "key": "Cache-Control",
           "value": "public, max-age=600, stale-while-revalidate=86400"
+        }
+      ]
+    },
+    {
+      "source": "/(og-image.png|og-image-ar.png|logo.png)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400, stale-while-revalidate=604800"
         }
       ]
     },

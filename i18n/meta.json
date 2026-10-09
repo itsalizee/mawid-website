@@ -1,0 +1,102 @@
+{
+  "/": {
+    "en": {
+      "title": "Mawid · Online booking system for salons, clinics & restaurants",
+      "description": "Arabic-first online booking for salons, clinics, spas and restaurants in Saudi Arabia, UAE, Qatar and Kuwait. Hijri dates, WhatsApp button, 7-day free trial."
+    },
+    "ar": {
+      "title": "موعد · نظام حجز مواعيد أونلاين للصالونات والعيادات والمطاعم",
+      "description": "نظام حجز مواعيد عربي أولاً للصالونات والعيادات والسبا والمطاعم في السعودية والإمارات وقطر والكويت. تاريخ هجري، زر واتساب، وتجربة مجانية ٧ أيام."
+    }
+  },
+  "/product/": {
+    "en": {
+      "title": "Features · Mawid online booking system for the Gulf",
+      "description": "A bilingual booking page with Hijri and Gregorian dates, prayer-time-aware slots, a customer list with visit history and a WhatsApp button. Built for the Gulf."
+    },
+    "ar": {
+      "title": "المزايا · نظام حجز مواعيد عربي للخليج · موعد",
+      "description": "صفحة حجز ثنائية اللغة بالتاريخ الهجري والميلادي، وأوقات تراعي الصلاة، وسجل عملاء بالزيارات، وزر واتساب. مبني للخليج."
+    }
+  },
+  "/pricing/": {
+    "en": {
+      "title": "Pricing · Mawid booking software · SAR, AED, QAR, KWD",
+      "description": "Flat monthly plans in SAR, AED, QAR, KWD or USD. Starter, Professional and Studio with a 7-day free trial, no setup fees and no commission. Cancel anytime."
+    },
+    "ar": {
+      "title": "الأسعار · موعد · باقات بالريال والدرهم والدينار",
+      "description": "باقات شهرية ثابتة بالريال السعودي أو الدرهم أو الريال القطري أو الدينار الكويتي. تجربة مجانية ٧ أيام، بدون رسوم إعداد أو عمولة، والإلغاء في أي وقت."
+    }
+  },
+  "/restaurants/": {
+    "en": {
+      "title": "Restaurant reservation system · Saudi Arabia & UAE · Mawid",
+      "description": "Online table reservations for Gulf restaurants and cafés: party size, table capacity, Hijri dates and a WhatsApp button. Saudi Arabia, UAE, Qatar, Kuwait."
+    },
+    "ar": {
+      "title": "نظام حجوزات للمطاعم في السعودية والخليج · موعد",
+      "description": "حجز طاولات أونلاين للمطاعم والمقاهي في الخليج: عدد الضيوف وسعة الطاولات والتاريخ الهجري وزر واتساب. السعودية والإمارات وقطر والكويت."
+    }
+  },
+  "/clinics/": {
+    "en": {
+      "title": "Clinic appointment booking system · Saudi Arabia & UAE · Mawid",
+      "description": "Online appointment booking for dermatology, dental and aesthetic clinics in Saudi Arabia, UAE, Qatar and Kuwait. Arabic-first, Hijri dates, front-desk only."
+    },
+    "ar": {
+      "title": "نظام حجز مواعيد للعيادات في السعودية والخليج · موعد",
+      "description": "حجز مواعيد أونلاين لعيادات الجلدية والأسنان والتجميل في السعودية والإمارات وقطر والكويت. عربي أولاً، بالتاريخ الهجري، للاستقبال فقط."
+    }
+  },
+  "/about/": {
+    "en": {
+      "title": "About Mawid · Booking software built for the Gulf",
+      "description": "Mawid is a booking platform built for the Gulf: Arabic-first and Hijri-aware. Operated by Diyar Holdings LLC for businesses in Saudi Arabia, UAE, Qatar and Kuwait."
+    },
+    "ar": {
+      "title": "من نحن · موعد · نظام حجز مبني للخليج",
+      "description": "موعد منصة حجوزات مبنية للخليج، عربية أولاً وتراعي التقويم الهجري. تديرها شركة ديار القابضة لخدمة الأعمال في السعودية والإمارات وقطر والكويت."
+    }
+  },
+  "/contact/": {
+    "en": {
+      "title": "Contact Mawid · Sales, setup help and support",
+      "description": "Talk to the Mawid team about sales, setup help, support or partnerships. We reply within one business day."
+    },
+    "ar": {
+      "title": "تواصلوا مع موعد · المبيعات والإعداد والدعم",
+      "description": "تواصلوا مع فريق موعد للمبيعات أو المساعدة في الإعداد أو الدعم أو الشراكات. نردّ خلال يوم عمل واحد."
+    }
+  },
+  "/refund/": {
+    "en": {
+      "title": "Refund Policy · Mawid",
+      "description": "Mawid refund policy. 7-day free trial. Cancel anytime. No refunds for partial months after the trial converts."
+    },
+    "ar": {
+      "title": "سياسة الاسترداد · موعد",
+      "description": "سياسة الاسترداد في موعد. تجربة مجانية ٧ أيام. الإلغاء في أي وقت. لا استرداد للأشهر الجزئية بعد انتهاء التجربة."
+    }
+  },
+  "/privacy/": {
+    "en": {
+      "title": "Privacy Policy · Mawid",
+      "description": "How Mawid handles personal information for our customers, their staff, and people who book through their booking pages. KSA PDPL, UAE PDP Law, and GDPR-aligned."
+    },
+    "ar": {
+      "title": "سياسة الخصوصية · موعد",
+      "description": "كيف تتعامل موعد مع المعلومات الشخصية لعملائنا وموظفيهم ومن يحجز عبر صفحات الحجز. النسخة الإنجليزية هي المعتمدة."
+    }
+  },
+  "/terms/": {
+    "en": {
+      "title": "Terms of Service · Mawid",
+      "description": "The agreement between you and Diyar Holdings LLC governing use of Mawid. Wyoming governing law."
+    },
+    "ar": {
+      "title": "شروط الخدمة · موعد",
+      "description": "الاتفاقية بينكم وبين شركة ديار القابضة التي تحكم استخدام موعد. النسخة الإنجليزية هي المعتمدة."
+    }
+  }
+}
